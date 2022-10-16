@@ -113,9 +113,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
-      # gravatarEmail = ""
+      gravatarEmail = ""
       # URL of avatar shown in home page
-      # avatarURL = "/images/avatar.png"
+      avatarURL = "/images/frederik_berg_avatar.png"
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
       title = "Freddys Website"
