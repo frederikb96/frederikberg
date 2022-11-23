@@ -46,7 +46,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/frederikb96/website"
+  gitRepo = "https://gitlab.com/frederikb96/website"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
@@ -150,14 +150,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = "frederikb96"
+    GitHub = ""
     Linkedin = ""
     Twitter = ""
     Instagram = ""
     Facebook = ""
     Telegram = ""
     Medium = ""
-    Gitlab = ""
+    Gitlab = "frederikb96"
     Youtubelegacy = ""
     Youtubecustom = ""
     Youtubechannel = ""
