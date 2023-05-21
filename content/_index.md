@@ -2,7 +2,7 @@
 title: "Welcome"
 ---
 
-I created this page as an entry point to my projects and my wiki:
+I created this page as an entry point to my projects and my Wiki:
 - In my [Wiki](https://wiki.bergrunde.net), you can find information about my home servers and other technical knowledge, I've written down, so I don't forget it ;)
 - Other interesting projects are available via [GitLab](https://gitlab.com/frederikb96) (I switched from GitHub to GitLab in 2022). Here is a small selection of some projects:
 	- [Nextcloud-MvSharedPics App](https://gitlab.com/frederikb96/nextcloud-mvsharedpics): This is a small Nextcloud server app, I developed to move shared pictures automatically.
