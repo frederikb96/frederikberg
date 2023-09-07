@@ -14,4 +14,4 @@ I created this page as an entry point to my projects and my Wiki:
 	- [Nextcloud](https://cloud.bergrunde.net)
 	- [Vaultwarden](https://vaultwarden.bergrunde.net)
 
-You can get in contact with me via [Matrix](https://matrix.to/#/@freddy:bergrunde.net)
+You can get in contact with me via [Matrix](https://matrix.to/#/@freddy:bergrunde.net) or Mail (first-letter-of-first-name.last-name[ät]posteo.de)
