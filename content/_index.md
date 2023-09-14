@@ -2,7 +2,15 @@
 title: "Welcome"
 ---
 
-I created this page as an entry point to my projects and my Wiki:
+Hi, I created this page to give an overview about me and my projects.
+
+Short bio (more see [About Me](about-me)):
+- 09/2023 - present: Upskilling in Compute Governance and Security
+- 08/2022 - 09/2023: \[Quit\] PhD in Computer Science, RWTH Aachen
+- 04/2019 - 01/2022: Master Automation Engineering, RWTH Aachen
+- 10/2014 - 12/2018: Bachelor Mechanical Engineering, Leibniz University Hannover
+
+My projects:
 - In my [Wiki](https://wiki.bergrunde.net), you can find information about my home servers and other technical knowledge, I've written down, so I don't forget it ;)
 - Other interesting projects are available via [GitLab](https://gitlab.com/frederikb96) (I switched from GitHub to GitLab in 2022). Here is a small selection of some projects:
 	- [Nextcloud-MvSharedPics App](https://gitlab.com/frederikb96/nextcloud-mvsharedpics): This is a small Nextcloud server app, I developed to move shared pictures automatically.
