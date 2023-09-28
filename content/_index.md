@@ -5,7 +5,7 @@ title: "Welcome"
 Hi, I created this page to give an overview about me and my projects.
 
 Short bio (more see [About Me](about-me)):
-- 09/2023 - present: Upskilling in Compute Governance and Security
+- 09/2023 - present: Upskilling in Information Security and AI Safety / Governance
 - 08/2022 - 09/2023: \[Quit\] PhD in Computer Science, RWTH Aachen
 - 04/2019 - 01/2022: Master Automation Engineering, RWTH Aachen
 - 10/2014 - 12/2018: Bachelor Mechanical Engineering, Leibniz University Hannover
