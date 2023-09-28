@@ -1,6 +1,6 @@
 baseURL = "https://bergrunde.net"
 languageCode = "en-us"
-title = "Freddys Website"
+title = "Frederik Berg"
 theme = ["hugo-embed-pdf-shortcode", "loveit"]
 
 # whether to use robots.txt
@@ -82,7 +82,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # date format
   dateFormat = "01.02.2006"
   # website title for Open Graph and Twitter Cards
-  title = "Freddys Website"
+  title = "Frederik Berg"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = ""
   # website images for Open Graph and Twitter Cards
@@ -99,7 +99,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Freddys Website"
+      name = "Frederik Berg"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
