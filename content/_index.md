@@ -11,22 +11,6 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: features
-    content:
-      title: Skills
-      items:
-        - name: Embedded / Control
-          description: 80%
-          icon: c
-          icon_pack: fas
-        - name: Machine Learning
-          description: 30%
-          icon: python
-          icon_pack: fab
-        - name: Linux Server
-          description: 80%
-          icon: linux
-          icon_pack: fab
   - block: experience
     content:
       title: Experience
