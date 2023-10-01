@@ -1,11 +1,10 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2023-10-01
 type: landing
 
 sections:
-  
   - block: about.biography
     id: about
     content:
@@ -29,7 +28,6 @@ sections:
           icon: linux
           icon_pack: fab
   - block: experience
-    id: experience
     content:
       title: Experience
       # Date format for experience
@@ -123,32 +121,26 @@ sections:
     design:
       columns: '2'
   - block: collection
-    id: posts
+    id: publications
     content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
+      title: Publications
       filters:
         folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+          - publication
+        featured_only: false
     design:
-      # Choose a layout view
-      view: compact
       columns: '2'
+      view: card
+  - block: collection
+    id: news
+    content:
+      title: News
+      filters:
+        folders:
+          - event
+    design:
+      columns: '2'
+      view: compact
   - block: portfolio
     id: projects
     content:
@@ -177,30 +169,31 @@ sections:
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
   - block: collection
-    id: publication
+    id: posts
     content:
-      title: Publications
+      title: Posts
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
       filters:
         folders:
-          - publication
-        featured_only: false
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
     design:
-      columns: '2'
-      view: card
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
+      # Choose a layout view
       view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
       columns: '2'
   - block: contact
     id: contact
