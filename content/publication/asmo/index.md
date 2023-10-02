@@ -31,6 +31,7 @@ publication_short: AUTOMED
 abstract: Interconnected medical devices enable new therapies and automate existing ones. Due to various manufacturers and interfaces, interoperability needs to be enabled with the help of auxiliary hardware. Since functional safety is indisputably critical, verifiability is essential, which is often neglected by state-of-the-art medical hardware platforms. We propose the ASMO hardware platform, which provides various interfaces to enable interoperability and where the workload is distributed such that the complexity of each unit can be reduced, while still providing enough capabilities for embedded machine learning. By using microcontrollers running an embedded real-time operating system, the verifiability can be further increased. The intrinsically created distributed architecture additionally allows for flexible rearrangement and efficient extension if needed.
 
 tags: []
+prio: 0
 
 # Display this page in the Featured widget?
 featured: true

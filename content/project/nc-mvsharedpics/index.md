@@ -17,6 +17,7 @@ url_code: ''
 url_pdf: ''
 url_slides: ''
 url_video: ''
+prio: 1
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

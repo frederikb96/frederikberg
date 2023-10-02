@@ -32,6 +32,7 @@ publication_short: BMT
 abstract: Research showed that the normothermic machine perfusion of kidneys can enable prolonged storage and improve conditions compared to traditional cold storage. For research in this area, there is a demand for a long-term in vitro perfusion setup. In this work, we present a fully automated normothermic machine perfusion (NMP) system as an experimental research platform. The perfusion system is intended as a tool for researching the effects of different perfusion strategies on the kidney. To enable the automation, the NMP system consists of a blood pressure control, a circulation volume level control and a pH-regulation component. The setup is realized as a medical cyber-physical system consisting of networked embedded microcontroller nodes.
 
 tags: []
+prio: 1
 
 # Display this page in the Featured widget?
 featured: true

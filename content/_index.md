@@ -112,6 +112,8 @@ sections:
         folders:
           - publication
         featured_only: false
+      sort_by: 'Params.prio'
+      sort_ascending: true
     design:
       columns: '2'
       view: card
@@ -146,6 +148,8 @@ sections:
           tag: server
         - name: Bicycle
           tag: bicycle
+      sort_by: 'Params.prio'
+      sort_ascending: true
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'

@@ -1,21 +1,23 @@
 ---
-title: Wiki
-summary: This is my knowledge base about my linux and server projects.
+title: Linux Scripts
+summary: A repository containing many of my self-written general-purpose Linux scripts and information about my backup strategies.
 tags:
   - server
-date: '2022-06-01T00:00:00Z'
+date: '2020-04-01T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://wiki.bergrunde.net'
+external_link: 'https://gitlab.com/frederikb96/Linux-Scripts'
 
 links:
-  - name: Link to Wiki
-    url: https://wiki.bergrunde.net
+  - icon: gitlab
+    icon_pack: fab
+    url: https://gitlab.com/frederikb96/Linux-Scripts
+    name: GitLab Repository
 url_code: ''
 url_pdf: ''
 url_slides: ''
 url_video: ''
-prio: 0
+prio: 3
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
