@@ -16,8 +16,6 @@ authors:
 date: '2023-09-01T00:00:00Z'
 doi: 'https://doi.org/10.1515/cdbme-2023-1081'
 
-# Schedule page publish date (NOT publication's date).
-publishDate: '2023-09-01T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

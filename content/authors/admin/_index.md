@@ -36,13 +36,13 @@ education:
   courses:
     - course: (Quit) PhD in Computer Science
       institution: RWTH Aachen University
-      year: 2023
+      year: 2022 - 2023
     - course: M.Sc. in Automation Engineering
       institution: RWTH Aachen University
-      year: 2022
+      year: 2019 - 2022
     - course: B.Sc. in Mechanical Engineering
       institution: Leibniz University Hannover
-      year: 2019
+      year: 2014 - 2019
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
