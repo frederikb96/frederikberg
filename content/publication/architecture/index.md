@@ -1,5 +1,5 @@
 ---
-title: 'A fully automated normothermic machine perfusion system for kidney grafts supporting physiological motivated flow profiles'
+title: 'A modular and verifiable software architecture for interconnected medical systems in intensive care'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -7,14 +7,14 @@ title: 'A fully automated normothermic machine perfusion system for kidney graft
 authors:
   - Marc Wiartalla
   - admin
+  - Florian Ottersbach
   - Jahnn Kühn
   - Mateusz Buglowski
   - Stefan Kowalewski
   - André Stollenwerk
-  - Christian Bleilevens
 
-date: '2023-09-01T00:00:00Z'
-doi: 'https://doi.org/10.1515/cdbme-2023-1081'
+date: '2023-10-11T00:00:00Z'
+doi: 'https://doi.org/10.15439/2023f6208'
 
 
 # Publication type.
@@ -24,13 +24,13 @@ doi: 'https://doi.org/10.1515/cdbme-2023-1081'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: Current Directions in Biomedical Engineering
-publication_short: BMT
+publication: Conference on Computer Science and Information Systems
+publication_short: FedCSIS
 
-abstract: Research showed that the normothermic machine perfusion of kidneys can enable prolonged storage and improve conditions compared to traditional cold storage. For research in this area, there is a demand for a long-term in vitro perfusion setup. In this work, we present a fully automated normothermic machine perfusion (NMP) system as an experimental research platform. The perfusion system is intended as a tool for researching the effects of different perfusion strategies on the kidney. To enable the automation, the NMP system consists of a blood pressure control, a circulation volume level control and a pH-regulation component. The setup is realized as a medical cyber-physical system consisting of networked embedded microcontroller nodes.
+abstract: Medical device interoperability enables new therapy methods and the automation of existing ones. Due to different medical device manufacturers and protocols, we need auxiliary hardware and software for the interconnection. In this paper we propose a service-oriented software architecture built on a real-time operating system in order to create a modular medical cyber-physical system consisting of networked embedded nodes. In particular we highlight the need for the application of formal methods to ensure the functional safety of the system.
 
 tags: []
-prio: 2
+prio: 1
 
 # Display this page in the Featured widget?
 featured: true
@@ -40,7 +40,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.degruyter.com/document/doi/10.1515/cdbme-2023-1081/pdf'
+url_pdf: 'https://annals-csis.org/proceedings/2023/pliks/6208.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -52,7 +52,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Normothermic machine perfusion system'
+  caption: 'Reference software architecture for medical applications in intensive care'
   focal_point: ''
   preview_only: false
 
