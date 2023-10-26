@@ -177,7 +177,7 @@ sections:
             name: DM me on Matrix
             icon_pack: fas
             link: https://matrix.to/#/@freddy:bergrunde.net
-      appointment_url: 'https://cloud.bergrunde.net/apps/calendar/appointment/QcbaqKC8zoEt'
+      appointment_url: 'https://cloud.bergrunde.net/apps/calendar/appointment/s6X47ckYt86Y'
       # Automatically link email and phone or display as text?
       autolink: true
     design:
