@@ -1,6 +1,6 @@
 ---
 title: Linux Scripts
-summary: A repository containing many of my self-written general-purpose Linux scripts and information about my backup strategies.
+summary: A repository for many of my smaller projects, which don't have their own place.
 tags:
   - server
 date: '2020-04-01T00:00:00Z'

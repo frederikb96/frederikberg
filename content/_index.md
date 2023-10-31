@@ -103,6 +103,14 @@ sections:
           organization_url: https://germany.ml4good.org/
           title: Maschine Learning for Good - AI Alignment Camp
           url: 'https://germany.ml4good.org/'
+        - certificate_url: ./news/it-sec
+          date_end: ''
+          date_start: '2023-10-01'
+          description: 'TryHackMe - Cybsersecurity'
+          organization: TryHackMe
+          organization_url: https://tryhackme.com/
+          title: TryHackMe - Certificates
+          url: 'https://tryhackme.com/'
     design:
       columns: '2'
   - block: collection
