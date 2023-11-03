@@ -31,7 +31,7 @@ sections:
           date_start: '2022-08-01'
           date_end: '2023-09-01'
           description: |2-
-              * Design and implementation of control algorithms
+              * Design and implementation of control algorithms (C and Matlab)
               * Research on contract-based design for interconnected medical devices and hardware security
               * First-author publication on verifiable hardware platform
         - title: Teaching Assistant - Advanced Micocontroller Programming and Debugging
@@ -61,7 +61,7 @@ sections:
           location: RWTH Aachen
           date_start: '2020-10-01'
           date_end: '2022-08-01'
-          description: Design and implementation of software to control measurement equipment like a blood pump control
+          description: Design and implementation of software (C and Matlab) to control measurement equipment like a blood pump control
         - title: Student Job - Android App Development
           company: Institute of Tansport and Automation Technology
           company_url: ''
@@ -69,7 +69,7 @@ sections:
           location: LUH Hannover
           date_start: '2018-10-01'
           date_end: '2019-03-01'
-          description: Design and implementation of software to control measurement equipment like a blood pump control
+          description: Developming an Android App (Java) to receive measurement data via visible light communication
         - title: Internship - Software Development
           company: KraussMaffei Berstorff GmbH
           company_url: ''
@@ -77,7 +77,7 @@ sections:
           location: Hannover
           date_start: '2017-05-01'
           date_end: '2017-07-01'
-          description: Programming of the control system BPC Touch
+          description: Programming of the control system BPC Touch (C#)
         
     design:
       columns: '2'
