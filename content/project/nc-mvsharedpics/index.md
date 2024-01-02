@@ -1,6 +1,6 @@
 ---
-title: Nextcloud Share Config App
-summary: This project is about creating a Nextcloud PHP server app which allows to configure if shared folders should be automatically moved to a specific folder.
+title: Nextcloud ShareMover App
+summary: In this project, I developed and published a Nextcloud app in the Nextcloud app store. The app allows users to configure automatic moving of shares to a specific folder. It is developed with PHP in the backend and JavaScript / Vue.js in the frontend and I automated the whole building and publishing process with GitLab CI.
 tags:
   - server
 date: '2023-04-01T00:00:00Z'
@@ -17,6 +17,6 @@ url_code: ''
 url_pdf: ''
 url_slides: ''
 url_video: ''
-prio: 1
+prio: 0
 
 ---
