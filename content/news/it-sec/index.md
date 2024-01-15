@@ -26,4 +26,5 @@ I am highly interested in cybersecurity, as it is crucial for both the present a
 
 **Certificates** [more will follow]]:
 - [Google Cybersecurity Professional - Foundations of Cybersecurity](/uploads/cyber-cert-01.pdf)
+- [Google Cybersecurity Professional - Play it Safe Manage Security Risks](/uploads/cyber-cert-02.pdf)
 - [TryHackMe - Introduction to Cybersecurity](/uploads/THM-B8W6MHUBRP-intro.pdf)
