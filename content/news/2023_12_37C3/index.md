@@ -18,3 +18,4 @@ url_pdf: ''
 url_slides: ''
 url_video: ''
 ---
+In December, I attended the Chaos Communication Congress 2023. It was my first time at a CCC and I am amazed by the community and the talks. I attendded interesting workshops and talks about security, privacy and hacking. I also met a lot of interesting people and had a great time. I am looking forward to the next CCC.
