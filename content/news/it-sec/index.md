@@ -29,4 +29,5 @@ I am highly interested in cybersecurity, as it is crucial for both the present a
 - [Google Cybersecurity Professional - Play it Safe - Manage Security Risks](/uploads/cyber-cert-02.pdf)
 - [Google Cybersecurity Professional - Connect and Protect - Networks and Network Security](/uploads/cyber-cert-03.pdf)
 - [Google Cybersecurity Professional - Tools of the Trade - Linux and SQL](/uploads/cyber-cert-04.pdf)
+- [Google Cybersecurity Professional - Assets, Threats, and Vulnerabilities](/uploads/cyber-cert-05.pdf)
 - [TryHackMe - Introduction to Cybersecurity](/uploads/THM-B8W6MHUBRP-intro.pdf)
