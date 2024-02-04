@@ -18,7 +18,7 @@ url_slides: ''
 url_video: ''
 ---
 
-Currently, I am attending a lecture on [network security and cryptography](https://online.rwth-aachen.de/RWTHonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/483913?$ctx=design=ca;lang=en&$scrollTo=toc_overview) at the RWTH Aachen University. Furthermore, I acquire further practical expertise by completing the TryHackMe learning paths to attain certifications and taking part in challenges. Furthermore, I am enrolled in the [Google Cybersecurity Professional Certificate](https://www.coursera.org/enroll/google-cybersecurity/paidmedia) online course and aiming to obtain the [CompTIA Security+](https://www.comptia.org/certifications/security) certificate.
+Currently, I am attending a lecture on [network security and cryptography](https://online.rwth-aachen.de/RWTHonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/483913?$ctx=design=ca;lang=en&$scrollTo=toc_overview) at the RWTH Aachen University. Furthermore, I acquire further practical expertise by completing the TryHackMe learning paths to attain certifications and taking part in challenges. Moreover, I am enrolled in the [Google Cybersecurity Professional Certificate](https://www.coursera.org/enroll/google-cybersecurity/paidmedia) online course and aiming to obtain the [CompTIA Security+](https://www.comptia.org/certifications/security) certificate.
 
 Short Statement about my motivation to work in that field:
 
@@ -31,3 +31,4 @@ I am highly interested in cybersecurity, as it is crucial for both the present a
 - [Google Cybersecurity Professional - Tools of the Trade - Linux and SQL](/uploads/cyber-cert-04.pdf)
 - [Google Cybersecurity Professional - Assets, Threats, and Vulnerabilities](/uploads/cyber-cert-05.pdf)
 - [TryHackMe - Introduction to Cybersecurity](/uploads/THM-B8W6MHUBRP-intro.pdf)
+- [TryHackMe - Pre Security](/uploads/THM-PXQRXJKQNF-pre-security.pdf)
