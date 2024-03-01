@@ -111,13 +111,13 @@ sections:
           organization_url: https://tryhackme.com/
           title: TryHackMe - Certificates
           url: 'https://tryhackme.com/'
-        - certificate_url: ./news/it-sec
-          date_end: ''
+        - certificate_url: uploads/cyber-cert.pdf
+          date_end: '2024-02-29'
           date_start: '2024-01-09'
-          description: 'Google Cybersecurity Professional Certificates'
+          description: 'Google Cybersecurity Certificates, [See all](./news/it-sec)'
           organization: Google and Coursera
           organization_url: https://coursera.org/
-          title: Google Cybersecurity Professional Certificate
+          title: Google Cybersecurity Certificate
           url: 'https://www.coursera.org/professional-certificates/google-cybersecurity'
     design:
       columns: '2'
