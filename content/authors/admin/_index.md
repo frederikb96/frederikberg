@@ -34,9 +34,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: (Quit) PhD in Computer Science
+    - course: Computer Science Continuing Education
       institution: RWTH Aachen University
-      year: 2022 - 2023
+      year: 2022 - 2024
     - course: M.Sc. in Automation Engineering
       institution: RWTH Aachen University
       year: 2019 - 2022
@@ -64,11 +64,11 @@ social:
     icon_pack: fab
     link: https://github.com/frederikb96
   # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
+  # To use: copy your cv to `static/uploads/cv.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: uploads/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
@@ -78,8 +78,8 @@ highlight_name: true
 ---
 
 
-I am an Alumni of the Chair for **Embedded Software** at RWTH Aachen University. My research was about the **safety** of embedded medical devices. Over the last few months, I have been focusing on **cybersecurity** and information security as this field is crucial for both the present and future, especially in protecting critical infrastructure ([see more about my accomplishments](./news/it-sec)). Moreover, I am also currently engaged in some security and server projects I always wanted to find time for.
+I am an Alumni of the Chair for **Embedded Software** at RWTH Aachen University. My research was about the **safety** of embedded medical devices. Over the last year, my interest has increasingly shifted towards **cybersecurity**, a field of high-impact and crucial importance for both the present and the future ([see more about my accomplishments](./news/it-sec)). Moreover, I am also currently engaged in some security and server projects I always wanted to find time for. I am looking forward to working in this dynamic and changing area. My strengths include a **strong motivation to learn** and develop, the ability to solve **omplex problems**, exceptional **organizational skills**, and an emphasis on well-documented work.
 {style="text-align: justify;"}
 
-For a few years, I have been working on projects like Linux servers including Nextcloud and network/backup solutions. I am also interested in **knowledge management**, as well as organizing and structuring data ([my Wiki](https://wiki.bergrunde.net)). On the sport side, I like bouldering and being in nature, bicycling and hiking. Furthermore, I enjoy working on the refurbishment of old bicycles.
+For a few years, I have been working on projects like **Linux servers** including Nextcloud and network/backup solutions. Moreover, I am interested in **knowledge management**, as well as organizing and structuring data ([my Wiki](https://wiki.bergrunde.net)). On the sport side, I like bouldering and being in nature, bicycling and hiking. Furthermore, I enjoy working on the refurbishment of old bicycles.
 {style="text-align: justify;"}

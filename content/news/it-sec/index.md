@@ -1,7 +1,7 @@
 ---
-title: Information Security - Certificates List
+title: Cybersecurity - Certificates List
 
-event: It-Sec
+event: Cybersecurity
 
 summary: Over the last few months, I have been focusing on cybersecurity and information security. I attended a lecture on network security and cryptography at the RWTH Aachen University. Furthermore, I acquired further practical expertise by completing the TryHackMe learning paths to attain certifications and taking part in challenges. Moreover, I completed the Google Cybersecurity Certificate and I am currently preparing for the CompTIA Security+ certificate. See more...
 
@@ -19,10 +19,6 @@ url_video: ''
 ---
 
 Over the last few months, I have been focusing on cybersecurity and information security. I attended a lecture on [network security and cryptography](https://online.rwth-aachen.de/RWTHonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/483913?$ctx=design=ca;lang=en&$scrollTo=toc_overview) at the RWTH Aachen University. Furthermore, I acquired further practical expertise by completing the TryHackMe learning paths to attain certifications and taking part in challenges. Moreover, I completed the Google Cybersecurity Certificate and I am currently preparing for the CompTIA Security+ certificate.
-
-Short Statement about my motivation to work in that field:
-
-I am highly interested in cybersecurity, as it is crucial for both the present and future, especially in protecting critical infrastructure. My strengths include well-structured writing, effective planning, and a methodical approach to work. I am motivated and persistent in solving complex problems, constantly seeking the right technical solutions. I take my responsibilities seriously, supporting my team and aiming to positively impact society through my efforts in cybersecurity.
 
 # Certificates
 - [Google Cybersecurity Certificate](/uploads/cyber-cert.pdf)

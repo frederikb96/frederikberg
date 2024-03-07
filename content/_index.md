@@ -23,6 +23,16 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Cybersecurity Certifications and Upskilling
+          company: ''
+          company_url: ''
+          company_logo: 
+          location: RWTH Aachen
+          date_start: '2023-09-01'
+          date_end: '2024-03-01'
+          description: |2-
+              * Lecture: Network security and cryptography
+              * Certificates: Google Professional Cybersecurity Certificate, TryHackMe, (CompTIA Security+ Certificate in progress) ([For more see: Link](./news/it-sec))
         - title: Researcher - Safety of interconnected Embedded Medical Devices
           company: Embedded Software
           company_url: ''
@@ -53,7 +63,7 @@ sections:
           location: Aachen
           date_start: '2023-03-01'
           date_end: ''
-          description: Operations for local retreat and co-organization of reading group
+          description: Coordinating events and participating in conferences and online courses focusing on effective, impactful solutions for global challenges.
         - title: Student Job - Software Development for Measurement Equipment
           company: Embedded Software
           company_url: ''
@@ -61,7 +71,7 @@ sections:
           location: RWTH Aachen
           date_start: '2020-10-01'
           date_end: '2022-08-01'
-          description: Design and implementation of software (C and Matlab) to control measurement equipment like a blood pump control
+          description: Developed software for controlling medical measurement equipment, including a blood pump control system, using C and Matlab.
         - title: Student Job - Android App Development
           company: Institute of Tansport and Automation Technology
           company_url: ''
@@ -69,7 +79,7 @@ sections:
           location: LUH Hannover
           date_start: '2018-10-01'
           date_end: '2019-03-01'
-          description: Developming an Android App (Java) to receive measurement data via visible light communication
+          description: Developed an Android camera module application for processing visible light signals, utilizing Java.
         - title: Internship - Software Development
           company: KraussMaffei Berstorff GmbH
           company_url: ''
