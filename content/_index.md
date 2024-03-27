@@ -32,7 +32,7 @@ sections:
           date_end: '2024-03-01'
           description: |2-
               * Lecture: Network security and cryptography
-              * Certificates: Google Professional Cybersecurity Certificate, TryHackMe, (CompTIA Security+ Certificate in progress) ([For more see: Link](./news/it-sec))
+              * Certificates: Google Professional Cybersecurity Certificate, TryHackMe, CompTIA Security+ Certificate ([For more see: Link](./news/it-sec))
         - title: Researcher - Safety of interconnected Embedded Medical Devices
           company: Embedded Software
           company_url: ''
@@ -124,11 +124,19 @@ sections:
         - certificate_url: uploads/cyber-cert.pdf
           date_end: '2024-02-29'
           date_start: '2024-01-09'
-          description: 'Google Cybersecurity Certificates, [See all](./news/it-sec)'
+          description: 'Google Cybersecurity Certificates, [see for more](./news/it-sec)'
           organization: Google and Coursera
           organization_url: https://coursera.org/
           title: Google Cybersecurity Certificate
           url: 'https://www.coursera.org/professional-certificates/google-cybersecurity'
+        - certificate_url: uploads/security+.pdf
+          date_end: '2024-03-26'
+          date_start: '2024-02-25'
+          description: 'CompTIA Security+ Certificate, [see for more](./news/it-sec)'
+          organization: CompTIA
+          organization_url: https://www.comptia.org
+          title: CompTIA Security+ Certificate
+          url: 'https://www.comptia.org/certifications/security'
     design:
       columns: '2'
   - block: collection
