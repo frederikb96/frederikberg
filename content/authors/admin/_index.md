@@ -14,12 +14,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Alumni Embedded Software
+role: Security Analytics Consultant
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: RWTH Aachen University
-    url: https://www.rwth-aachen.de
+  - name: SVA System Vertrieb Alexander GmbH
+    url: https://www.sva.de/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Background in Cybersecurity and conducted research on safety of embedded medical devices.
@@ -77,8 +77,7 @@ email: ''
 highlight_name: true
 ---
 
-
-I am an Alumni of the Chair for **Embedded Software** at RWTH Aachen University. My research was about the **safety** of embedded medical devices. Over the last year, my interest has increasingly shifted towards **cybersecurity**, a field of high-impact and crucial importance for both the present and the future ([see more about my accomplishments](./news/it-sec)). Moreover, I am also currently engaged in some security and server projects I always wanted to find time for. I am looking forward to working in this dynamic and changing area. My strengths include a **strong motivation to learn** and develop, the ability to solve **omplex problems**, exceptional **organizational skills**, and an emphasis on well-documented work.
+I am working as a **Security Analytics Consultant** at [SVA System Vertrieb Alexander GmbH](https://www.sva.de/). Previously, I was a **Research Assistant** at the Chair for **Embedded Software** at RWTH Aachen University. My research was about the **safety** of embedded medical devices. Over the last year, my interest has increasingly shifted towards **cybersecurity**, a field of high-impact and crucial importance for both the present and the future. Moreover, I am also engaged in some personal security and server projects. I am happy working in this dynamic and changing area. My strengths include a **strong motivation to learn** and develop, the ability to solve **omplex problems**, exceptional **organizational skills**, and an emphasis on well-documented work.
 {style="text-align: justify;"}
 
 For a few years, I have been working on projects like **Linux servers** including Nextcloud and network/backup solutions. Moreover, I am interested in **knowledge management**, as well as organizing and structuring data ([my Wiki](https://wiki.bergrunde.net)). On the sport side, I like bouldering and being in nature, bicycling and hiking. Furthermore, I enjoy working on the refurbishment of old bicycles.

@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2023-10-01
+date: 2024-05-14
 type: landing
 
 sections:
@@ -23,6 +23,16 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Security Analytics Consultant
+          company: SVA System Vertrieb Alexander GmbH
+          company_url: https://www.sva.de/
+          company_logo: 
+          location: Aachen
+          date_start: '2024-05-01'
+          date_end: ''
+          description: |2-
+              * Security Analytics
+              * Security Information and Event Management (SIEM)
         - title: Cybersecurity Certifications and Upskilling
           company: ''
           company_url: ''
