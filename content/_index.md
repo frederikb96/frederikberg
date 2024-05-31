@@ -213,7 +213,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Just write me a mail or get in contact via Matrix. You can also book and appointment via Nextcloud.
+        Just write me a mail or get in contact via Matrix. You can also book an appointment via Nextcloud.
       # Contact (add or remove contact options as necessary)
       email: fberg@posteo.de
       contact_links:
