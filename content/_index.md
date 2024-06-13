@@ -120,9 +120,9 @@ sections:
           date_start: '2023-08-01'
           description: 'Deep Learning Skills and AI Safety. Project: Compute Governance and Security'
           organization: ML4Good
-          organization_url: https://germany.ml4good.org/
+          organization_url: https://www.ml4good.org/about-us
           title: Maschine Learning for Good - AI Alignment Camp
-          url: 'https://germany.ml4good.org/'
+          url: 'https://www.ml4good.org/about-us'
         - certificate_url: ./news/it-sec
           date_end: ''
           date_start: '2023-10-01'
@@ -221,7 +221,7 @@ sections:
             name: DM me on Matrix
             icon_pack: fas
             link: https://matrix.to/#/@freddy:bergrunde.net
-      appointment_url: 'https://cloud.bergrunde.net/apps/calendar/appointment/s6X47ckYt86Y'
+      appointment_url: 'https://cloud.bergrunde.net/apps/calendar/appointment/fybDpcT49T79'
       # Automatically link email and phone or display as text?
       autolink: true
     design:
