@@ -213,14 +213,9 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Just write me a mail or get in contact via Matrix. You can also book an appointment via Nextcloud.
+        Just write me a mail or you can also book an appointment via Nextcloud.
       # Contact (add or remove contact options as necessary)
       email: fberg@posteo.de
-      contact_links:
-          - icon: comment
-            name: DM me on Matrix
-            icon_pack: fas
-            link: https://matrix.to/#/@freddy:bergrunde.net
       appointment_url: 'https://cloud.bergrunde.net/apps/calendar/appointment/fybDpcT49T79'
       # Automatically link email and phone or display as text?
       autolink: true
