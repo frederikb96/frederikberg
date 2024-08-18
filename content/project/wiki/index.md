@@ -1,6 +1,6 @@
 ---
-title: Wiki
-summary: This is my knowledge base about my linux and server projects.
+title: Wiki [Archived]
+summary: This is a knowledge base where I once wrote down stuff I learned about Linux servers, Nextcloud, and other self-hostable services.
 tags:
   - server
 date: '2022-06-01T00:00:00Z'
@@ -9,7 +9,7 @@ date: '2022-06-01T00:00:00Z'
 external_link: 'https://wiki.bergrunde.net'
 
 links:
-  - name: Link to Wiki
+  - name: Link to archived Wiki
     url: https://wiki.bergrunde.net
 url_code: ''
 url_pdf: ''
