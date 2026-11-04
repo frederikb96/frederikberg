@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import PublicationItem from '../../components/PublicationItem.astro';
+import nightLetters from '../../assets/art/night-letters.jpg';
+
+const publications = (await getCollection('publications')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Publications" description="Peer-reviewed papers on the functional safety of interconnected medical devices." searchable>
+  <div class="mx-auto max-w-5xl px-5">
+    <PageHeader title="Publications" image={nightLetters} imageAlt="A person reading a letter by lantern light inside a lookout tower at night">
+      Papers from my time at the Chair for Embedded Software at RWTH Aachen, on interconnected medical devices
+      in intensive care and how to keep them functionally safe. More on
+      <a href="https://scholar.google.com/citations?user=cmAmnmcAAAAJ" class="text-link underline decoration-moss underline-offset-4 hover:decoration-amber">Google Scholar</a>.
+    </PageHeader>
+    <ul class="space-y-12">
+      {publications.map((publication) => <PublicationItem publication={publication} abstract />)}
+    </ul>
+  </div>
+</Base>

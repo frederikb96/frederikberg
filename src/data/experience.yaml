@@ -1,0 +1,134 @@
+# Positions, newest first. One file feeds two renderings:
+#   - the Experience section of the website: `title`, `organization`, `location`, dates, `bullets`;
+#     an entry with `site: false` is left out there.
+#   - the one-page CV: the `cv` block. `show: false` leaves the entry out; `title`,
+#     `organization` and `location` override the site values when set; `bullets` are the CV's
+#     shorter text, with Markdown-style [text](url) links.
+# Dates are YYYY-MM; `end: null` means "present".
+
+- id: sva
+  title: Security Analytics Consultant
+  organization: SVA System Vertrieb Alexander GmbH
+  organization_url: https://www.sva.de/
+  location: Aachen
+  start: 2024-05
+  end: null
+  site: true
+  bullets:
+    - Build and operate a fully automated, multi-tenant SOC and SIEM platform on Elastic Security, with infrastructure, detection rules, upgrades and monitoring as code (Terraform, Ansible, CI/CD) and Fleet with Elastic Defend on the endpoints.
+    - Designed and built a vulnerability management platform on Elastic that brings scanner, asset and exposure data from several sources into one view with reporting.
+    - SOAR automation of SOC use cases with Tines.
+    - IT security workshops, trainings and talks, among them sessions and hands-on labs for an IT security bootcamp and a webinar with a live demo of the SOC platform.
+  cv:
+    show: true
+    location: Aachen, Germany
+    bullets:
+      - "Building and operating a fully automated, multi-tenant SOC platform on Elastic Security: everything as code with Terraform, Ansible and CI/CD, detection rules deployed per customer, Fleet and Elastic Defend. Further SIEM and detection engineering projects for customers, including a central vulnerability management platform on Elastic."
+      - "IT security workshops, trainings and talks: sessions and hands-on labs for an IT security bootcamp, and a customer webinar with a live demo of the SOC platform."
+
+- id: homelab
+  title: Security Homelab and Personal Projects
+  organization: ""
+  location: Germany
+  start: 2019-04
+  end: null
+  site: true
+  bullets:
+    - An Elastic SIEM on my own Kubernetes cluster, configured entirely as code, with detection rules over Kubernetes audit logs, network flows and container runtime events.
+    - AI agents that triage alerts and security advisories and operate the cluster, as part of a personal AI infrastructure with a backend, web and iOS clients, long-term memory and scheduled agents.
+    - Open-source tools around it, among them MailVerdict, kube-borg-backup and Baton; see Projects.
+  cv:
+    show: true
+    bullets:
+      - "Elastic SIEM on my own Kubernetes cluster, configured entirely as code: detection rules over Kubernetes audit logs, network flows and container runtime events, with AI agents that triage alerts and security advisories and operate the cluster."
+      - "A personal AI assistant infrastructure built on Claude Code, with a backend, web and iOS clients, long-term memory and scheduled agents."
+      - "MailVerdict: an open-source, self-hosted mail client in which a language model gives spam verdicts ([GitHub](https://github.com/frederikb96/mail-verdict))."
+
+- id: rwth-research
+  title: Research Associate
+  organization: Chair for Embedded Software, RWTH Aachen University
+  location: Aachen
+  start: 2022-08
+  end: 2023-09
+  site: true
+  bullets:
+    - Research on the functional safety of interconnected medical devices, including control algorithms in C and Matlab, contract-based design and hardware security.
+    - Three publications, first author of the paper on the ASMO hardware platform.
+    - Ran the lecture Advanced Microcontroller Programming and Debugging, restructured its content, gave tutorials and created and graded the exams.
+    - Managed projects and supervised students.
+  cv:
+    show: true
+    title: Research Associate in Computer Science
+    organization: Chair for Embedded Software
+    location: RWTH Aachen, Germany
+    bullets:
+      - Conducted research on the functional safety of medical embedded devices.
+      - "Authored multiple publications, including first-author papers. For more details, see: [Google Scholar](https://scholar.google.com/citations?user=cmAmnmcAAAAJ)."
+      - Supervised a lecture on Advanced Microcontroller Programming and Debugging, focusing on safe and verifiable software.
+      - Managed projects and supervised students.
+
+- id: ml4good
+  title: Machine Learning for Good (ML4Good)
+  organization: ""
+  location: Germany
+  start: 2023-08
+  end: 2023-09
+  site: false
+  bullets: []
+  cv:
+    show: true
+    bullets:
+      - Participated in an AI safety and alignment camp, focusing on ethical applications of machine learning.
+
+- id: ea-aachen
+  title: Co-organiser
+  organization: Effective Altruism Aachen
+  location: Aachen
+  start: 2023-03
+  end: null
+  site: true
+  bullets:
+    - Organising the local group's meetups and events and looking after its website and newsletter.
+  cv:
+    show: true
+    title: Co-Organizer, Effective Altruism Aachen
+    organization: ""
+    location: Aachen, Germany
+    bullets:
+      - Organizing the local group's meetups and events and looking after its website and newsletter.
+
+- id: rwth-student
+  title: Student assistant, software development for medical measurement equipment
+  organization: Chair for Embedded Software, RWTH Aachen University
+  location: Aachen
+  start: 2020-10
+  end: 2022-08
+  site: true
+  bullets:
+    - Software in C and Matlab to control medical measurement equipment, including a blood pump control system.
+  cv:
+    show: false
+
+- id: luh-student
+  title: Student assistant, Android app development
+  organization: Institute of Transport and Automation Technology, Leibniz University Hannover
+  location: Hannover
+  start: 2018-10
+  end: 2019-03
+  site: true
+  bullets:
+    - An Android camera app in Java that processes visible light signals.
+  cv:
+    show: false
+
+- id: kraussmaffei
+  title: Internship, software development
+  organization: KraussMaffei Berstorff GmbH
+  location: Hannover
+  start: 2017-05
+  end: 2017-07
+  site: true
+  bullets:
+    - Programming of the BPC Touch control system in C#.
+  cv:
+    show: false

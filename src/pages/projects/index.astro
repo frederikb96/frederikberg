@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import Icon from '../../components/Icon.astro';
+import { moreProjects, profile } from '../../lib/data';
+import bikeLock from '../../assets/art/bike-lock.jpg';
+
+const all = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const active = all.filter((p) => p.data.status === 'active');
+const archive = all.filter((p) => p.data.status === 'archive');
+---
+
+<Base title="Projects" description="What I build in my spare time: self-hosted infrastructure, AI agents, security tooling and smaller open-source tools." searchable>
+  <div class="mx-auto max-w-5xl px-5">
+    <PageHeader title="Projects" image={bikeLock} imageAlt="An old bicycle chained with an amber padlock to the leg of a wooden lookout tower">
+      What I build next to work: a Kubernetes homelab and the agents that run it, security tooling, and smaller
+      tools that solve one problem well. Most of it is open source on
+      <a href={profile.links.github} class="text-link underline decoration-moss underline-offset-4 hover:decoration-amber">GitHub</a>.
+    </PageHeader>
+
+    <section>
+      <SectionHeading id="active" title="Active" />
+      <div class="grid gap-6 sm:grid-cols-2">
+        {active.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </section>
+
+    <section class="pt-20">
+      <SectionHeading id="more" title="More on GitHub" />
+      <ul class="grid gap-x-10 gap-y-4 sm:grid-cols-2">
+        {
+          moreProjects.map((item) => (
+            <li>
+              <a href={item.url} class="inline-flex items-center gap-1.5 font-bold text-link hover:text-amber-ink">
+                <Icon name="github" class="h-4 w-4" />
+                {item.name}
+              </a>
+              <p class="text-[0.95rem] text-fg-muted">{item.description}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="pt-20">
+      <SectionHeading id="archive" title="Archive" />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {archive.map((project) => <ProjectCard project={project} compact />)}
+      </div>
+    </section>
+  </div>
+</Base>

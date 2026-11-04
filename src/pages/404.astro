@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import nightTower from '../assets/art/night-tower.jpg';
+---
+
+<Base title="Not found" description="This page does not exist.">
+  <div class="mx-auto max-w-3xl px-5 pt-14 text-center">
+    <div class="print mx-auto mb-10 max-w-xl overflow-hidden rounded-2xl">
+      <Image src={nightTower} alt="A lookout tower with a lit lantern above a sleeping valley at night" width={720} class="w-full" />
+    </div>
+    <h1 class="text-3xl font-black tracking-tight text-brand">Nothing here</h1>
+    <p class="mt-3 text-lg text-fg-muted">
+      This page does not exist, or not any more. Try the <a href="/" class="text-link underline underline-offset-4">start page</a>
+      or the <a href="/search/" class="text-link underline underline-offset-4">search</a>.
+    </p>
+  </div>
+</Base>

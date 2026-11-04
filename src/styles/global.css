@@ -1,0 +1,147 @@
+@import '@fontsource/lato/300.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/400-italic.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/lato/900.css';
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* berg palette: fir, moss, amber and slate on paper. Light by default, the same
+   palette inverted onto fir green in dark mode. Components use the semantic names. */
+:root {
+  --c-bg: #f8f6f1;
+  --c-surface: #ffffff;
+  --c-surface-2: #efece4;
+  --c-fg: #24302a;
+  --c-fg-muted: #5f6a63;
+  --c-line: #dcdfd8;
+  --c-brand: #1e3b2f;
+  --c-brand-fg: #f8f6f1;
+  --c-link: #1e3b2f;
+  --c-moss: #8fae86;
+  --c-moss-soft: #e3ebdd;
+  --c-amber: #d9923a;
+  --c-amber-soft: #f6e5cc;
+  --c-amber-ink: #8a5514;
+  --c-slate: #5b7a93;
+  --c-slate-soft: #dee6ec;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #1a3329;
+    --c-surface: #213f33;
+    --c-surface-2: #264a3c;
+    --c-fg: #f1eee6;
+    --c-fg-muted: #b5c2b8;
+    --c-line: #345847;
+    --c-brand: #f8f6f1;
+    --c-brand-fg: #1e3b2f;
+    --c-link: #c3d8bb;
+    --c-moss: #8fae86;
+    --c-moss-soft: #2d5243;
+    --c-amber: #d9923a;
+    --c-amber-soft: #4a3d22;
+    --c-amber-ink: #f0c487;
+    --c-slate: #9db6ca;
+    --c-slate-soft: #2a4651;
+    color-scheme: dark;
+  }
+}
+
+@theme {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-fg: var(--c-fg);
+  --color-fg-muted: var(--c-fg-muted);
+  --color-line: var(--c-line);
+  --color-brand: var(--c-brand);
+  --color-brand-fg: var(--c-brand-fg);
+  --color-link: var(--c-link);
+  --color-moss: var(--c-moss);
+  --color-moss-soft: var(--c-moss-soft);
+  --color-amber: var(--c-amber);
+  --color-amber-soft: var(--c-amber-soft);
+  --color-amber-ink: var(--c-amber-ink);
+  --color-slate: var(--c-slate);
+  --color-slate-soft: var(--c-slate-soft);
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background-color: var(--c-bg);
+  color: var(--c-fg);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--c-amber-soft);
+  color: var(--c-fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-amber);
+  outline-offset: 2px;
+}
+
+/* Illustrations hang like prints: their own paper ground, a soft shadow, no frame. */
+.print {
+  background: #f8f6f1;
+  box-shadow: 0 1px 2px rgb(30 59 47 / 0.08), 0 10px 30px -12px rgb(30 59 47 / 0.25);
+}
+
+.prose {
+  --tw-prose-body: var(--c-fg);
+  --tw-prose-headings: var(--c-brand);
+  --tw-prose-lead: var(--c-fg-muted);
+  --tw-prose-links: var(--c-link);
+  --tw-prose-bold: var(--c-fg);
+  --tw-prose-counters: var(--c-fg-muted);
+  --tw-prose-bullets: var(--c-moss);
+  --tw-prose-hr: var(--c-line);
+  --tw-prose-quotes: var(--c-fg);
+  --tw-prose-quote-borders: var(--c-amber);
+  --tw-prose-captions: var(--c-fg-muted);
+  --tw-prose-code: var(--c-fg);
+  --tw-prose-pre-code: var(--c-fg);
+  --tw-prose-pre-bg: var(--c-surface-2);
+  --tw-prose-th-borders: var(--c-line);
+  --tw-prose-td-borders: var(--c-line);
+}
+
+.prose a {
+  text-decoration-color: var(--c-moss);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--c-amber);
+}
+
+/* Pagefind's own UI, recoloured into the palette. */
+.pagefind-ui {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: var(--c-brand);
+  --pagefind-ui-text: var(--c-fg);
+  --pagefind-ui-background: var(--c-surface);
+  --pagefind-ui-border: var(--c-line);
+  --pagefind-ui-tag: var(--c-surface-2);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 10px;
+  --pagefind-ui-font: var(--font-sans);
+}
+
+.pagefind-ui mark {
+  background: var(--c-amber-soft);
+  color: inherit;
+}

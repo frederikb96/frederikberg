@@ -1,0 +1,16 @@
+---
+import { kindLabel } from '../lib/blog';
+
+interface Props {
+  kind: 'update' | 'research';
+  lang: 'en' | 'de';
+}
+const { kind, lang } = Astro.props;
+---
+
+<span
+  class:list={[
+    'inline-block rounded-full px-2 py-0.5 text-xs font-bold tracking-wide uppercase',
+    kind === 'research' ? 'bg-amber-soft text-amber-ink' : 'bg-moss-soft text-fg',
+  ]}>{kindLabel[kind][lang]}</span
+>

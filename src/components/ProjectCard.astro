@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import Icon from './Icon.astro';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+  compact?: boolean;
+}
+const { project, compact = false } = Astro.props;
+const { title, pitch, repo, links, image, image_alt, image_fit } = project.data;
+const detail = project.body?.trim() ? `/projects/${project.id}/` : undefined;
+const allLinks = [...(repo ? [{ label: 'GitHub', url: repo }] : []), ...links];
+---
+
+<article class="flex flex-col overflow-hidden rounded-2xl border border-line bg-surface" id={project.id}>
+  <div class:list={['print aspect-[16/9] overflow-hidden', image_fit === 'contain' && 'flex items-center justify-center p-6']}>
+    <Image
+      src={image}
+      alt={image_alt}
+      widths={[400, 700, 1000]}
+      sizes="(min-width: 768px) 480px, 100vw"
+      class:list={[image_fit === 'contain' ? 'max-h-full w-auto object-contain' : 'h-full w-full object-cover']}
+    />
+  </div>
+  <div class="flex flex-1 flex-col p-5">
+    <h3 class:list={['font-bold text-brand', compact ? 'text-base' : 'text-lg']}>
+      {detail ? <a href={detail} class="hover:text-amber-ink">{title}</a> : title}
+    </h3>
+    <p class="mt-2 flex-1 text-[0.95rem] leading-relaxed text-fg-muted">{pitch}</p>
+    {
+      (allLinks.length > 0 || detail) && (
+        <ul class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-sm font-bold">
+          {detail && (
+            <li>
+              <a href={detail} class="inline-flex items-center gap-1 text-link hover:text-amber-ink">
+                Details <Icon name="arrow" class="h-3.5 w-3.5" />
+              </a>
+            </li>
+          )}
+          {allLinks.map((link) => (
+            <li>
+              <a href={link.url} class="inline-flex items-center gap-1 text-link hover:text-amber-ink">
+                {link.label === 'GitHub' && <Icon name="github" class="h-4 w-4" />}
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</article>

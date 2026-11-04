@@ -1,0 +1,114 @@
+---
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AiDisclaimer from '../../components/AiDisclaimer.astro';
+import KindBadge from '../../components/KindBadge.astro';
+import PdfViewer from '../../components/PdfViewer.astro';
+import { formatDate, getPosts, pdfUrl, postUrl } from '../../lib/blog';
+import { profile } from '../../lib/data';
+import { site } from '../../data/site';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const urls = new Set(posts.map(postUrl));
+  return posts.map((post) => {
+    if (post.data.alt_url && !urls.has(post.data.alt_url)) {
+      throw new Error(`${post.filePath}: alt_url ${post.data.alt_url} matches no published post`);
+    }
+    if (Boolean(post.data.alt_url) !== Boolean(post.data.alt_lang)) {
+      throw new Error(`${post.filePath}: alt_url and alt_lang go together`);
+    }
+    return { params: { slug: post.id }, props: { post } };
+  });
+}
+
+const { post } = Astro.props;
+const { title, description, summary, date, lang, kind, image, image_alt, disclaimer, disclaimer_extra, alt_lang, alt_url } =
+  post.data;
+const { Content } = await render(post);
+const pdf = pdfUrl(post);
+const url = postUrl(post);
+const de = lang === 'de';
+
+const alternates = alt_url && alt_lang ? [{ lang, href: url }, { lang: alt_lang, href: alt_url }] : [];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': kind === 'research' ? 'ScholarlyArticle' : 'BlogPosting',
+  headline: title,
+  description: description ?? summary,
+  datePublished: date.toISOString().slice(0, 10),
+  inLanguage: lang,
+  url: new URL(url, site.url).href,
+  author: { '@type': 'Person', name: profile.name, url: site.url },
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  ...(pdf && { encoding: { '@type': 'MediaObject', encodingFormat: 'application/pdf', contentUrl: new URL(pdf, site.url).href } }),
+  ...(alt_url && { workTranslation: { '@type': 'CreativeWork', url: new URL(alt_url, site.url).href, inLanguage: alt_lang } }),
+};
+---
+
+<Base
+  title={title}
+  description={description ?? summary}
+  lang={lang}
+  image={image}
+  type="article"
+  alternates={alternates}
+  jsonLd={jsonLd}
+  searchable
+>
+  <article class="mx-auto max-w-3xl px-5 pt-10 sm:pt-14">
+    <a href="/blog/" class="text-sm font-bold text-link hover:text-amber-ink" data-pagefind-ignore>← Blog</a>
+    <header class="mt-4 mb-8">
+      <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-fg-muted">
+        <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date, lang)}</time>
+        <KindBadge kind={kind} lang={lang} />
+        {
+          alt_url && (
+            <a href={alt_url} hreflang={alt_lang} class="font-bold text-link hover:text-amber-ink" data-pagefind-ignore>
+              {alt_lang === 'de' ? 'Deutsche Fassung' : 'English version'}
+            </a>
+          )
+        }
+        {
+          pdf && (
+            <a href={pdf} class="font-bold text-link hover:text-amber-ink" data-pagefind-ignore>
+              PDF
+            </a>
+          )
+        }
+      </div>
+      <h1 class="text-3xl leading-tight font-black tracking-tight text-brand sm:text-4xl" data-pagefind-meta="title">{title}</h1>
+      <div class="mt-4">
+        <AiDisclaimer part="badge" lang={lang} variant={disclaimer} />
+      </div>
+    </header>
+
+    {
+      image && (
+        <div class="print mb-8 overflow-hidden rounded-2xl">
+          <Image src={image} alt={image_alt ?? ''} widths={[640, 1024]} sizes="(min-width: 768px) 720px, 100vw" class="w-full" />
+        </div>
+      )
+    }
+
+    <div class="prose prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight">
+      <Content />
+    </div>
+
+    {pdf && <PdfViewer src={pdf} title={title} lang={lang} />}
+
+    <footer class="mt-12 space-y-4">
+      <AiDisclaimer part="note" lang={lang} variant={disclaimer} extra={disclaimer_extra} />
+      <p class="text-sm text-fg-muted" data-pagefind-ignore>
+        {
+          de ? (
+            <>Text unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de" class="underline underline-offset-4">CC BY 4.0</a>. Hinweise und Korrekturen an <a href={`mailto:${profile.email}`} class="underline underline-offset-4">{profile.email}</a>.</>
+          ) : (
+            <>Text under <a href="https://creativecommons.org/licenses/by/4.0/" class="underline underline-offset-4">CC BY 4.0</a>. Corrections and comments to <a href={`mailto:${profile.email}`} class="underline underline-offset-4">{profile.email}</a>.</>
+          )
+        }
+      </p>
+    </footer>
+  </article>
+</Base>

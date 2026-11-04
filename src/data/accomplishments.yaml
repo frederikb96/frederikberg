@@ -1,0 +1,95 @@
+# Certifications, newest first. `verify_url` links the issuer's live verification page;
+# `pdf` (a path under public/) is the fallback where no such page exists.
+# Dates are YYYY-MM; `expires: null` means no expiry is stated.
+# The `cv` block is the CV's certification line: entries with `show: true` are joined by
+# their `label`, sorted by `order`.
+
+- id: ckad
+  title: Certified Kubernetes Application Developer (CKAD)
+  issuer: The Linux Foundation / CNCF
+  date: 2025-12
+  expires: null
+  cv:
+    show: true
+    label: Certified Kubernetes Application Developer (CKAD)
+    order: 2
+
+- id: elastic-siem-analyst
+  title: Elastic Certified SIEM Analyst
+  issuer: Elastic
+  date: 2025-01
+  expires: 2027-01
+  verify_url: https://certified.elastic.co/24b93a0d-9929-4683-8e6a-a18c47024678
+  cv:
+    show: false
+
+- id: elastic-observability-engineer
+  title: Elastic Certified Observability Engineer
+  issuer: Elastic
+  date: 2024-12
+  expires: 2028-12
+  verify_url: https://certified.elastic.co/1fcd4302-035f-4a48-92e5-f54e27a5785c
+  cv:
+    show: false
+
+- id: tines
+  title: Tines Core and Tines Advanced
+  issuer: Tines
+  date: 2024-12
+  expires: null
+  cv:
+    show: true
+    label: Tines Core and Advanced
+    order: 5
+
+- id: elastic-analyst
+  title: Elastic Certified Analyst
+  issuer: Elastic
+  date: 2024-07
+  expires: 2030-07
+  verify_url: https://certified.elastic.co/a3fc0078-cf42-4974-8dbc-0ddd91d968eb
+  cv:
+    show: false
+
+- id: elastic-engineer
+  title: Elastic Certified Engineer
+  issuer: Elastic
+  date: 2024-06
+  expires: 2032-06
+  verify_url: https://certified.elastic.co/f60195af-7e05-4294-ac06-3b9abb4c101d
+  cv:
+    show: true
+    label: Elastic Certified Engineer, Analyst, Observability Engineer and SIEM Analyst
+    order: 1
+
+- id: comptia-security-plus
+  title: CompTIA Security+
+  issuer: CompTIA
+  date: 2024-03
+  expires: 2027-03
+  pdf: /certificates/comptia-security-plus.pdf
+  cv:
+    show: true
+    label: CompTIA Security+
+    order: 3
+
+- id: google-cybersecurity
+  title: Google Cybersecurity Professional Certificate
+  issuer: Google / Coursera
+  date: 2024-03
+  expires: null
+  verify_url: https://www.coursera.org/verify/professional-cert/TDBZU2G8TU2Q
+  cv:
+    show: true
+    label: Google Cybersecurity Professional Certificate
+    order: 4
+
+- id: ml4good
+  title: ML4Good, AI alignment camp
+  issuer: ML4Good
+  date: 2023-09
+  expires: null
+  description: Ten days of deep learning and AI safety; project on compute governance and security.
+  pdf: /certificates/ml4good.pdf
+  cv:
+    show: false

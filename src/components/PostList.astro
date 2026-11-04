@@ -1,0 +1,36 @@
+---
+import { formatDate, postUrl, type Post } from '../lib/blog';
+import KindBadge from './KindBadge.astro';
+
+interface Props {
+  posts: Post[];
+}
+const { posts } = Astro.props;
+---
+
+<ul class="divide-y divide-line">
+  {
+    posts.map((post) => (
+      <li class="py-5 first:pt-0" data-kind={post.data.kind}>
+        <article lang={post.data.lang}>
+          <div class="mb-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-fg-muted">
+            <time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(post.data.date, 'en')}</time>
+            <KindBadge kind={post.data.kind} lang="en" />
+            {post.data.lang === 'de' && <span>Deutsch</span>}
+            {post.data.alt_lang === 'de' && post.data.alt_url && (
+              <a href={post.data.alt_url} hreflang="de" class="hover:text-brand">
+                Auch auf Deutsch
+              </a>
+            )}
+          </div>
+          <h3 class="text-lg leading-snug font-bold">
+            <a href={postUrl(post)} class="text-brand hover:text-amber-ink">
+              {post.data.title}
+            </a>
+          </h3>
+          <p class="mt-1.5 text-fg-muted">{post.data.summary}</p>
+        </article>
+      </li>
+    ))
+  }
+</ul>

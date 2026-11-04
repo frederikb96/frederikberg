@@ -1,0 +1,250 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import PostList from '../components/PostList.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import PublicationItem from '../components/PublicationItem.astro';
+import { profile, experience, accomplishments, formatMonth } from '../lib/data';
+import { getListedPosts } from '../lib/blog';
+import { site } from '../data/site';
+import avatar from '../assets/profile/avatar.jpg';
+import valley from '../assets/art/valley.jpg';
+
+const posts = (await getListedPosts()).slice(0, site.latestPosts);
+const publications = (await getCollection('publications')).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection('projects', (p) => p.data.status === 'active')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  jobTitle: profile.role,
+  worksFor: { '@type': 'Organization', name: profile.organization.name, url: profile.organization.url },
+  url: site.url,
+  email: `mailto:${profile.email}`,
+  sameAs: [profile.links.github, profile.links.scholar],
+  knowsAbout: profile.interests,
+};
+---
+
+<Base jsonLd={jsonLd} searchable>
+  <div class="mx-auto max-w-5xl px-5">
+    <div class="print mt-6 overflow-hidden rounded-2xl sm:mt-10">
+      <Image
+        src={valley}
+        alt="A wooden lookout tower above a small valley at dusk, a messenger on the road, a second tower on a far hill"
+        widths={[640, 1024, 1600]}
+        sizes="(min-width: 1024px) 1024px, 100vw"
+        class="aspect-[16/9] w-full object-cover object-bottom sm:aspect-[2/1]"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+
+    <!-- About -->
+    <section id="about" class="grid gap-10 pt-10 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-14 md:pt-14">
+      <div>
+        <div class="flex items-center gap-5 md:block">
+          <Image
+            src={avatar}
+            alt={profile.name}
+            width={176}
+            height={176}
+            class="h-24 w-24 rounded-full object-cover md:mb-5 md:h-44 md:w-44"
+            loading="eager"
+          />
+          <div>
+            <h1 class="text-3xl font-black tracking-tight text-brand sm:text-4xl">{profile.name}</h1>
+            <p class="mt-1 text-lg text-fg">{profile.role}</p>
+            <p class="text-fg-muted">
+              <a href={profile.organization.url} class="hover:text-brand">{profile.organization.name}</a>
+            </p>
+          </div>
+        </div>
+        <ul class="mt-5 flex flex-wrap gap-2" aria-label="Links">
+          <li>
+            <a
+              href={`mailto:${profile.email}`}
+              class="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-sm hover:border-moss hover:text-brand"
+              ><Icon name="mail" class="h-4 w-4" />Mail</a
+            >
+          </li>
+          <li>
+            <a
+              href={profile.links.github}
+              class="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-sm hover:border-moss hover:text-brand"
+              ><Icon name="github" class="h-4 w-4" />GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href={profile.links.scholar}
+              class="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-sm hover:border-moss hover:text-brand"
+              ><Icon name="scholar" class="h-4 w-4" />Scholar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/cv.pdf"
+              class="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-sm hover:border-moss hover:text-brand"
+              ><Icon name="cv" class="h-4 w-4" />CV</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="sr-only">About</h2>
+        <div class="space-y-4 text-[1.075rem] leading-relaxed">
+          {profile.bio.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="mt-8 grid gap-8 sm:grid-cols-2">
+          <div>
+            <h3 class="mb-3 text-sm font-bold tracking-wide text-fg-muted uppercase">Interests</h3>
+            <ul class="space-y-1.5">
+              {
+                profile.interests.map((interest) => (
+                  <li class="flex gap-2">
+                    <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber" />
+                    {interest}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-bold tracking-wide text-fg-muted uppercase">Education</h3>
+            <ul class="space-y-3">
+              {
+                profile.education.map((item) => (
+                  <li>
+                    <p class="leading-snug font-bold">{item.course}</p>
+                    <p class="text-sm text-fg-muted">
+                      {item.institution}, {item.years}
+                    </p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="pt-20">
+      <SectionHeading id="experience" title="Experience" />
+      <ol class="space-y-9">
+        {
+          experience
+            .filter((item) => item.site)
+            .map((item) => (
+              <li class="grid gap-1 sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8">
+                <p class="pt-0.5 text-sm text-fg-muted tabular-nums">
+                  {formatMonth(item.start)} – {item.end ? formatMonth(item.end) : 'present'}
+                </p>
+                <div>
+                  <h3 class="text-lg leading-snug font-bold text-brand">{item.title}</h3>
+                  <p class="text-fg-muted">
+                    {item.organization &&
+                      (item.organization_url ? (
+                        <a href={item.organization_url} class="hover:text-brand">
+                          {item.organization}
+                        </a>
+                      ) : (
+                        item.organization
+                      ))}
+                    {item.organization && ', '}
+                    {item.location}
+                  </p>
+                  {item.bullets.length > 0 && (
+                    <ul class="mt-3 space-y-1.5">
+                      {item.bullets.map((bullet) => (
+                        <li class="flex gap-2.5 leading-relaxed">
+                          <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-moss" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </li>
+            ))
+        }
+      </ol>
+    </section>
+
+    <!-- Accomplishments -->
+    <section class="pt-20">
+      <SectionHeading id="accomplishments" title="Accomplishments" />
+      <ul class="grid gap-4 sm:grid-cols-2">
+        {
+          accomplishments.map((item) => (
+            <li class="flex flex-col rounded-xl border border-line bg-surface p-4">
+              <h3 class="leading-snug font-bold text-brand">{item.title}</h3>
+              <p class="mt-0.5 text-sm text-fg-muted">
+                {item.issuer} · {formatMonth(item.date)}
+                {item.expires && <> · valid until {formatMonth(item.expires)}</>}
+              </p>
+              {item.description && <p class="mt-2 text-sm">{item.description}</p>}
+              {(item.verify_url || item.pdf) && (
+                <a
+                  href={item.verify_url ?? item.pdf}
+                  class="mt-3 inline-flex items-center gap-1.5 self-start text-sm font-bold text-link hover:text-amber-ink"
+                >
+                  <Icon name={item.verify_url ? 'check' : 'file'} class="h-4 w-4" />
+                  {item.verify_url ? 'Verify' : 'Certificate'}
+                </a>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Blog -->
+    <section class="pt-20">
+      <SectionHeading id="blog" title="Blog" more={{ label: 'All posts', href: '/blog/' }} />
+      <PostList posts={posts} />
+    </section>
+
+    <!-- Publications -->
+    <section class="pt-20">
+      <SectionHeading id="publications" title="Publications" more={{ label: 'All publications', href: '/publications/' }} />
+      <ul class="space-y-8">
+        {publications.map((publication) => <PublicationItem publication={publication} />)}
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="pt-20">
+      <SectionHeading id="projects" title="Projects" more={{ label: 'All projects', href: '/projects/' }} />
+      <div class="grid gap-6 sm:grid-cols-2">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="pt-20">
+      <SectionHeading id="contact" title="Contact" />
+      <p class="text-lg">{profile.contact.text}</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a
+          href={`mailto:${profile.email}`}
+          class="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 font-bold text-brand-fg hover:opacity-90"
+          ><Icon name="mail" />{profile.email}</a
+        >
+        <a
+          href={profile.contact.appointment_url}
+          class="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-2.5 font-bold text-brand hover:border-moss"
+          ><Icon name="calendar" />Book an appointment</a
+        >
+      </div>
+    </section>
+  </div>
+</Base>

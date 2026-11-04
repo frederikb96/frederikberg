@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Search" description="Search the blog, projects and publications.">
+  <div class="mx-auto max-w-3xl px-5 pt-10 sm:pt-14">
+    <h1 class="mb-6 text-4xl font-black tracking-tight text-brand">Search</h1>
+    <div id="search"></div>
+    <noscript><p class="text-fg-muted">Search needs JavaScript.</p></noscript>
+    <p class="mt-6 text-sm text-fg-muted">
+      Research PDFs are not searched word for word; each post's summary on the site carries its findings.
+    </p>
+  </div>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      const ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, autofocus: true, resetStyles: false });
+      const q = new URLSearchParams(location.search).get('q');
+      if (q) ui.triggerSearch(q);
+    });
+  </script>
+</Base>

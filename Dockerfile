@@ -1,8 +1,14 @@
-FROM klakegg/hugo:ext AS build
+# Build the static site, then serve it with nginx.
+FROM node:24-alpine AS build
 WORKDIR /src
+COPY package.json package-lock.json ./
+RUN npm ci
 COPY . .
-RUN hugo --minify
+RUN npm run build
+# The CV is maintained in its own repository; every image carries the version on its main branch.
+ADD --chmod=644 https://raw.githubusercontent.com/frederikb96/cv/main/cv.pdf dist/cv.pdf
 
-FROM nginx:alpine
-COPY --from=build /src/public /usr/share/nginx/html
+FROM nginx:1.29-alpine
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /src/dist /usr/share/nginx/html
 EXPOSE 80
