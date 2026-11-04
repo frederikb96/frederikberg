@@ -120,6 +120,7 @@ body {
 }
 
 .prose a {
+  overflow-wrap: anywhere;
   text-decoration-color: var(--c-moss);
   text-underline-offset: 3px;
 }
