@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  title: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
+}
+const { title, image, imageAlt = '' } = Astro.props;
+---
+
+<header class="grid items-center gap-8 pt-10 pb-10 sm:pt-14 md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
+  <div>
+    <h1 class="text-4xl font-black tracking-tight text-brand sm:text-5xl">{title}</h1>
+    <div class="mt-4 max-w-prose text-lg leading-relaxed text-fg-muted">
+      <slot />
+    </div>
+  </div>
+  {
+    image && (
+      <div class="print hidden overflow-hidden rounded-2xl md:block">
+        <Image src={image} alt={imageAlt} widths={[480, 800]} sizes="420px" class="aspect-[16/9] w-full object-cover" />
+      </div>
+    )
+  }
+</header>

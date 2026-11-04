@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import PostList from '../../components/PostList.astro';
+import { getListedPosts } from '../../lib/blog';
+import messenger from '../../assets/art/messenger.jpg';
+
+const posts = await getListedPosts();
+const filters = [
+  { kind: 'all', label: 'All' },
+  { kind: 'research', label: 'Research' },
+  { kind: 'update', label: 'Updates' },
+];
+---
+
+<Base title="Blog" description="Research posts with sources, and short updates on events, talks and projects.">
+  <div class="mx-auto max-w-5xl px-5">
+    <PageHeader title="Blog" image={messenger} imageAlt="A messenger hurrying along a winding path with a sealed letter, a lookout tower ahead">
+      <p>
+        Two kinds of posts end up here. Research posts work through one question properly, with a source for
+        every claim, and are published so that others can find, cite and check them, the same way code goes on
+        GitHub. Updates are short notes on events, talks and things I worked on.
+      </p>
+    </PageHeader>
+
+    <div class="mb-8 flex gap-2" role="group" aria-label="Filter posts">
+      {
+        filters.map((filter) => (
+          <button
+            type="button"
+            data-filter={filter.kind}
+            class="rounded-full border border-line bg-surface px-4 py-1.5 text-sm font-bold text-fg-muted hover:text-brand aria-pressed:border-brand aria-pressed:bg-brand aria-pressed:text-brand-fg"
+            aria-pressed={filter.kind === 'all' ? 'true' : 'false'}
+          >
+            {filter.label}
+          </button>
+        ))
+      }
+    </div>
+
+    <div id="posts">
+      <PostList posts={posts} />
+    </div>
+  </div>
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+  const items = document.querySelectorAll<HTMLElement>('#posts [data-kind]');
+
+  function apply(kind: string) {
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === kind)));
+    items.forEach((item) => (item.hidden = kind !== 'all' && item.dataset.kind !== kind));
+  }
+
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      const kind = button.dataset.filter!;
+      apply(kind);
+      const url = new URL(location.href);
+      if (kind === 'all') url.searchParams.delete('kind');
+      else url.searchParams.set('kind', kind);
+      history.replaceState(null, '', url);
+    }),
+  );
+
+  const initial = new URLSearchParams(location.search).get('kind');
+  if (initial === 'research' || initial === 'update') apply(initial);
+</script>

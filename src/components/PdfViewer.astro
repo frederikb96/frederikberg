@@ -1,0 +1,111 @@
+---
+// Embedded, scrollable PDF reader built on pdf.js. A plain <iframe> of a PDF shows only
+// the first page on iOS Safari; pdf.js draws every page to canvas and scrolls everywhere.
+// pdf.js is loaded only once the viewer comes near the viewport.
+import Icon from './Icon.astro';
+
+interface Props {
+  src: string;
+  title: string;
+  lang: 'en' | 'de';
+}
+const { src, title, lang } = Astro.props;
+const t =
+  lang === 'de'
+    ? { open: 'PDF öffnen', page: 'Seite', zoomIn: 'Vergrößern', zoomOut: 'Verkleinern', loading: 'PDF wird geladen …', failed: 'Das PDF konnte hier nicht angezeigt werden.' }
+    : { open: 'Open the PDF', page: 'Page', zoomIn: 'Zoom in', zoomOut: 'Zoom out', loading: 'Loading the PDF …', failed: 'The PDF could not be shown here.' };
+---
+
+<figure class="pdf-embed not-prose my-10" data-src={src} data-pagefind-ignore>
+  <div class="mb-2 flex flex-wrap items-center justify-between gap-3 text-sm">
+    <a href={src} class="inline-flex items-center gap-1.5 font-bold text-link hover:text-amber-ink" target="_blank" rel="noopener">
+      <Icon name="file" class="h-4 w-4" />{t.open}
+    </a>
+    <div class="pdf-controls hidden items-center gap-2 text-fg-muted">
+      <span><span class="pdf-page">1</span> / <span class="pdf-pages">–</span></span>
+      <button type="button" class="pdf-zoom-out rounded-full border border-line px-2.5 leading-6 hover:text-brand" aria-label={t.zoomOut}>−</button>
+      <button type="button" class="pdf-zoom-in rounded-full border border-line px-2.5 leading-6 hover:text-brand" aria-label={t.zoomIn}>+</button>
+    </div>
+  </div>
+  <div class="relative h-[80vh] overflow-hidden rounded-xl border border-line bg-surface-2">
+    <div class="pdf-scroll absolute inset-0 overflow-auto" tabindex="0" aria-label={`${title}, PDF`}>
+      <div class="pdfViewer"></div>
+    </div>
+    <p class="pdf-status absolute inset-0 flex items-center justify-center p-6 text-center text-fg-muted">{t.loading}</p>
+  </div>
+  <template class="pdf-failed">{t.failed}</template>
+</figure>
+
+<script>
+  import 'pdfjs-dist/web/pdf_viewer.css';
+  import workerSrc from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+
+  async function mount(figure: HTMLElement) {
+    const src = figure.dataset.src!;
+    const container = figure.querySelector<HTMLDivElement>('.pdf-scroll')!;
+    const status = figure.querySelector<HTMLElement>('.pdf-status')!;
+    const controls = figure.querySelector<HTMLElement>('.pdf-controls')!;
+    try {
+      const pdfjs = await import('pdfjs-dist');
+      // pdf_viewer.mjs reads the core library from this global.
+      (globalThis as unknown as { pdfjsLib: typeof pdfjs }).pdfjsLib = pdfjs;
+      const { EventBus, PDFLinkService, PDFViewer, LinkTarget } = await import('pdfjs-dist/web/pdf_viewer.mjs');
+      pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+
+      const eventBus = new EventBus();
+      const linkService = new PDFLinkService({ eventBus, externalLinkTarget: LinkTarget.BLANK });
+      const viewer = new PDFViewer({ container, eventBus, linkService });
+      linkService.setViewer(viewer);
+
+      const fit = () => {
+        viewer.currentScaleValue = 'page-width';
+      };
+      eventBus.on('pagesinit', () => {
+        fit();
+        status.remove();
+        controls.classList.replace('hidden', 'flex');
+      });
+      eventBus.on('pagechanging', (e: { pageNumber: number }) => {
+        figure.querySelector('.pdf-page')!.textContent = String(e.pageNumber);
+      });
+      figure.querySelector('.pdf-zoom-in')!.addEventListener('click', () => viewer.increaseScale());
+      figure.querySelector('.pdf-zoom-out')!.addEventListener('click', () => viewer.decreaseScale());
+      let width = container.clientWidth;
+      new ResizeObserver(() => {
+        if (container.clientWidth !== width) {
+          width = container.clientWidth;
+          fit();
+        }
+      }).observe(container);
+
+      const doc = await pdfjs.getDocument({ url: src }).promise;
+      figure.querySelector('.pdf-pages')!.textContent = String(doc.numPages);
+      viewer.setDocument(doc);
+      linkService.setDocument(doc);
+    } catch (error) {
+      console.error(error);
+      status.textContent = figure.querySelector('template.pdf-failed')!.innerHTML;
+    }
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        observer.unobserve(entry.target);
+        mount(entry.target as HTMLElement);
+      }
+    },
+    { rootMargin: '600px' },
+  );
+  document.querySelectorAll<HTMLElement>('.pdf-embed').forEach((el) => observer.observe(el));
+</script>
+
+<style is:global>
+  /* pdf.js lays pages out for its own toolbar-less viewer; give them air on our ground. */
+  .pdf-embed .pdfViewer .page {
+    margin: 12px auto;
+    border: 0;
+    box-shadow: 0 1px 3px rgb(30 59 47 / 0.18);
+  }
+</style>

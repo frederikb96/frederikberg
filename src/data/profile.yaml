@@ -1,0 +1,46 @@
+# Everything the About and Contact sections show. Plain text; paragraphs in `bio`
+# are rendered one per entry.
+name: Frederik Berg
+role: Security Analytics Consultant
+organization:
+  name: SVA System Vertrieb Alexander GmbH
+  url: https://www.sva.de/
+location: Aachen, Germany
+description: >-
+  Frederik Berg, Security Analytics Consultant in Aachen. SIEM and SOC platforms on the Elastic
+  Stack, a Kubernetes homelab, AI agents, and research posts with sources.
+bio:
+  - >-
+    I work as a Security Analytics Consultant at SVA, where I build and run SOC and SIEM platforms
+    on the Elastic Stack: infrastructure and detection rules as code, automated operations, and the
+    reporting around them. Before that I did research at the Chair for Embedded Software at RWTH
+    Aachen on the functional safety of interconnected medical devices, with three publications and
+    a lecture on microcontroller programming.
+  - >-
+    Outside work I run a small Kubernetes homelab on Hetzner that hosts services for family and
+    friends, watched by an Elastic SIEM and operated by AI agents that I build as part of my
+    personal AI infrastructure. I co-organise the Effective Altruism group in Aachen, and I spend
+    the rest of my time bouldering, cycling and hiking.
+interests:
+  - Security Analytics & Detection Engineering
+  - AI Agents & Personal AI Infrastructure
+  - Kubernetes & Self-hosting
+  - AI Safety
+  - Effective Altruism
+education:
+  - course: Computer Science, continuing education
+    institution: RWTH Aachen University
+    years: 2022 – 2024
+  - course: M.Sc. Automation Engineering
+    institution: RWTH Aachen University
+    years: 2019 – 2022
+  - course: B.Sc. Mechanical Engineering
+    institution: Leibniz University Hannover
+    years: 2014 – 2019
+email: fberg@posteo.de
+links:
+  github: https://github.com/frederikb96
+  scholar: https://scholar.google.com/citations?user=cmAmnmcAAAAJ
+contact:
+  text: Write me a mail, or book a slot in my calendar.
+  appointment_url: https://cloud.bergrunde.net/apps/calendar/appointment/fybDpcT49T79
