@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-04
+
+### Changed
+
+- `/cv.pdf` serves the updated CV.
+
 ## [2.0.0] - 2026-11-04
 
 ### Added
