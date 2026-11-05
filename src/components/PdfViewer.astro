@@ -50,7 +50,9 @@ const t =
       // pdf_viewer.mjs reads the core library from this global.
       (globalThis as unknown as { pdfjsLib: typeof pdfjs }).pdfjsLib = pdfjs;
       const { EventBus, PDFLinkService, PDFViewer, LinkTarget } = await import('pdfjs-dist/web/pdf_viewer.mjs');
-      pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+      // /_astro/ files are cached as immutable, so a browser that once got the worker under a
+      // non-JavaScript type would keep failing on the plain URL; the query gives it a new one.
+      pdfjs.GlobalWorkerOptions.workerSrc = `${workerSrc}?type=js`;
 
       const eventBus = new EventBus();
       const linkService = new PDFLinkService({ eventBus, externalLinkTarget: LinkTarget.BLANK });
