@@ -6,6 +6,16 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Project pages for the personal AI infrastructure, the homelab SOC and the Kubernetes homelab, linked first from their cards.
+
+### Fixed
+
+- The embedded PDF reader loads again: nginx serves `.mjs` files as JavaScript, which the pdf.js worker needs.
+- Education dates match the CV.
+- The Nextcloud Conference 2023 link points at the 2023 announcement instead of the current conference.
+
 ## [2.0.1] - 2026-11-04
 
 ### Changed

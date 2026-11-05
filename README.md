@@ -33,7 +33,8 @@ with a message naming the file and field when an entry does not match its schema
 - `src/content/blog/<slug>/index.md` – one folder per post, with its PDF and images beside it. A
   translation is a post of its own (its own folder, or `index.<lang>.md` beside the original,
   published under `/blog/<slug>/<lang>/`); `alt_lang` and `alt_url` link the two.
-- `src/content/projects/<slug>.md` – project cards; a project with a Markdown body gets its own page.
+- `src/content/projects/<slug>.md` – project cards; a project with a Markdown body gets its own page,
+  linked first from its card, as prose or, with `layout: gallery`, as a grid of its images.
 - `src/content/publications/<slug>/` – paper, BibTeX and abstract.
 - `src/data/site.ts` – navigation.
 

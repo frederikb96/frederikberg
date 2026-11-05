@@ -11,4 +11,4 @@ image: ./featured.png
 image_alt: "Nextcloud logo"
 ---
 
-In September 2023 I went to the [Nextcloud Conference](https://nextcloud.com/conference-2023/) and stayed for the Contributor Week afterwards. I used the week to continue working on my Nextcloud ShareMover app, which moves incoming shares into a folder of the user's choice. The app is listed under [projects](/projects/#sharemover).
+In September 2023 I went to the [Nextcloud Conference](https://nextcloud.com/blog/nextcloud-conference-2023-sept-16-17-berlin-register-now/) and stayed for the Contributor Week afterwards. I used the week to continue working on my Nextcloud ShareMover app, which moves incoming shares into a folder of the user's choice. The app is listed under [projects](/projects/#sharemover).

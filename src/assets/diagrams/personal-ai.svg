@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 580" font-family="Lato, system-ui, sans-serif">
+  <style>
+    .bg { fill: #f8f6f1; }
+    .box { fill: #ffffff; stroke: #1e3b2f; stroke-width: 1.5; }
+    .soft { fill: #e3ebdd; stroke: #8fae86; stroke-width: 1.5; }
+    .warm { fill: #f6e5cc; stroke: #d9923a; stroke-width: 1.5; }
+    .group { fill: none; stroke: #5b7a93; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .t { fill: #1e3b2f; font-size: 15.5px; font-weight: 700; }
+    .s { fill: #5f6a63; font-size: 13.5px; }
+    .g { fill: #5b7a93; font-size: 12.5px; font-weight: 700; letter-spacing: 0.04em; }
+    .a { stroke: #1e3b2f; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    .aw { stroke: #d9923a; stroke-width: 1.5; fill: none; marker-end: url(#arrow-warm); }
+    .head { fill: #1e3b2f; }
+    .head-warm { fill: #d9923a; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1a3329; }
+      .box { fill: #213f33; stroke: #f1eee6; }
+      .soft { fill: #2d5243; stroke: #8fae86; }
+      .warm { fill: #4a3d22; stroke: #d9923a; }
+      .group { stroke: #9db6ca; }
+      .t { fill: #f1eee6; }
+      .s { fill: #b5c2b8; }
+      .g { fill: #9db6ca; }
+      .a { stroke: #f1eee6; }
+      .head { fill: #f1eee6; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M0 0 10 5 0 10z"/>
+    </marker>
+    <marker id="arrow-warm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head-warm" d="M0 0 10 5 0 10z"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="520" height="580" rx="16"/>
+
+  <text class="g" x="20" y="36">CLIENTS</text>
+  <rect class="soft" x="20" y="48" width="150" height="58" rx="10"/>
+  <text class="t" x="34" y="72">iPhone app</text>
+  <text class="s" x="34" y="92">chat, notes, voice</text>
+  <rect class="soft" x="185" y="48" width="150" height="58" rx="10"/>
+  <text class="t" x="199" y="72">Web app</text>
+  <text class="s" x="199" y="92">the same in a browser</text>
+  <rect class="soft" x="350" y="48" width="150" height="58" rx="10"/>
+  <text class="t" x="364" y="72">Dictation client</text>
+  <text class="s" x="364" y="92">Linux, to the clipboard</text>
+  <path class="a" d="M95 106 V146"/>
+  <path class="a" d="M260 106 V146"/>
+  <path class="a" d="M425 106 V146"/>
+
+  <rect class="box" x="20" y="152" width="480" height="104" rx="12"/>
+  <text class="t" x="38" y="180">Backend</text>
+  <text class="s" x="110" y="180">FastAPI + Postgres, in the Kubernetes cluster</text>
+  <text class="s" x="38" y="206">sessions and transcripts · notes · reports · scheduler</text>
+  <text class="s" x="38" y="230">memory: projects, phases, summaries, memories, search</text>
+
+  <path class="a" d="M110 340 V262"/>
+  <text class="s" x="122" y="296">the VM connects out,</text>
+  <text class="s" x="122" y="314">transcripts flow back</text>
+  <rect class="soft" x="330" y="276" width="170" height="56" rx="10"/>
+  <text class="t" x="344" y="300">Alerts and timers</text>
+  <text class="s" x="344" y="319">wake scheduled agents</text>
+  <path class="aw" d="M415 276 V262"/>
+
+  <text class="g" x="36" y="370">VM</text>
+  <rect class="group" x="20" y="346" width="480" height="214" rx="12"/>
+  <rect class="box" x="40" y="380" width="440" height="50" rx="10"/>
+  <text class="t" x="56" y="402">Agent service</text>
+  <text class="s" x="56" y="420">starts and supervises sessions, reads their transcripts</text>
+  <path class="a" d="M260 430 V444"/>
+  <rect class="warm" x="40" y="450" width="210" height="40" rx="10"/>
+  <text class="t" x="56" y="475">Claude Code session</text>
+  <rect class="warm" x="270" y="450" width="210" height="40" rx="10"/>
+  <text class="t" x="286" y="475">Claude Code session</text>
+  <rect class="warm" x="40" y="502" width="210" height="40" rx="10"/>
+  <text class="t" x="56" y="527">scheduled agent</text>
+  <rect class="warm" x="270" y="502" width="210" height="40" rx="10"/>
+  <text class="t" x="286" y="527">…</text>
+</svg>

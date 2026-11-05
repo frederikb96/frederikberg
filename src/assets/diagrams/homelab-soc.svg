@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 640" font-family="Lato, system-ui, sans-serif">
+  <style>
+    .bg { fill: #f8f6f1; }
+    .box { fill: #ffffff; stroke: #1e3b2f; stroke-width: 1.5; }
+    .soft { fill: #e3ebdd; stroke: #8fae86; stroke-width: 1.5; }
+    .warm { fill: #f6e5cc; stroke: #d9923a; stroke-width: 1.5; }
+    .group { fill: none; stroke: #5b7a93; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .t { fill: #1e3b2f; font-size: 15.5px; font-weight: 700; }
+    .s { fill: #5f6a63; font-size: 13.5px; }
+    .g { fill: #5b7a93; font-size: 12.5px; font-weight: 700; letter-spacing: 0.04em; }
+    .a { stroke: #1e3b2f; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    .aw { stroke: #d9923a; stroke-width: 1.5; fill: none; marker-end: url(#arrow-warm); }
+    .head { fill: #1e3b2f; }
+    .head-warm { fill: #d9923a; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1a3329; }
+      .box { fill: #213f33; stroke: #f1eee6; }
+      .soft { fill: #2d5243; stroke: #8fae86; }
+      .warm { fill: #4a3d22; stroke: #d9923a; }
+      .group { stroke: #9db6ca; }
+      .t { fill: #f1eee6; }
+      .s { fill: #b5c2b8; }
+      .g { fill: #9db6ca; }
+      .a { stroke: #f1eee6; }
+      .head { fill: #f1eee6; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M0 0 10 5 0 10z"/>
+    </marker>
+    <marker id="arrow-warm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head-warm" d="M0 0 10 5 0 10z"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="520" height="640" rx="16"/>
+
+  <text class="g" x="20" y="36">SOURCES</text>
+  <rect class="soft" x="20" y="48" width="232" height="40" rx="10"/>
+  <text class="t" x="34" y="73">Traefik access log</text>
+  <rect class="soft" x="268" y="48" width="232" height="40" rx="10"/>
+  <text class="t" x="282" y="73">Pod logs</text>
+  <rect class="soft" x="20" y="98" width="232" height="40" rx="10"/>
+  <text class="t" x="34" y="123">Processes in web pods</text>
+  <rect class="soft" x="268" y="98" width="232" height="40" rx="10"/>
+  <text class="t" x="282" y="123">Cilium network flows</text>
+  <rect class="soft" x="20" y="148" width="232" height="40" rx="10"/>
+  <text class="t" x="34" y="173">Kubernetes audit log</text>
+  <rect class="soft" x="268" y="148" width="232" height="40" rx="10"/>
+  <text class="t" x="282" y="173">Logins, hosts outside</text>
+  <path class="a" d="M260 196 V216"/>
+  <rect class="box" x="20" y="222" width="480" height="44" rx="10"/>
+  <text class="t" x="36" y="249">Elastic Agent</text>
+  <text class="s" x="140" y="249">one per node, policies from Fleet</text>
+  <path class="a" d="M160 266 V286"/>
+
+  <rect class="box" x="20" y="292" width="300" height="70" rx="12"/>
+  <text class="t" x="36" y="318">Elasticsearch</text>
+  <text class="s" x="36" y="338">three nodes in the cluster, a week hot,</text>
+  <text class="s" x="36" y="354">a year frozen in object storage</text>
+  <rect class="soft" x="340" y="292" width="160" height="70" rx="10"/>
+  <text class="t" x="354" y="318">Security news</text>
+  <text class="s" x="354" y="338">advisories, sorted</text>
+  <text class="s" x="354" y="354">by a language model</text>
+  <path class="a" d="M340 327 H326"/>
+
+  <path class="a" d="M160 362 V382"/>
+  <rect class="box" x="20" y="388" width="300" height="44" rx="10"/>
+  <text class="t" x="36" y="415">Detection rules</text>
+  <text class="s" x="152" y="415">prebuilt and own</text>
+  <path class="aw" d="M160 432 V452"/>
+  <path class="aw" d="M420 362 V478 H326"/>
+  <text class="s" x="428" y="420">critical</text>
+  <text class="s" x="428" y="436">wakes it</text>
+
+  <rect class="warm" x="20" y="458" width="300" height="44" rx="10"/>
+  <text class="t" x="36" y="485">Security agent</text>
+  <text class="s" x="148" y="485">triage, retro-hunt</text>
+  <path class="a" d="M90 502 V538"/>
+  <path class="a" d="M260 502 V538"/>
+
+  <rect class="soft" x="20" y="544" width="232" height="64" rx="10"/>
+  <text class="t" x="34" y="569">Pull request</text>
+  <text class="s" x="34" y="589">exception, ban, containment</text>
+  <rect class="soft" x="268" y="544" width="232" height="64" rx="10"/>
+  <text class="t" x="282" y="569">Report to me</text>
+  <text class="s" x="282" y="589">notification when it needs me</text>
+</svg>
