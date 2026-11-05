@@ -51,6 +51,8 @@ const projects = defineCollection({
       image_alt: z.string(),
       // Logos and diagrams are shown whole on a paper ground; illustrations fill the card.
       image_fit: z.enum(['cover', 'contain']).default('cover'),
+      // How a Markdown body renders on the project's own page: as prose, or its images as a grid.
+      layout: z.enum(['article', 'gallery']).default('article'),
       order: z.number(),
       date: z.coerce.date(),
     }),

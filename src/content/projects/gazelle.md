@@ -4,6 +4,7 @@ status: archive
 pitch: How I turned my old Gazelle city bike into a randonneur, in pictures.
 image: ../../assets/projects/gazelle.jpg
 image_alt: The rebuilt Gazelle randonneur
+layout: gallery
 order: 1
 date: 2023-05-01
 ---
