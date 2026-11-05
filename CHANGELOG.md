@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- The PDF reader also loads in browsers that cached the worker while it was served with the wrong type.
+
+## [2.1.0] - 2026-11-05
+
 ### Added
 
 - Project pages for the personal AI infrastructure, the homelab SOC and the Kubernetes homelab, linked first from their cards.
