@@ -1,5 +1,5 @@
 # Build the static site, then serve it with nginx.
-FROM node:24-alpine AS build
+FROM node:26-alpine AS build
 WORKDIR /src
 COPY package.json package-lock.json ./
 RUN npm ci

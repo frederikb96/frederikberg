@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- The site is built with Node 26 and Astro 7.4.7.
+
+## [2.1.1] - 2026-11-05
+
 ### Fixed
 
 - The PDF reader also loads in browsers that cached the worker while it was served with the wrong type.

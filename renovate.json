@@ -30,6 +30,11 @@
       "matchUpdateTypes": ["major"],
       "automerge": false,
       "minimumReleaseAge": "30 days"
+    },
+    {
+      "description": "astro check refuses TypeScript 7; lift once an @astrojs/check release accepts typescript 7 in its peer range",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
     }
   ]
 }
