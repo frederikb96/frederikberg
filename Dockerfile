@@ -1,5 +1,6 @@
-# Build the static site, then serve it with nginx.
-FROM node:26-alpine AS build
+# Build the static site, then serve it with nginx. The site is the same on every architecture, so it
+# is built once on the builder's own platform and only the nginx stage is per architecture.
+FROM --platform=$BUILDPLATFORM node:26-alpine AS build
 WORKDIR /src
 COPY package.json package-lock.json ./
 RUN npm ci
