@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.3.1] - 2026-11-10
+
+### Changed
+
+- The AI Influence Level page explains how a level is picked without tying levels to kinds of post.
+
 ## [2.3.0] - 2026-11-10
 
 ### Added
