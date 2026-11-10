@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.3.0] - 2026-11-10
+
 ### Added
 
 - Every post shows its AI Influence Level as a badge under the title and names it in the note at the end; an explanation page of the scale exists in English and German and is linked from the footer.
