@@ -1,0 +1,49 @@
+---
+// The page that explains the scale, in one language; the slot carries the prose
+// above the level table.
+import Base from '../layouts/Base.astro';
+import AilLevels from './AilLevels.astro';
+import { ailPage, ailSource, type Lang } from '../lib/ail';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const de = lang === 'de';
+const other: Lang = de ? 'en' : 'de';
+const title = de ? 'KI-Einflussstufe (AIL)' : 'AI Influence Level (AIL)';
+const description = de
+  ? 'Die Skala von 0 bis 6, mit der jeder Blogbeitrag kennzeichnet, wie viel davon eine KI gemacht hat.'
+  : 'The 0 to 6 scale every blog post uses to say how much of it an AI made.';
+---
+
+<Base
+  title={title}
+  description={description}
+  lang={lang}
+  alternates={[
+    { lang, href: ailPage[lang] },
+    { lang: other, href: ailPage[other] },
+  ]}
+>
+  <div class="mx-auto max-w-3xl px-5 pt-10 sm:pt-14">
+    <h1 class="text-4xl font-black tracking-tight text-brand">{title}</h1>
+    <div class="prose prose-lg mt-6 max-w-none">
+      <slot />
+    </div>
+    <div class="mt-10">
+      <AilLevels lang={lang} />
+    </div>
+    <p class="mt-8 text-sm text-fg-muted">
+      {
+        de ? (
+          <>Die Skala und die englischen Stufennamen stammen von <a href={ailSource} class="underline underline-offset-4">Daniel Miessler</a> (AIL, Version 2.0). Die deutschen Namen und die Erläuterungen auf dieser Seite sind eigene Formulierungen.</>
+        ) : (
+          <>The scale and the level names are by <a href={ailSource} class="underline underline-offset-4">Daniel Miessler</a> (AIL, version 2.0). The meanings and the badge design on this page are this site's own.</>
+        )
+      }
+      {' '}
+      <a href={ailPage[other]} hreflang={other} class="font-bold text-link hover:text-amber-ink">{de ? 'English version' : 'Deutsche Fassung'}</a>
+    </p>
+  </div>
+</Base>

@@ -4,8 +4,9 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AiDisclaimer from '../../components/AiDisclaimer.astro';
 import KindBadge from '../../components/KindBadge.astro';
-import PdfViewer from '../../components/PdfViewer.astro';
-import { formatDate, getPosts, pdfUrl, postUrl } from '../../lib/blog';
+import AilBadge from '../../components/AilBadge.astro';
+import { formatDate, getPosts, postUrl } from '../../lib/blog';
+import { ailPage } from '../../lib/ail';
 import { profile } from '../../lib/data';
 import { site } from '../../data/site';
 
@@ -24,10 +25,9 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, description, summary, date, lang, kind, image, image_alt, disclaimer, disclaimer_extra, alt_lang, alt_url } =
+const { title, description, summary, date, lang, kind, image, image_alt, ail, disclaimer, disclaimer_extra, alt_lang, alt_url } =
   post.data;
 const { Content } = await render(post);
-const pdf = pdfUrl(post);
 const url = postUrl(post);
 const de = lang === 'de';
 
@@ -42,7 +42,6 @@ const jsonLd = {
   url: new URL(url, site.url).href,
   author: { '@type': 'Person', name: profile.name, url: site.url },
   license: 'https://creativecommons.org/licenses/by/4.0/',
-  ...(pdf && { encoding: { '@type': 'MediaObject', encodingFormat: 'application/pdf', contentUrl: new URL(pdf, site.url).href } }),
   ...(alt_url && { workTranslation: { '@type': 'CreativeWork', url: new URL(alt_url, site.url).href, inLanguage: alt_lang } }),
 };
 ---
@@ -70,17 +69,17 @@ const jsonLd = {
             </a>
           )
         }
-        {
-          pdf && (
-            <a href={pdf} class="font-bold text-link hover:text-amber-ink" data-pagefind-ignore>
-              PDF
-            </a>
-          )
-        }
       </div>
       <h1 class="text-3xl leading-tight font-black tracking-tight text-brand sm:text-4xl" data-pagefind-meta="title">{title}</h1>
-      <div class="mt-4">
-        <AiDisclaimer part="badge" lang={lang} variant={disclaimer} />
+      <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <AilBadge level={ail} lang={lang} href={ailPage[lang]} />
+        <a
+          href="#ai-disclaimer"
+          class="text-sm text-fg-muted underline decoration-line underline-offset-4 hover:text-brand hover:decoration-amber"
+          data-pagefind-ignore
+        >
+          {de ? 'Hinweis zu KI' : 'A note on AI'}
+        </a>
       </div>
     </header>
 
@@ -96,10 +95,8 @@ const jsonLd = {
       <Content />
     </div>
 
-    {pdf && <PdfViewer src={pdf} title={title} lang={lang} />}
-
     <footer class="mt-12 space-y-4">
-      <AiDisclaimer part="note" lang={lang} variant={disclaimer} extra={disclaimer_extra} />
+      <AiDisclaimer lang={lang} level={ail} variant={disclaimer} extra={disclaimer_extra} />
       <p class="text-sm text-fg-muted" data-pagefind-ignore>
         {
           de ? (

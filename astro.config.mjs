@@ -11,7 +11,6 @@ export default defineConfig({
   integrations: [
     sitemap({ filter: (page) => !page.includes('/search/') }),
     contentFiles([
-      { from: 'src/content/blog', to: 'blog' },
       { from: 'src/content/publications', to: 'publications' },
     ]),
   ],

@@ -1,56 +1,137 @@
 ---
-title: "Footprints and Handprints"
+title: "Footprints and handprints: what the numbers mean and what one person can change"
 description: >-
-  How carbon and ecological accounting work and how to read the numbers they produce: why Germany has
-  per-person footprints from 6.8 to 10.4 tonnes that are all correct, why the ecological footprint is
-  mostly a carbon number in an area unit, and why a handprint can never be subtracted from a footprint.
+  How carbon and ecological footprints are calculated and how to read them: why Germany has
+  per-person footprints from 6.8 to 10.4 tonnes that are all correct, why the ecological footprint
+  is mostly a carbon number in an area unit, what one person can realistically change, and why a
+  handprint can never be subtracted from a footprint.
 date: 2026-09-24
 lang: en
 kind: research
 summary: >-
   A footprint figure means nothing without its accounting rule: Germany's published per-person numbers
   run from 6.8 to 10.4 tonnes a year, and all of them are correct. The ecological footprint is about
-  60 % carbon, and a handprint, the emissions someone avoids at other people, can be reported beside a
-  footprint but never netted against it.
-pdf: footprints-and-handprints.pdf
+  60 % carbon, private choices remove roughly half of a German footprint, and a handprint, the
+  emissions someone avoids at other people, can be reported beside a footprint but never netted
+  against it.
 tags: [climate, carbon accounting, ecological footprint]
 disclaimer: core
+ail: 4
 ---
 
-Footprint figures are quoted constantly and almost never together with the accounting choice that produced them. The paper starts from that gap and works down from countries to individuals to single products, then looks at the ecological footprint and at the handprint, a newer concept that counts what someone changes at other people.
+<div class="tldr">
 
-## One country, four correct numbers
+In short
 
-Ask how large Germany's carbon footprint is per person and the published answers run from 6.8 to 10.4 tonnes a year. None of them is wrong. They differ in what they count: emissions inside the border only, or also the emissions caused abroad by goods bought in Germany; carbon dioxide only, or all greenhouse gases; and whether each resident is charged an equal share of roads, hospitals and public administration. The narrowest figure, territorial CO₂ only, is the one national climate law is written against. The widest, 10.4 tonnes, is what the German environment agency's consumer calculator shows ([UBA CO₂ calculator background report](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf)). Correcting for trade alone moves Germany's figure from about 7 to about 9 tonnes of CO₂, so roughly three of every ten tonnes a German resident is responsible for are released outside Germany ([Our World in Data, consumption-based CO₂](https://ourworldindata.org/grapher/consumption-co2-per-capita)).
+- **One country, four correct numbers.** Germany's carbon footprint per person is published as anything from 6.8 to 10.4 tonnes a year. The figures differ in what they count, not in how well they measure.
+- **Two different measurements share the word.** The carbon footprint is a weight of greenhouse gases. The ecological footprint is an area, and about 60 % of it is carbon converted into a forest that does not exist.
+- **Private choices reach about half.** Living without a car, flying less, a plant-based diet and green electricity remove roughly five to seven of a German resident's 10.4 tonnes. The rest is grid, buildings, rail and industry.
+- **A handprint is never subtracted.** What someone changes at other people counts as a handprint. Several people can honestly claim the same avoided tonne, so it may stand beside a footprint but never be netted against it.
 
-A national total divided by the population is also a share, not a personal footprint. It hands everyone the same value, while in Germany the lowest-emitting tenth of the population sits near 7 tonnes and the highest near 17.7. Worldwide the spread between income groups is now larger than the spread between countries, and for the richest percentile most emissions come from what they own and invest in rather than from what they consume. A calculator that asks about flights, heating and diet therefore understates exactly the group with the largest footprint.
+</div>
 
-## What sits inside a personal footprint
+Footprint figures are quoted all the time, and almost never together with the accounting choice behind them. This article answers four questions:
 
-The consumer calculator is built in two ways at once. Whatever a person can report about themselves, kilometres driven, heating oil, electricity, flights, is calculated bottom-up with emission factors. Everything nobody can report, the emissions behind a shirt, a restaurant meal or a hospital, comes top-down from national sector totals divided by the population and scaled by the person's answers. Nobody adds up the individual products they bought.
+- Why do published footprints for the same country disagree?
+- What is inside a personal footprint, and what can one person change in it?
+- What does the ecological footprint add?
+- What is a handprint, and how does it relate to the footprint?
 
-The categories are not where intuition puts them. The largest is general consumption, everything else bought together with the machines and factory buildings that made it. Household electricity is only about half a tonne, which is why a green tariff moves a personal total less than expected. And 1.2 tonnes are an equal share of public infrastructure that no personal decision can change.
+## 1. One country, four correct numbers
 
-## How a product footprint is calculated
+Every published per-person footprint for Germany is correct for the question it answers. They differ in three choices:
 
-Two methods produce product footprints, and knowing which one was used explains most disagreements between published figures. Tracing a supply chain step by step is precise about what it includes but has to stop somewhere, usually before the factory building and the machines; that cut-off understates the total by 20 to 50 %, always in the same direction. Working from national input-output tables instead misses nothing, because every purchase between industries is recorded somewhere, but it treats everything within one industry as identical. Whether "the factory" is in a footprint therefore depends on the method: in the whole-economy method used by the German calculator it is counted, but spread across the whole shopping basket rather than attached to the product bought.
+- **Which gases.** Carbon dioxide only, or also methane, nitrous oxide and refrigerants.
+- **Which border.** Only what is emitted inside Germany, or everything German consumption causes, including abroad.
+- **Whether the state is shared out.** The consumer calculator gives each resident an equal share of roads, hospitals and administration.
 
-Green electricity is a boundary question of the same kind. Company reporting rules allow a contract-based electricity figure close to zero next to the grid-average one, without requiring that the purchase added any new renewable generation ([GHG Protocol, Scope 2 guidance](https://ghgprotocol.org/blog/top-ten-questions-about-scope-2-guidance)).
+![Bar chart of Germany's per-person footprint under four accounting rules: 6.77 tonnes territorial CO₂ only, 7.77 territorial with all greenhouse gases, 9.09 consumption-based CO₂, 10.40 in the consumer calculator, all far above the target of well below one tonne.](./four-numbers.png)
 
-## The ecological footprint is mostly carbon
+The narrowest number, 6.77 tonnes of CO₂ emitted inside the border in 2024, is the one national statistics report [\[1\]](https://ourworldindata.org/grapher/co2-emissions-per-capita). Adding the other greenhouse gases gives 649 million tonnes for 2025, or 7.8 tonnes per resident [\[2\]](https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland), and this is the basis German climate law is written against. Correcting for trade means subtracting what Germany produces for export and adding what is produced abroad for Germany. That raises the CO₂ figure for 2023 from 7.02 to 9.09 tonnes [\[3\]](https://ourworldindata.org/grapher/consumption-co2-per-capita), so roughly three of every ten tonnes a German resident causes are emitted outside Germany. The consumer calculator of the German environment agency (UBA) arrives at 10.4 tonnes: trade-corrected, all gases, the extra warming of aircraft at altitude, and a share of the public sector [\[4\]](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf).
 
-The ecological footprint measures an area, the biologically productive land and sea a population needs, in global hectares. Its carbon component converts emissions into the forest area that would be needed to absorb them, a forest that does not exist. That component dominates: for Germany in 2023 it was 2.43 of 4.03 global hectares per person, about 60 % ([Global Footprint Network data](https://data.footprintnetwork.org/)). Without it, what remains is close to what Germany's own land and sea regenerate and has barely moved since 1961. The well-known "1.7 Earths" is therefore essentially a statement that humanity emits more CO₂ than forests absorb, which is true and already measurable in tonnes. Critics have argued for years that this makes the metric unsuitable for decisions ([Blomqvist et al. 2013](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001700)); its authors reply that it answers a different question ([Rees and Wackernagel 2013](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001701)). Both are right about different things: the area framing and Earth Overshoot Day communicate overshoot well, but for choosing between two options the conversion to area adds an assumption and no information. Overshoot Day is also recalculated every year, and in 2026 a revised ocean-uptake figure moved the date more than the real change did.
+A national figure divided by the population is also a share rather than anyone's footprint. It gives everyone the same value, while in Germany the lowest-emitting tenth of the population sits near 7 tonnes and the highest-emitting tenth near 17.7 [\[5\]](https://www.umweltbundesamt.de/service/uba-fragen/wie-hoch-sind-die-treibhausgasemissionen-pro-person). Before two footprint figures are compared, the three choices above have to match.
 
-## What one person can change
+## 2. What sits inside a personal footprint
 
-Reviews of individual climate actions rank living without a car, avoiding long flights, renewable electricity and a plant-based diet as the largest private levers ([Ivanova et al. 2020](https://doi.org/10.1088/1748-9326/ab8589), [Wynes and Nicholas 2017](https://doi.org/10.1088/1748-9326/aa7541)). Those are medians for an average-emitting population. A saving is capped by what someone already emits in that category, so living car-free is worth nothing to someone without a car, and the switch to green electricity is worth at most the half tonne a German household uses. For a German resident, giving up animal products for a year is worth roughly one and a half to two return flights of about 1000 km. Taken together, the realistic private levers remove about five to seven of the 10.4 tonnes. The German environment agency puts a compatible level well below one tonne per person and year ([UBA](https://www.umweltbundesamt.de/service/uba-fragen/wie-hoch-sind-die-treibhausgasemissionen-pro-person)). What remains is the electricity grid, buildings, railways, freight and industrial heat, none of which is a consumption decision.
+The 10.4 tonnes of the consumer calculator are the starting point for anyone who wants to know their own number. It is built in two ways at once:
 
-## The handprint
+- **Bottom-up** for what a person can report: kilometres driven, heating oil, electricity, flights, each multiplied by an emission factor.
+- **Top-down** for what nobody can report: the emissions behind a shirt, a restaurant meal or a hospital come from national sector totals divided by the population, scaled by the person's answers. Nobody adds up the products they bought [\[4\]](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf).
 
-The handprint counts what someone changes at other people: a landlord persuaded to insulate a building, an employer who puts solar on the roof, a council that changes a bus route. A personal footprint cannot show any of this. The concept was developed in Germany by Germanwatch with Brot für die Welt ([Germanwatch](https://www.germanwatch.org/en/90288)). Unlike a footprint, it is deliberately not exclusive: when a tenant gets a block of ten flats insulated and five tonnes a year are avoided, the residents' footprints fall by five tonnes in total, and the tenant can honestly claim the same five tonnes as a handprint. Adding both gives ten tonnes from an event that saved five. That is not an error, because the two numbers answer different questions, but it is why a handprint may be reported beside a footprint and never subtracted from it. Claims that slide between the two, "our product saved four million tonnes" against "we cut our emissions by four million tonnes", are the standard shape of greenwashing.
+![Horizontal bar chart of the average German footprint of 10.4 tonnes by category: other consumption 2.9, housing 2.2, mobility 2.0, food 1.6, public infrastructure 1.2, household electricity 0.5.](./breakdown.png)
 
-## What follows
+The categories are not where intuition puts them. The largest is general consumption: clothes, electronics, furniture and services, together with the machines and factory buildings that made them. Household electricity is only half a tonne, which is why a green tariff moves a personal total less than expected. And 1.2 tonnes are an equal share of public infrastructure that no personal decision can change [\[4\]](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf).
 
-Before comparing any two footprint figures, three properties have to be fixed: which gases, which boundary, and whether trade is counted. Where a decision depends on the answer, tonnes of CO₂e with a stated boundary is the defensible unit; the ecological footprint is useful to make overshoot visible and not to rank options. A personal footprint is worth computing once, to find the two or three levers that are actually large and to see the floor underneath them that only structural change can reach, which is where the handprint comes in.
+Whether "the factory" is in a footprint depends on the method. In the whole-economy method behind the calculator it is counted, about 153 million tonnes of investment emissions in 2021, but spread across the whole shopping basket rather than attached to the product bought [\[4\]](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf). Product footprints that trace a supply chain step by step usually stop before the factory building and the machines. That cut-off understates the total, in some product systems by half or more, and always in the same direction [\[6\]](https://doi.org/10.1162/10881980052541981).
 
-The full paper, with all figures, the data behind them and every source, is the PDF on this page.
+## 3. The ecological footprint is mostly carbon
+
+The ecological footprint answers a different question from the carbon footprint, and in practice it repeats the carbon footprint in another unit:
+
+- **It measures an area.** How much biologically productive land and sea a population needs, in global hectares, compared with the area actually available, the biocapacity.
+- **Its carbon part is a forest that does not exist.** Emissions are converted into the forest area that would be needed to absorb them.
+- **That part dominates.** For Germany in 2023 it was 2.43 of 4.03 global hectares per person, about 60 % [\[7\]](https://data.footprintnetwork.org/).
+
+![Stacked area chart of Germany's ecological footprint per person since 1961 by component. The carbon layer makes up most of it and causes almost all of the movement; the other components together stay close to Germany's own biocapacity.](./ef-germany.png)
+
+Without the carbon layer, what remains is close to what Germany's own land and sea regenerate, and it has barely moved since 1961 [\[7\]](https://data.footprintnetwork.org/). The well-known statement that humanity uses 1.7 Earths therefore mostly says that more CO₂ is emitted than forests absorb. That is true, and it is already measurable in tonnes. Critics conclude that the metric is unsuitable for science and policy decisions [\[8\]](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001700). Its authors reply that it answers one specific question, how much biocapacity a population uses against how much exists, and that the large carbon share reflects the real weight of fossil fuels [\[9\]](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001701).
+
+Both sides are right about different things. The area figure and Earth Overshoot Day show a general audience in one number that consumption exceeds what the planet regenerates. For choosing between two options the conversion into area adds an assumption and no information. The dates also move with the model: the whole series is recalculated every year, and in 2026 a revised figure for how much carbon the oceans absorb moved Earth Overshoot Day eight days later, while the actual situation got worse [\[10\]](https://www.overshootday.org/newsroom/past-earth-overshoot-days/).
+
+## 4. What one person can change
+
+Reviews of individual climate actions agree on which private levers are large. What they are worth for a particular person is a different matter:
+
+- **The largest levers** are living without a car, avoiding long flights, renewable electricity and a plant-based diet [\[11\]](https://doi.org/10.1088/1748-9326/ab8589) [\[12\]](https://doi.org/10.1088/1748-9326/aa7541).
+- **A saving is capped by what someone already emits in that category.** Living without a car is worth nothing to someone who has no car, and green electricity is worth at most the half tonne a German household uses for electricity.
+- **Together, the realistic levers remove about five to seven of the 10.4 tonnes.** A climate-compatible level is well below one tonne per person and year [\[5\]](https://www.umweltbundesamt.de/service/uba-fragen/wie-hoch-sind-die-treibhausgasemissionen-pro-person).
+
+The published rankings are medians across studies, measured against an average emitter. The ordering is right for a population and can be wrong for an individual. Diet makes the point in a milder form. In one consistent data set the step from a medium meat-eater to a vegan diet is worth about 1.7 tonnes a year, the step from a vegetarian to a vegan diet about 0.6 [\[13\]](https://www.nature.com/articles/s43016-023-00795-w). For an average German diet, the environment agency estimates that a vegan diet cuts food emissions by 38 to 52 % [\[14\]](https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/fragen-antworten-zu-tierhaltung-ernaehrung). Applied to the 1.6 tonnes of food in the calculator, that is roughly 0.6 to 0.8 tonnes a year. A return flight of about 1000 km each way, Frankfurt to Barcelona for example, comes to about 0.4 tonnes at 195 g CO₂e per passenger-kilometre [\[15\]](https://doi.org/10.5281/zenodo.19208116). A year without animal products is therefore worth one and a half to two such flights.
+
+What remains after the private levers is the electricity grid, the building stock, the railways, freight and industrial heat, and the 1.2 tonnes of public infrastructure. None of that is a consumption decision.
+
+## 5. The handprint
+
+The handprint picks up where the private levers stop. It counts what someone changes at other people:
+
+- **What it covers:** a landlord persuaded to insulate a building, an employer who puts solar panels on the roof, a council that changes a bus route. A personal footprint cannot show any of it.
+- **Where it comes from:** the concept was developed in Germany by Germanwatch with Brot für die Welt [\[16\]](https://www.germanwatch.org/en/90288).
+- **The rule:** a handprint is reported beside a footprint and never subtracted from it.
+
+The rule follows from one property. A footprint assigns every real tonne to exactly one person; a handprint cannot. Take a block of ten flats in which one tenant spends a year pushing the landlord into insulating the building, and afterwards each flat emits half a tonne less per year. The ten footprints fall by five tonnes in total, exactly what was avoided. The tenant who organised it can also honestly claim the five tonnes as a handprint, because without them nothing would have happened. Added up, that makes ten tonnes from an event that saved five. That is not an error. The two numbers answer different questions, how much someone causes and how much someone changed. The UBA calculator follows the same rule: a compensated flight still counts at full weight under mobility, and the compensation is shown on a separate line [\[4\]](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf).
+
+Many public claims sort themselves out once the two are kept apart. "Our product saved four million tonnes" is a handprint claim and says nothing about what a company emits. "We cut our emissions by four million tonnes" is a footprint claim and can be checked against a balance. A claim that slides from one to the other is the usual shape of greenwashing, which is why corporate guidance makes separate reporting a condition of credibility [\[17\]](https://www.wbcsd.org/resources/guidance-on-avoided-emissions/).
+
+## 6. Assessment
+
+Each metric answers its own question, and most confusion comes from using one to answer another's:
+
+| Question | Metric |
+|---|---|
+| Is a country meeting its legal target? | Territorial emissions in t CO₂e |
+| How much warming does a population's consumption cause? | Consumption-based emissions in t CO₂e |
+| Where should one household act first? | Consumer calculator in t CO₂e |
+| Does humanity use more than the planet regenerates? | Ecological footprint in global hectares |
+| What did someone change beyond their own life? | Handprint, reported separately |
+
+Where a decision depends on the answer, tonnes of CO₂e with a stated boundary is the defensible unit. A personal footprint is worth calculating once, to find the two or three levers that are large for that person and to see the floor underneath them. That floor is where most of the remaining emissions sit, and it is reached through structural change rather than through shopping, which is the work the handprint makes visible.
+
+## References
+
+1. Our World in Data, from the Global Carbon Project. *CO₂ emissions per capita.* https://ourworldindata.org/grapher/co2-emissions-per-capita
+2. Umweltbundesamt. *Treibhausgas-Emissionen in Deutschland*, 2 July 2026. https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland
+3. Our World in Data, from the Global Carbon Project. *Per capita consumption-based CO₂ emissions.* https://ourworldindata.org/grapher/consumption-co2-per-capita
+4. Schunkert, S. et al. *Der UBA-CO₂-Rechner für Privatpersonen – Hintergrundinformationen.* Umweltbundesamt, TEXTE 19/2025. https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/19_2025_texte.pdf
+5. Umweltbundesamt. *Wie hoch sind die Treibhausgasemissionen pro Person in Deutschland und wie viel wäre klimaverträglich?* https://www.umweltbundesamt.de/service/uba-fragen/wie-hoch-sind-die-treibhausgasemissionen-pro-person
+6. Lenzen, M. *Errors in Conventional and Input-Output-based Life-Cycle Inventories.* Journal of Industrial Ecology 4(4), 127–148, 2000. https://doi.org/10.1162/10881980052541981
+7. Global Footprint Network and York University. *Footprint Data Platform*, National Footprint and Biocapacity Accounts, 2026 edition. https://data.footprintnetwork.org/
+8. Blomqvist, L. et al. *Does the Shoe Fit? Real versus Imagined Ecological Footprints.* PLOS Biology 11(11): e1001700, 2013. https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001700
+9. Rees, W.E., Wackernagel, M. *The Shoe Fits, but the Footprint is Larger than Earth.* PLOS Biology 11(11): e1001701, 2013. https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001701
+10. Global Footprint Network. *Past Earth Overshoot Days.* https://www.overshootday.org/newsroom/past-earth-overshoot-days/
+11. Ivanova, D. et al. *Quantifying the potential for climate change mitigation of consumption options.* Environmental Research Letters 15(9), 093001, 2020. https://doi.org/10.1088/1748-9326/ab8589
+12. Wynes, S., Nicholas, K.A. *The climate mitigation gap: education and government recommendations miss the most effective individual actions.* Environmental Research Letters 12(7), 074024, 2017. https://doi.org/10.1088/1748-9326/aa7541
+13. Scarborough, P. et al. *Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts.* Nature Food 4, 565–574, 2023. https://www.nature.com/articles/s43016-023-00795-w
+14. Umweltbundesamt. *Fragen und Antworten zu Tierhaltung und Ernährung.* https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/fragen-antworten-zu-tierhaltung-ernaehrung
+15. Allekotte, M., Kräck, J., Kämper, C. *Harmonized GHG Emission Factors for Air Travel in Germany.* ifeu paper 01/2026. https://doi.org/10.5281/zenodo.19208116
+16. Germanwatch. *The Handprint Concept. Changing Structures towards Sustainability*, 2024. https://www.germanwatch.org/en/90288
+17. World Business Council for Sustainable Development. *Guidance on Avoided Emissions v2.0*, 2025. https://www.wbcsd.org/resources/guidance-on-avoided-emissions/

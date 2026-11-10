@@ -6,6 +6,19 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Every post shows its AI Influence Level as a badge under the title and names it in the note at the end; an explanation page of the scale exists in English and German and is linked from the footer.
+
+### Changed
+
+- Posts need an `ail` level; a level 0 post has no `disclaimer` and its note says it was written without AI.
+- The four research posts are rewritten as shorter articles with a summary box, numbered chapters, numbered sources and their charts as images; the links to their former PDFs redirect to the posts.
+
+### Removed
+
+- The PDF field and embedded PDF reader for blog posts, and the pdf.js dependency.
+
 ## [2.2.1] - 2026-11-10
 
 ### Changed

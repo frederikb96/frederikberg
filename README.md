@@ -30,7 +30,7 @@ with a message naming the file and field when an entry does not match its schema
   the CV renders from the same file.
 - `src/data/accomplishments.yaml` – certifications with a verification link or certificate PDF.
 - `src/data/more-projects.yaml` – smaller repositories listed without a card.
-- `src/content/blog/<slug>/index.md` – one folder per post, with its PDF and images beside it. A
+- `src/content/blog/<slug>/index.md` – one folder per post, with its images beside it. A
   translation is a post of its own (its own folder, or `index.<lang>.md` beside the original,
   published under `/blog/<slug>/<lang>/`); `alt_lang` and `alt_url` link the two.
 - `src/content/projects/<slug>.md` – project cards; a project with a Markdown body gets its own page,
@@ -42,11 +42,17 @@ The front matter fields of each collection, with what they mean, are in `src/con
 
 ### Blog posts
 
-`kind: research` posts show their Markdown body as a readable summary and the PDF named in `pdf` in an
-embedded reader below it. `kind: update` posts are a few sentences, optionally with an `image`. Every
-post ends with a short note on how it was written, selected by `disclaimer` (`core`, or `core+legal`
-for posts that touch on law) and shown in the post's `lang`. Set `draft: true` to keep
-a post out of the build.
+`kind: research` posts are longer, sourced write-ups; `kind: update` posts are a few sentences, optionally
+with an `image`. Sources are numbered links in the text, `[\[1\]](url)`, with a numbered reference list at
+the end of the post.
+
+Every post carries an `ail` level from 0 to 6, the [AI Influence Level](https://danielmiessler.com/blog/ai-influence-level-ail)
+(level names in `src/lib/ail.ts`). It shows as a badge under the title that links to the explanation
+page, `/ai-influence-level/` (German: `/ai-influence-level/de/`, prose in
+`src/pages/ai-influence-level/`), and in the note on how the post was written at its end, shown in the
+post's `lang`. Above level 0 the note also carries the assistance text selected by `disclaimer` (`core`,
+or `core+legal` for posts that touch on law); a level 0 post sets no `disclaimer` and its note says it was
+written without AI. Set `draft: true` to keep a post out of the build.
 
 A post can open with a highlighted summary box: wrap a short label line and a Markdown list in
 `<div class="tldr">` … `</div>`, with a blank line after the opening and before the closing tag.

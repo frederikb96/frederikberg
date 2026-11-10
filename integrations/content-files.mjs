@@ -1,5 +1,5 @@
 // Publishes the non-Markdown files that sit beside a content entry (PDFs, BibTeX)
-// under the entry's URL, e.g. src/content/blog/<slug>/paper.pdf -> /blog/<slug>/paper.pdf.
+// under the entry's URL, e.g. src/content/publications/<slug>/paper.pdf -> /publications/<slug>/paper.pdf.
 // Images are left out: Markdown references them and Astro optimises them itself.
 import { cp, readdir, stat } from 'node:fs/promises';
 import { createReadStream, existsSync } from 'node:fs';

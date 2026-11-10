@@ -6,7 +6,7 @@ lang: en
 kind: update
 summary: "Talk on the ASMO hardware platform for interoperable medical devices at the AUTOMED conference 2023."
 tags: [talk, research]
-disclaimer: core
+ail: 0
 image: ./featured.png
 image_alt: "AUTOMED 2023 conference logo"
 ---

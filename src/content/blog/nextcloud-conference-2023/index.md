@@ -6,7 +6,7 @@ lang: en
 kind: update
 summary: "The Nextcloud Conference and Contributor Week 2023 and working on the ShareMover app."
 tags: [self-hosting, open source]
-disclaimer: core
+ail: 0
 image: ./featured.png
 image_alt: "Nextcloud logo"
 ---

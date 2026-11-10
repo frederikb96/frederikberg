@@ -1,0 +1,36 @@
+---
+import AilPage from '../../components/AilPage.astro';
+import { ailSource } from '../../lib/ail';
+---
+
+<AilPage lang="en">
+  <p>
+    Every post on this blog shows its AI Influence Level at the top. The scale comes from <a href={ailSource}>Daniel Miessler</a>,
+    and this site uses its version 2.0 as he defines it. It says how much
+    of a text an AI made, and who had the idea and started it. It says how a text was made, not whether it is any
+    good.
+  </p>
+  <h2>How I use it</h2>
+  <ul>
+    <li>
+      <strong>Every post gets a level</strong>, decided per post. My short update posts are written by me alone and
+      sit at 0.
+    </li>
+    <li>
+      <strong>My research posts are written with my personal AI setup</strong>, mostly Claude. They are at 3 where
+      the structure of the finished text is mine, and at 4 where the AI gave my idea its structure and that
+      structure stayed.
+    </li>
+    <li>
+      <strong>The level does not change how a post is checked.</strong> Every fact has a source, quotations are
+      taken from the original documents, and I read and check every post before it goes online.
+    </li>
+  </ul>
+  <h2>How to read the badge</h2>
+  <p>
+    The badge shows the level as a number and as a bar of six segments, filled up to the level. The colour runs
+    from green at 0 to brick red at 6 without judging either end: a high level describes how a text was made, not
+    that it is worse.
+  </p>
+  <h2>The seven levels</h2>
+</AilPage>

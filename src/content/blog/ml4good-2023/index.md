@@ -6,7 +6,7 @@ lang: en
 kind: update
 summary: "Ten days at the ML4Good AI alignment camp in Germany, on deep learning and AI safety."
 tags: [EA, AI safety]
-disclaimer: core
+ail: 0
 image: ./featured.png
 image_alt: "Group photo of the ML4Good camp participants"
 ---

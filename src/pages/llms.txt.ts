@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { getPosts, pdfUrl, postUrl } from '../lib/blog';
+import { getPosts, postUrl } from '../lib/blog';
 import { profile } from '../lib/data';
 import { site } from '../data/site';
 
@@ -22,11 +22,10 @@ export const GET: APIRoute = async () => {
     '## Blog',
     '',
     ...posts.map((post) => {
-      const pdf = pdfUrl(post);
       const extras = [
         post.data.kind,
         post.data.lang === 'de' ? 'German' : 'English',
-        pdf ? `[PDF](${abs(pdf)})` : undefined,
+        `AIL ${post.data.ail}`,
         post.data.alt_url ? `[${post.data.alt_lang === 'de' ? 'German' : 'English'} version](${abs(post.data.alt_url)})` : undefined,
       ].filter(Boolean);
       return `- [${post.data.title}](${abs(postUrl(post))}) (${extras.join(', ')}): ${post.data.summary}`;
