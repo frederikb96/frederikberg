@@ -42,7 +42,7 @@ Food footprints come from life-cycle assessments, which add up the emissions of 
 
 - **Per what.** A complete food is a dry powder at about 417 kcal per 100 g; fresh vegetables are mostly water. Per kilogram the powder looks about ten times better, purely because of the water. All figures here are therefore per 2000 kcal.
 - **Where the accounting stops.** At the factory gate, at the supermarket shelf, or only after cooking and waste at home. Cooking, waste and the trip to the shop are shown as separate lines here, so a comparison can be redone at another boundary.
-- **No independent assessment exists.** No peer-reviewed assessment of any complete-food product could be found. Huel publishes an absolute figure per serving [\[1\]](https://de.huel.com/pages/huel-sustainability-nutrition-facts) and has its emissions data audited independently [\[2\]](https://huel.com/pages/sustainability-page). Jimmy Joy reports only how much it has offset, which is a payment, not a measurement [\[3\]](https://jimmyjoy.com/pages/how-sustainable-is-jimmy-joy).
+- **No independent assessment exists.** No peer-reviewed assessment of any complete-food product could be found in PubMed or in the manufacturers' material. Huel publishes an absolute figure per serving [\[1\]](https://de.huel.com/pages/huel-sustainability-nutrition-facts) and has its emissions data audited independently [\[2\]](https://huel.com/pages/sustainability-page). Jimmy Joy reports only how much it has offset, which is a payment, not a measurement [\[3\]](https://jimmyjoy.com/pages/how-sustainable-is-jimmy-joy).
 
 Because of that last point, every figure for a complete food in this article is either a manufacturer claim or a reconstruction from ingredient data, and each is labelled as one.
 
@@ -62,13 +62,13 @@ Huel's own figure works out at about 3 kg CO₂e per 2000 kcal, three times the 
 
 ## 3. The home-cooked side
 
-Two model days of 2000 kcal each were built from the French Agribalyse 3.1 database: one optimised around German seasonal and stored winter produce, one reflecting an ordinary vegan shop with imported and greenhouse items. Including waste, cooking and shopping they come to about 2.0 and 2.6 kg CO₂e. Three results matter more than the totals:
+Two model days of 2000 kcal each were built from the French Agribalyse 3.1 database: one optimised around German seasonal and stored winter produce, one reflecting an ordinary vegan shop with imported and greenhouse items. Including waste, cooking and shopping they come to about 2.0 and 2.6 kg CO₂e in this model. Three results matter more than the totals:
 
 - **Seasonality is large, and it is about heating, not distance.** An out-of-season tomato carries 3.4 times the footprint of a seasonal one [\[9\]](https://data.ademe.fr/datasets/agribalyse-31-synthese). The difference is almost all in the farming stage, the heated greenhouse; transport barely changes [\[10\]](https://data.ademe.fr/datasets/agribalyse-31-detail-par-etape).
 - **Food miles mislead.** For apples, transport is 64 % of the footprint, but the footprint is small to begin with [\[10\]](https://data.ademe.fr/datasets/agribalyse-31-detail-par-etape). Growing plants is cheap in emissions, so transport looks large as a share and saves little in tonnes.
-- **Cooking energy is the largest line outside the food.** About 0.57 kg a day, half of the food itself in the optimised day, and most published comparisons leave it out.
+- **Cooking energy is the largest line outside the food.** In the model about 0.57 kg a day (1.6 kWh at the German grid average), half of the food itself in the optimised day.
 
-A single 200 g portion of winter tomato is the largest line in the ordinary day, larger than all the grain in it together. Cooking and waste, on the other hand, are where a powder mixed with cold water has a real structural advantage: nothing is heated, and a sealed pouch does not go off at the back of the fridge.
+In the model, a single 200 g portion of winter tomato is the largest line in the ordinary day, larger than all the grain in it together. Cooking and waste, on the other hand, are where a powder mixed with cold water has a real structural advantage: nothing is heated, and a sealed pouch does not go off at the back of the fridge.
 
 ## 4. Side by side
 

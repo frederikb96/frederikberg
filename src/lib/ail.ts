@@ -25,16 +25,16 @@ export const ailLevels: { level: Ail; name: Record<Lang, string>; meaning: Recor
     level: 1,
     name: { en: 'Human Created, Minor AI Assistance', de: 'Von Menschen geschaffen, geringe KI-Unterstützung' },
     meaning: {
-      en: 'I wrote it. An AI only tidied it: spelling, grammar, a sentence here and there.',
-      de: 'Ich habe ihn geschrieben. Eine KI hat nur geglättet: Rechtschreibung, Grammatik, hier und da ein Satz.',
+      en: 'My text; spelling and grammar were checked with AI, nothing more.',
+      de: 'Mein Text; Rechtschreibung und Grammatik wurden mit KI geprüft, mehr nicht.',
     },
   },
   {
     level: 2,
     name: { en: 'Human Created, Major AI Augmentation', de: 'Von Menschen geschaffen, umfassende KI-Erweiterung' },
     meaning: {
-      en: 'I wrote it. An AI added to it, rather than only tidying it.',
-      de: 'Ich habe ihn geschrieben. Eine KI hat etwas ergänzt, statt nur zu glätten.',
+      en: 'My text, with passages or content an AI contributed.',
+      de: 'Mein Text, mit Passagen oder Inhalten, die eine KI beigetragen hat.',
     },
   },
   {
@@ -57,16 +57,16 @@ export const ailLevels: { level: Ail; name: Record<Lang, string>; meaning: Recor
     level: 5,
     name: { en: 'AI Created, Human Request', de: 'Von KI geschaffen, auf menschliche Anfrage' },
     meaning: {
-      en: 'I asked for it. The AI came up with the idea itself.',
-      de: 'Ich habe darum gebeten. Die Idee kam von der KI selbst.',
+      en: 'I set it in motion; the topic and the text came from the AI.',
+      de: 'Ich habe es angestoßen; Thema und Text kamen von der KI.',
     },
   },
   {
     level: 6,
     name: { en: 'AI Initiated, No Human Involvement', de: 'Von KI initiiert, ohne menschliche Beteiligung' },
     meaning: {
-      en: 'Nobody asked. An AI decided on its own that the piece should exist.',
-      de: 'Niemand hat darum gebeten. Eine KI hat selbst entschieden, dass es den Text geben soll.',
+      en: 'An AI started it on its own, without anyone asking for it.',
+      de: 'Eine KI hat ihn von sich aus begonnen, ohne dass jemand darum gebeten hat.',
     },
   },
 ];
