@@ -13,29 +13,40 @@ function folderId({ entry }: { entry: string }): string {
 const blog = defineCollection({
   loader: glob({ pattern: '**/index*.md', base: './src/content/blog', generateId: folderId }),
   schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      // Meta description; the summary is used when absent.
-      description: z.string().optional(),
-      date: z.coerce.date(),
-      lang: z.enum(['en', 'de']),
-      kind: z.enum(['update', 'research']),
-      // Listing text and search snippet, in the post's own words.
-      summary: z.string(),
-      // File name of a PDF in the post's folder, shown in the embedded viewer.
-      pdf: z.string().optional(),
-      image: image().optional(),
-      image_alt: z.string().optional(),
-      tags: z.array(z.string()).default([]),
-      // Which AI note the post carries at its end; core+legal adds "this is not legal
-      // advice", and disclaimer_extra appends one post-specific sentence.
-      disclaimer: z.enum(['core', 'core+legal']),
-      disclaimer_extra: z.string().optional(),
-      // The post's translation: its language and site path.
-      alt_lang: z.enum(['en', 'de']).optional(),
-      alt_url: z.string().startsWith('/').optional(),
-      draft: z.boolean().default(false),
-    }),
+    z
+      .object({
+        title: z.string(),
+        // Meta description; the summary is used when absent.
+        description: z.string().optional(),
+        date: z.coerce.date(),
+        lang: z.enum(['en', 'de']),
+        kind: z.enum(['update', 'research']),
+        // Listing text and search snippet, in the post's own words.
+        summary: z.string(),
+        image: image().optional(),
+        image_alt: z.string().optional(),
+        tags: z.array(z.string()).default([]),
+        // AI Influence Level (0-6, see src/lib/ail.ts): shown as a badge under the title and
+        // named in the note at the post's end.
+        ail: z.literal([0, 1, 2, 3, 4, 5, 6]),
+        // Which assistance text the note carries; core+legal adds "this is not legal advice", and
+        // disclaimer_extra appends one post-specific sentence. Required above level 0; a level 0
+        // post says it was written without AI and has none.
+        disclaimer: z.enum(['core', 'core+legal']).optional(),
+        disclaimer_extra: z.string().optional(),
+        // The post's translation: its language and site path.
+        alt_lang: z.enum(['en', 'de']).optional(),
+        alt_url: z.string().startsWith('/').optional(),
+        draft: z.boolean().default(false),
+      })
+      .superRefine((post, ctx) => {
+        if (post.ail > 0 && !post.disclaimer) {
+          ctx.addIssue({ code: 'custom', path: ['disclaimer'], message: 'required when ail is above 0' });
+        }
+        if (post.ail === 0 && post.disclaimer) {
+          ctx.addIssue({ code: 'custom', path: ['disclaimer'], message: 'an ail 0 post has no assistance text' });
+        }
+      }),
 });
 
 const projects = defineCollection({

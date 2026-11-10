@@ -15,6 +15,7 @@ summary: >-
   departure, the whole trip is freed; announced on the way, only the rest from the station where
   the traveller gets off.
 tags: [Deutsche Bahn, passenger rights, train binding]
+ail: 3
 disclaimer: core+legal
 disclaimer_extra: "Deutsche Bahn's conditions of carriage are authoritative."
 alt_lang: de

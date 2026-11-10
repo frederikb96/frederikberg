@@ -6,7 +6,7 @@ lang: en
 kind: update
 summary: "Two days at the EAGxBerlin conference 2023."
 tags: [EA]
-disclaimer: core
+ail: 0
 image: ./featured.png
 image_alt: "Effective Altruism logo"
 ---

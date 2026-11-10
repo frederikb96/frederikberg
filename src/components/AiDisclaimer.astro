@@ -1,50 +1,53 @@
 ---
-// The AI note every blog post carries: a one-line badge under the title that jumps to
-// the full note at the end of the post. Text per post language; `core+legal` adds the
-// no-legal-advice sentence, `extra` one post-specific sentence after it.
+// The AI note every blog post carries at its end, in the post's language: how the post
+// was written, then its AI Influence Level with a link to the page that explains the scale.
+// Level 0 posts say they were written without AI. Otherwise `variant` picks the assistance
+// text; `core+legal` adds the no-legal-advice sentence, `extra` one post-specific sentence.
+import { ailName, ailPage, type Ail, type Lang } from '../lib/ail';
+
 interface Props {
-  part: 'badge' | 'note';
-  lang: 'en' | 'de';
-  variant: 'core' | 'core+legal';
+  lang: Lang;
+  level: Ail;
+  variant?: 'core' | 'core+legal';
   extra?: string;
 }
-const { part, lang, variant, extra } = Astro.props;
+const { lang, level, variant, extra } = Astro.props;
 
 const text = {
   en: {
-    badge: 'Written with AI assistance — see the note at the end.',
     heading: 'A note on AI',
     core: 'Research and writing for this post were done together with my personal AI setup, mostly Claude. Every fact still has a source, quotations are taken from the original documents, and I read and checked the result before publishing. Corrections are welcome by mail.',
+    none: 'I wrote this post myself, without AI.',
     legal: 'This is not legal advice.',
+    level: (n: Ail, name: string) => `This post is at AI Influence Level ${n} of 6, “${name}”.`,
+    scale: 'What the levels mean',
   },
   de: {
-    badge: 'Mit KI-Unterstützung geschrieben — Hinweis am Ende.',
     heading: 'Hinweis zu KI',
     core: 'Recherche und Text sind zusammen mit meinem persönlichen KI-Setup entstanden, überwiegend Claude. Jede Aussage hat weiterhin eine Quelle, Zitate stammen aus den Originaldokumenten, und ich habe das Ergebnis vor der Veröffentlichung gelesen und geprüft. Korrekturen gerne per Mail.',
+    none: 'Diesen Beitrag habe ich selbst geschrieben, ohne KI.',
     legal: 'Das ist keine Rechtsberatung.',
+    level: (n: Ail, name: string) => `Dieser Beitrag hat die KI-Einflussstufe ${n} von 6, „${name}“.`,
+    scale: 'Was die Stufen bedeuten',
   },
 }[lang];
 
-const sentences = [text.core, variant === 'core+legal' ? text.legal : undefined, extra].filter(Boolean);
+const sentences = [
+  level === 0 ? text.none : text.core,
+  variant === 'core+legal' ? text.legal : undefined,
+  extra,
+].filter(Boolean);
 ---
 
-{
-  part === 'badge' ? (
-    <a
-      href="#ai-disclaimer"
-      class="inline-flex items-center gap-1.5 text-sm text-fg-muted underline decoration-line underline-offset-4 hover:text-brand hover:decoration-amber"
-      data-pagefind-ignore
-    >
-      {text.badge}
-    </a>
-  ) : (
-    <aside
-      id="ai-disclaimer"
-      class="rounded-xl border border-line bg-surface-2/60 px-5 py-4 text-sm leading-relaxed text-fg-muted"
-      data-pagefind-ignore
-    >
-      <h2 class="mb-1 text-sm font-bold text-fg">{text.heading}</h2>
-      <p>{sentences.join(' ')}</p>
-    </aside>
-  )
-}
+<aside
+  id="ai-disclaimer"
+  class="rounded-xl border border-line bg-surface-2/60 px-5 py-4 text-sm leading-relaxed text-fg-muted"
+  data-pagefind-ignore
+>
+  <h2 class="mb-1 text-sm font-bold text-fg">{text.heading}</h2>
+  <p>{sentences.join(' ')}</p>
+  <p class="mt-2">
+    {text.level(level, ailName(level, lang))}{' '}
+    <a href={`${ailPage[lang]}#level-${level}`} class="underline decoration-line underline-offset-4 hover:text-brand hover:decoration-amber">{text.scale}</a>.
+  </p>
+</aside>

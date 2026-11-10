@@ -1,6 +1,4 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { existsSync } from 'node:fs';
-import path from 'node:path';
 
 export type Post = CollectionEntry<'blog'>;
 
@@ -20,21 +18,6 @@ export async function getListedPosts(): Promise<Post[]> {
 
 export function postUrl(post: Post): string {
   return `/blog/${post.id}/`;
-}
-
-/** The post's folder, which is also where its files are published (see integrations/content-files.mjs). */
-function postFolder(post: Post): string {
-  return path.dirname(path.relative('src/content/blog', post.filePath ?? ''));
-}
-
-/** Site path of the post's PDF; fails the build when the file is missing. */
-export function pdfUrl(post: Post): string | undefined {
-  if (!post.data.pdf) return undefined;
-  const folder = postFolder(post);
-  if (!existsSync(path.join('src/content/blog', folder, post.data.pdf))) {
-    throw new Error(`${post.filePath}: pdf "${post.data.pdf}" is not in the post's folder`);
-  }
-  return `/blog/${folder}/${post.data.pdf}`;
 }
 
 export function formatDate(date: Date, lang: 'en' | 'de'): string {

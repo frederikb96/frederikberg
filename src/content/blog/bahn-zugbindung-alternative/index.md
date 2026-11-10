@@ -15,6 +15,7 @@ summary: >-
   aufholt. Erscheint die Prognose vor der Abfahrt, ist die ganze Strecke frei, sonst nur der Rest
   ab dem Bahnhof, an dem ausgestiegen wird.
 tags: [Deutsche Bahn, Fahrgastrechte, Zugbindung]
+ail: 3
 disclaimer: core+legal
 disclaimer_extra: "Maßgeblich sind die Beförderungsbedingungen der DB."
 alt_lang: en

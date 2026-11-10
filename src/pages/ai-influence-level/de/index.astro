@@ -1,0 +1,36 @@
+---
+import AilPage from '../../../components/AilPage.astro';
+import { ailSource } from '../../../lib/ail';
+---
+
+<AilPage lang="de">
+  <p>
+    Jeder Beitrag in diesem Blog zeigt oben seine KI-Einflussstufe (AI Influence Level, AIL). Die Skala stammt von <a href={ailSource}>Daniel Miessler</a>,
+    und diese Seite verwendet ihre Version 2.0 so, wie er sie definiert. Sie
+    gibt an, wie viel von einem Text eine KI gemacht hat und von wem die Idee und der Anstoß kamen. Sie beschreibt,
+    wie ein Text entstanden ist, nicht, wie gut er ist.
+  </p>
+  <h2>Wie ich sie verwende</h2>
+  <ul>
+    <li>
+      <strong>Jeder Beitrag bekommt eine Stufe</strong>, für jeden Beitrag einzeln entschieden. Meine kurzen
+      Update-Beiträge schreibe ich selbst, sie haben Stufe 0.
+    </li>
+    <li>
+      <strong>Meine Recherche-Beiträge entstehen mit meinem persönlichen KI-Setup</strong>, überwiegend Claude. Sie
+      haben Stufe 3, wenn die Struktur des fertigen Texts von mir ist, und Stufe 4, wenn die KI meiner Idee ihre
+      Struktur gegeben hat und diese Struktur geblieben ist.
+    </li>
+    <li>
+      <strong>Die Stufe ändert nichts daran, wie ein Beitrag geprüft wird.</strong> Jede Aussage hat eine Quelle,
+      Zitate stammen aus den Originaldokumenten, und ich lese und prüfe jeden Beitrag, bevor er online geht.
+    </li>
+  </ul>
+  <h2>So liest man das Abzeichen</h2>
+  <p>
+    Das Abzeichen zeigt die Stufe als Zahl und als Leiste aus sechs Feldern, gefüllt bis zur Stufe. Die Farbe geht
+    von Grün bei 0 bis Ziegelrot bei 6, ohne eines der Enden zu bewerten: Eine hohe Stufe beschreibt, wie ein Text
+    entstanden ist, nicht, dass er schlechter ist.
+  </p>
+  <h2>Die sieben Stufen</h2>
+</AilPage>

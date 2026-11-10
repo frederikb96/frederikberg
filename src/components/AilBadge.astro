@@ -1,0 +1,79 @@
+---
+// The AI Influence Level badge: "AIL" reversed out of a solid panel in the level's colour,
+// the number, and a six-segment rail filled up to the level. Links to the explanation page
+// unless `href` is omitted.
+import { ailName, type Ail, type Lang } from '../lib/ail';
+
+interface Props {
+  level: Ail;
+  lang: Lang;
+  href?: string;
+}
+const { level, lang, href } = Astro.props;
+const label = lang === 'de' ? `KI-Einflussstufe ${level} von 6: ${ailName(level, lang)}` : `AI Influence Level ${level} of 6: ${ailName(level, lang)}`;
+const Tag = href ? 'a' : 'span';
+---
+
+<Tag
+  href={href}
+  aria-label={label}
+  title={label}
+  class="ail-badge"
+  style={`--ail: var(--ail-${level})`}
+  data-pagefind-ignore
+>
+  <span class="ail-badge__panel" aria-hidden="true">AIL</span>
+  <span class="ail-badge__num" aria-hidden="true">{level}</span>
+  <span class="ail-badge__rail" aria-hidden="true">
+    {[1, 2, 3, 4, 5, 6].map((n) => <i class:list={{ on: n <= level }} />)}
+  </span>
+</Tag>
+
+<style>
+  .ail-badge {
+    display: inline-flex;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid var(--ail);
+    border-radius: 8px;
+    background: var(--c-surface);
+    color: var(--c-fg);
+    font-weight: 900;
+    line-height: 1;
+    text-decoration: none;
+  }
+  a.ail-badge:hover {
+    box-shadow: 0 0 0 2px var(--c-amber);
+  }
+  .ail-badge__panel {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.5rem;
+    background: var(--ail);
+    color: var(--ail-ink);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+  }
+  .ail-badge__num {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem 0 0.55rem;
+    font-size: 1.05rem;
+  }
+  .ail-badge__rail {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-right: 0.6rem;
+  }
+  .ail-badge__rail i {
+    display: block;
+    width: 0.5rem;
+    height: 0.8rem;
+    border-radius: 1px;
+    background: var(--c-line);
+  }
+  .ail-badge__rail i.on {
+    background: var(--ail);
+  }
+</style>

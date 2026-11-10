@@ -25,6 +25,15 @@
   --c-amber-ink: #8a5514;
   --c-slate: #5b7a93;
   --c-slate-soft: #dee6ec;
+  /* AI Influence Level badge: muted sage (0) to dusty brick (6); ink is the text on a level's panel. */
+  --ail-0: #4f7a54;
+  --ail-1: #66784a;
+  --ail-2: #7d7442;
+  --ail-3: #8d6a3c;
+  --ail-4: #98583a;
+  --ail-5: #9c4a3a;
+  --ail-6: #8f3a35;
+  --ail-ink: #ffffff;
   color-scheme: light;
 }
 
@@ -46,6 +55,14 @@
     --c-amber-ink: #f0c487;
     --c-slate: #9db6ca;
     --c-slate-soft: #2a4651;
+    --ail-0: #a9c4a3;
+    --ail-1: #bcc99a;
+    --ail-2: #cfc68f;
+    --ail-3: #dbb386;
+    --ail-4: #e3a07f;
+    --ail-5: #e69284;
+    --ail-6: #e8857f;
+    --ail-ink: #1a3329;
     color-scheme: dark;
   }
 }
