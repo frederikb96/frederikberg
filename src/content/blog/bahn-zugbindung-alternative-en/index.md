@@ -148,7 +148,7 @@ A journey is continued from where it stands. A single-journey ticket is one cont
 
 One example is a Super Sparpreis from Aachen to Hannover with changes in Cologne and Hamm. If the app already shows in Aachen that the change in Hamm will fail, the whole journey can take place on another day. If it shows this only on arrival in Cologne, the ticket is valid from Cologne, also on a later day, and the Aachen–Cologne leg counts as travelled.
 
-Whether a journey may be broken off on the way and the rest travelled on another day is not regulated explicitly, neither in the conditions of carriage nor on the help page. The second row of the table is the obvious reading of the wording, not an answer the texts give expressly.
+Neither of the first two rows is stated outright anywhere. The help page does not say from where the "later connection" runs, and only the regulation names the case before the journey starts, with "bei der Abfahrt" (at departure). Both rows are the obvious reading of the wording: a traveller still at the starting station continues from there. Whether a journey may be broken off on the way and the rest travelled on another day is the less certain of the two questions.
 
 ## 4. A journey that is never started
 
@@ -156,6 +156,8 @@ Whether a journey may be broken off on the way and the rest travelled on another
 - **What does not work is not starting the journey and relying on a disruption announced only once the journey was already under way.** The traveller would then have had to be on the train, and only the rest from the station of getting off would have been freed.
 
 Where the conditions of carriage regulate not starting a journey at all, the delay is the reason: under clause 9.1.3 the journey may be abandoned or not started „aufgrund einer Verspätung", because of a delay, and clause 2.5.3 extends a ticket's validity when the traveller „infolge Verspätung oder Ausfall eines Zuges die Fahrt nicht antreten kann", cannot start the journey because of a delayed or cancelled train (https://www.bahn.de/agb).
+
+The case in between is open: the disruption was announced before departure, but the journey was not started for a different reason. Clause 9.1.4 requires the announcement, not that it was read, and the help page speaks of a binding lifted „automatisch“, automatically. Whether that is enough depends in practice mostly on whether the announcement can be proven.
 
 As in [section 2](#2-the-forecast-counts-not-how-the-journey-turns-out), what counts here too is the announcement at the time of departure, not how things turned out: a connection that actually arrives late in the evening does not free a ticket after the fact.
 

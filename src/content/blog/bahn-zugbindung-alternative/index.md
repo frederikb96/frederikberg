@@ -134,7 +134,7 @@ Fortgesetzt wird eine Fahrt von dort, wo sie gerade steht. Eine Fahrkarte für e
 
 Ein Beispiel ist ein Super Sparpreis von Aachen nach Hannover mit Umstiegen in Köln und Hamm. Zeigt die App schon in Aachen, dass der Umstieg in Hamm nicht mehr klappt, kann die ganze Reise an einem anderen Tag stattfinden. Zeigt sie das erst bei der Ankunft in Köln, gilt das Ticket ab Köln, auch an einem späteren Tag, und die Strecke Aachen–Köln ist gefahren.
 
-Ob eine Fahrt unterwegs unterbrochen und der Rest an einem anderen Tag gefahren werden darf, regeln weder die Beförderungsbedingungen noch die Hilfeseite ausdrücklich. Die zweite Zeile der Tabelle ist die naheliegende Lesart des Wortlauts, keine ausdrücklich geregelte Antwort.
+Die ersten beiden Zeilen der Tabelle stehen so nirgends ausdrücklich. Die Hilfeseite sagt nicht, ab wo die „spätere Verbindung“ gilt, und den Fall vor Reisebeginn nennt nur die Verordnung mit „bei der Abfahrt“. Beide Zeilen sind die naheliegende Lesart des Wortlauts: Wer noch am Startbahnhof steht, setzt die Reise von dort fort. Ob eine Fahrt unterwegs unterbrochen und der Rest an einem anderen Tag gefahren werden darf, ist dabei die unsicherere der beiden Fragen.
 
 ## 4. Eine Reise, die gar nicht erst angetreten wird
 
@@ -142,6 +142,8 @@ Ob eine Fahrt unterwegs unterbrochen und der Rest an einem anderen Tag gefahren 
 - **Nicht in Ordnung ist es, die Reise nicht anzutreten und sich auf eine Störung zu berufen, die erst angekündigt wurde, als die Fahrt schon lief.** Dann hätte man im Zug sitzen müssen, und frei wäre nur der Rest ab dem Bahnhof, an dem man ausgestiegen wäre.
 
 Wo die Beförderungsbedingungen den Nichtantritt überhaupt regeln, ist die Verspätung der Grund dafür: Nach Nr. 9.1.3 darf die Reise „aufgrund einer Verspätung" abgebrochen oder „gar nicht erst" angetreten werden, und Nr. 2.5.3 verlängert die Geltung einer Fahrkarte, wenn der Reisende „infolge Verspätung oder Ausfall eines Zuges die Fahrt nicht antreten kann" (https://www.bahn.de/agb).
+
+Ungeklärt ist der Fall dazwischen: Die Störung war vor der Abfahrt angekündigt, die Reise unterblieb aber aus einem anderen Grund. Nr. 9.1.4 verlangt nur die Bekanntmachung, nicht dass sie gelesen wurde, und die Hilfeseite spricht von einer „automatisch“ aufgehobenen Zugbindung. Ob das reicht, hängt in der Praxis vor allem davon ab, ob sich die Ankündigung belegen lässt.
 
 Wie in [Kapitel 2](#2-es-zählt-die-prognose-nicht-der-spätere-verlauf) zählt auch hier die Ankündigung zum Zeitpunkt der Abfahrt, nicht der spätere Verlauf: Eine Verbindung, die am Abend tatsächlich verspätet ankommt, macht ein Ticket nicht nachträglich frei.
 

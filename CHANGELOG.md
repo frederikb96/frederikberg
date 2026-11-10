@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.2.1] - 2026-11-10
+
+### Changed
+
+- The Zugbindung post marks which of its cases are a reading of the wording rather than stated rules.
+
 ## [2.2.0] - 2026-11-10
 
 ### Added
