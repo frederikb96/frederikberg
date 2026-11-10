@@ -72,6 +72,6 @@ const og = await getImage({ src: image, width: 1200, format: 'jpg' });
     <main id="main" data-pagefind-body={searchable ? '' : undefined}>
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>
