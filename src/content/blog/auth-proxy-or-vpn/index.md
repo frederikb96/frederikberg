@@ -21,7 +21,7 @@ ail: 4
 
 In short
 
-- **A VPN hides the services.** They cannot be reached at all without being on the VPN, whatever the protocol. Whoever is on it can reach everything.
+- **A VPN hides the services.** They cannot be reached at all without being on the VPN, whatever the protocol. Unless it is set up with rules per service, whoever is on it can reach everything.
 - **An authenticating proxy checks every request.** The services can be found, but no request reaches them without a valid login, and access can be granted per app and per person.
 - **For web apps used by a small group, a well-maintained proxy is enough.** For anything that is not HTTP, the VPN is the right tool.
 - **For admin interfaces, use both.** The VPN keeps them out of sight, and the proxy still decides who may use them.
@@ -38,12 +38,12 @@ Anyone who hosts web applications at home or on a rented server has to decide ho
 
 The two work at different layers and therefore hide different things:
 
-- **A VPN works at the network.** Services behind it have no public address. Access is all or nothing: whoever is on the network can reach every service on it.
+- **A VPN works at the network.** Services behind it have no public address. By default access is all or nothing: whoever is on the network can reach every service on it, unless the VPN is configured with rules per device and service.
 - **An authenticating proxy works at the application.** The services can be found by name and connected to, but no request reaches them without a valid session.
 
 A WireGuard server does not even answer a client it does not know: "the server does not even respond at all to an unauthorized client; it is silent and invisible" [\[1\]](https://www.wireguard.com/protocol/). An attacker first has to compromise the VPN itself or a device connected to it.
 
-The proxy check runs on every HTTP request, not once at login. With the Traefik reverse proxy, the ForwardAuth middleware "delegates authentication to an external service. If the service answers with a 2XX code, access is granted, and the original request is performed. Otherwise, the response from the authentication server is returned" [\[2\]](https://doc.traefik.io/traefik/reference/routing-configuration/http/middlewares/forwardauth/). OAuth2-Proxy's endpoint for this purpose "only returns a 202 Accepted response or a 401 Unauthorized response" [\[3\]](https://oauth2-proxy.github.io/oauth2-proxy/features/endpoints/).
+The proxy check runs on every HTTP request, not once at login. With the Traefik reverse proxy, the ForwardAuth middleware "delegates authentication to an external service. If the service answers with a 2XX code, access is granted, and the original request is performed. Otherwise, the response from the authentication server is returned" [\[2\]](https://doc.traefik.io/traefik/reference/routing-configuration/http/middlewares/forwardauth/). OAuth2-Proxy's endpoint for this purpose answers only allow or deny: it "only returns a 202 Accepted response or a 401 Unauthorized response" [\[3\]](https://oauth2-proxy.github.io/oauth2-proxy/features/endpoints/).
 
 ## 2. What each does better
 
@@ -55,20 +55,20 @@ Each covers ground the other cannot:
 
 The proxy's model matches what NIST describes as zero trust: "Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location" [\[4\]](https://csrc.nist.gov/pubs/sp/800/207/final). A VPN grants exactly that kind of location-based trust once a device is connected.
 
-The proxy as an attack surface is real. OAuth2-Proxy up to version 7.10.0 contained a critical authentication bypass in which attackers could get past the `skip_auth_routes` rules "by crafting URLs with query parameters that satisfy the configured regex patterns" (CVE-2025-54576) [\[5\]](https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-7rh7-c77v-6434). VPN software has its own vulnerabilities, but a proxy in front of public services is reachable by everyone, so a flaw in it is too.
+The proxy as an attack surface is real. OAuth2-Proxy up to version 7.10.0 contained a critical authentication bypass in which attackers could get past the `skip_auth_routes` rules "by crafting URLs with query parameters that satisfy the configured regex patterns" (CVE-2025-54576) [\[5\]](https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-7rh7-c77v-6434). VPN software can have flaws too, but a proxy in front of public services is reachable by everyone, so a flaw in it is too.
 
 ## 3. Where the proxy's check stops
 
 The per-request check has two edges, both following from where the check sits rather than from a bug:
 
 - **Long-lived connections are checked once.** A WebSocket or event stream is opened by one request and then stays open, so the session is checked when the connection starts, not for each message.
-- **A stolen session cookie works at the proxy too.** A cross-site scripting flaw in one of the applications behind it can leak the cookie.
+- **A stolen session cookie works at the proxy too.** A flaw in one of the applications behind it that lets an attacker run script in the browser (cross-site scripting) can leak the cookie.
 
 Both are reasons to keep sessions short and revocable on the server.
 
 ## 4. The counter-argument
 
-The strongest case for a VPN-only setup is that an exposed login is a target and a hidden service is not. That is true, and it is why the common advice to never expose internal tools exists. The advice is mostly aimed at applications with no authentication or weak authentication of their own, though. With a maintained proxy, a central identity provider, sessions held on the server and two-factor login, the remaining difference is the proxy's own attack surface, which is the same kind of risk a VPN server carries.
+The strongest case for a VPN-only setup is that an exposed login is a target and a hidden service is not. That is true, and it is why the common advice to never expose internal tools exists. The advice is mostly aimed at applications with no authentication or weak authentication of their own, though. With a maintained proxy, a central identity provider, sessions held on the server and two-factor login, the remaining difference is the proxy's own attack surface. It is larger than a WireGuard server's, because the proxy answers requests from anyone while the VPN stays silent, and that is the price for per-app access without a client.
 
 ## 5. Assessment
 

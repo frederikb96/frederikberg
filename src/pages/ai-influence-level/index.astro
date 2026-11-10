@@ -6,20 +6,21 @@ import { ailSource } from '../../lib/ail';
 <AilPage lang="en">
   <p>
     Every post on this blog shows its AI Influence Level at the top. The scale comes from <a href={ailSource}>Daniel Miessler</a>,
-    and this site uses its version 2.0 as he defines it. It says how much
+    and this site uses its version 2.0 with one reading of my own, explained below. It says how much
     of a text an AI made, and who had the idea and started it. It says how a text was made, not whether it is any
     good.
   </p>
   <h2>How I use it</h2>
   <ul>
     <li>
-      <strong>Every post gets a level</strong>, decided per post. My short update posts are written by me alone and
-      sit at 0.
+      <strong>Every post gets a level</strong>, decided per post. Update posts I wrote myself sit at 0; one that an
+      automated run picked and wrote would sit at 5.
     </li>
     <li>
       <strong>My research posts are written with my personal AI setup</strong>, mostly Claude. They are at 3 where
       the structure of the finished text is mine, and at 4 where the AI gave my idea its structure and that
-      structure stayed.
+      structure stayed. The reading of my own: level 3 also covers a structure I set afterwards, by reordering and
+      regrouping a draft in depth, because what counts is the finished text, not who started it.
     </li>
     <li>
       <strong>The level does not change how a post is checked.</strong> Every fact has a source, quotations are

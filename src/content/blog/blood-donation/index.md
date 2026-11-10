@@ -38,7 +38,7 @@ A standard whole-blood donation takes about half a litre. The Stanford Blood Cen
 
 The body replaces the fluid within days and the red cells within weeks, and performance follows the red cells:
 
-- **Plasma is back within a few days.** It "will begin to replenish immediately and should be fully back to normal within a few days", while "it typically takes 4–8 weeks to replace all the red cells lost in a whole blood donation" [\[1\]](https://stanfordbloodcenter.org/pulse-spring23-what-really-happens-to-your-body-after-you-donate-blood-effects-risks-and-recovery/). Drinking enough speeds up the first part, since plasma is mostly water.
+- **Plasma is back within a few days.** It "will begin to replenish immediately and should be fully back to normal within a few days", while "it typically takes 4–8 weeks to replace all the red cells lost in a whole blood donation" [\[1\]](https://stanfordbloodcenter.org/pulse-spring23-what-really-happens-to-your-body-after-you-donate-blood-effects-risks-and-recovery/).
 - **Peak endurance drops by about 5 to 10 %.** One to two days after a donation, maximal oxygen uptake is about 7 % lower and maximal exercise capacity about 10 % lower [\[2\]](https://pubmed.ncbi.nlm.nih.gov/27807869/).
 - **It recovers within two to four weeks.** Easy endurance training is hardly affected.
 
@@ -69,7 +69,7 @@ Health benefits reported for donors are no good reason to donate either. Donors 
 
 ## 4. When a donation has to wait (Germany)
 
-German blood services defer donors under common rules; the final decision is made by the doctor on site. In short:
+The rules come from the national guideline on haemotherapy, and the doctor on site makes the final decision. In short, from one blood service's list [\[9\]](https://www.ukaachen.de/fileadmin/files/institute/transfusionsmedizin/Blutspendedienst/20250926_DM_Dokument_Rueckstellungsgruende_WEB.pdf):
 
 - **After a cold or another uncomplicated infection:** one week.
 - **After fever or diarrhoea of unclear cause:** four weeks.
