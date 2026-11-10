@@ -13,7 +13,7 @@ summary: >-
   Die Zugbindung eines Sparpreises fällt weg, sobald die DB eine Ankunft mindestens 20 Minuten zu
   spät oder einen geplatzten Umstieg ankündigt, und sie kommt nicht zurück, wenn der Zug später
   aufholt. Erscheint die Prognose vor der Abfahrt, ist die ganze Strecke frei, sonst nur der Rest
-  ab dem Bahnhof, an dem die Wahl fällt.
+  ab dem Bahnhof, an dem ausgestiegen wird.
 tags: [Deutsche Bahn, Fahrgastrechte, Zugbindung]
 disclaimer: core+legal
 disclaimer_extra: "Maßgeblich sind die Beförderungsbedingungen der DB."
@@ -21,11 +21,33 @@ alt_lang: en
 alt_url: /blog/bahn-zugbindung-alternative-en/
 ---
 
-Ein Sparpreis oder Super Sparpreis gilt nur in den gebuchten Fernzügen. Diese Zugbindung fällt weg, wenn die Reise gestört ist, und dann gilt das Ticket auch in anderen Zügen, laut DB bis zu einem Jahr lang. Im Alltag stellen sich dazu drei Fragen. Wodurch genau wird die Zugbindung aufgehoben? Was gilt, wenn sich die Lage danach wieder bessert? Und gilt das Ticket dann für die ganze Strecke oder nur für den Rest der Fahrt?
+<div class="tldr">
 
-Die kurze Antwort: Die Zugbindung ist aufgehoben, sobald die DB über ihre Auskunft ankündigt, dass die Ankunft am Ziel mindestens 20 Minuten später liegen wird oder ein gebuchter Umstieg nicht mehr erreichbar ist. Maßgeblich ist diese Prognose, nicht der spätere Verlauf. Holt der Zug danach auf, entfällt das Recht nicht wieder. Wann die Prognose erscheint, bestimmt den Umfang: Erscheint sie vor der Abfahrt, lässt sich die ganze Fahrt an einem anderen Tag antreten. Erscheint sie unterwegs, gilt das Ticket ab dem Bahnhof, an dem die Wahl fällt, bis zum Ziel. Die Begründung folgt aus dem Wortlaut der Beförderungsbedingungen der DB in der Fassung vom 26.10.2026, der EU-Fahrgastrechteverordnung und den Hilfeseiten der DB, die unten wörtlich zitiert sind.
+Kurz gesagt
 
-## Wodurch die Zugbindung aufgehoben wird
+- **Zwei Auslöser.** Die Zugbindung ist aufgehoben, sobald die DB eine Ankunft am Ziel mindestens 20 Minuten nach Plan ankündigt oder einen gebuchten Umstieg, der nicht mehr erreichbar ist.
+- **Es zählt die Ankündigung.** Maßgeblich ist, was App, bahn.de oder die Anzeige am Bahnhof in diesem Moment zeigen. Holt der Zug danach auf, bleibt die Zugbindung trotzdem aufgehoben.
+- **Vor der Abfahrt angekündigt:** Die ganze Strecke lässt sich an einem anderen Tag fahren, laut DB bis zu einem Jahr lang.
+- **Erst unterwegs angekündigt:** Das Ticket gilt ab dem Bahnhof, an dem ausgestiegen wird. Die schon gefahrene Strecke wird nicht noch einmal gefahren.
+- **Ein Screenshot im Moment der Ankündigung** ist der beste Beleg, denn die Prognose verschwindet, sobald die Züge weiterfahren.
+
+</div>
+
+Ein Sparpreis oder Super Sparpreis gilt nur in den gebuchten Fernzügen. Diese Zugbindung fällt weg, wenn die Reise gestört ist, und dann gilt das Ticket auch in anderen Zügen. Dazu stellen sich drei Fragen:
+
+- Wodurch genau wird die Zugbindung aufgehoben?
+- Was gilt, wenn sich die Lage danach wieder bessert?
+- Gilt das Ticket dann für die ganze Strecke oder nur für den Rest der Fahrt?
+
+Die Antworten folgen aus dem Wortlaut der Beförderungsbedingungen der DB in der Fassung vom 26.10.2026, der EU-Fahrgastrechteverordnung und den Hilfeseiten der DB, die unten wörtlich zitiert sind.
+
+## 1. Wodurch die Zugbindung aufgehoben wird
+
+Für eine Reise innerhalb Deutschlands reicht jeder dieser Fälle für sich:
+
+- **Die Ankunft am Ziel liegt voraussichtlich mindestens 20 Minuten nach Plan.** Bei internationalen Reisen sind es 60 Minuten.
+- **Ein gebuchter Umstieg ist nicht mehr erreichbar.** Ob ein schnellerer Zug existiert, spielt keine Rolle.
+- **Ein Zug oder Halt fällt aus**, oder ein Zug fährt wegen einer Fahrplanänderung früher ab.
 
 Die Grundlage ist Nr. 9.1.1 der Beförderungsbedingungen Personenverkehr:
 
@@ -33,7 +55,7 @@ Die Grundlage ist Nr. 9.1.1 der Beförderungsbedingungen Personenverkehr:
 >
 > *— Beförderungsbedingungen der DB AG, Stand 26.10.2026, BB Personenverkehr Nr. 9.1.1 — https://www.bahn.de/agb*
 
-Die Hilfeseite der DB zählt die Fälle einzeln auf:
+Die Hilfeseite der DB zählt die Fälle einzeln auf, den nicht erreichten Anschluss ausdrücklich als eigenen Fall:
 
 > Bei Tickets mit Zugbindung (Sparpreisen) ist diese Zugbindung in folgenden Fällen aufgehoben:
 > - Bei erwartbarer Verspätung am Zielort von:
@@ -46,88 +68,92 @@ Die Hilfeseite der DB zählt die Fälle einzeln auf:
 >
 > *— bahn.de, „In welchen Fällen ist die Zugbindung aufgehoben und was bedeutet das?" — https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung*
 
-Für eine Reise innerhalb Deutschlands gibt es damit zwei Auslöser, und jeder reicht für sich: eine erwartete Ankunft am Ziel mindestens 20 Minuten nach Plan, oder ein gebuchter Umstieg, der nicht mehr erreichbar ist. Beim Umstieg kommt es nicht darauf an, ob ein schnellerer Zug existiert. Auf einer Strecke mit Stundentakt liegt die nächste Verbindung ohnehin eine Stunde später, sodass auch die 20-Minuten-Schwelle erreicht ist.
+Auf einer Strecke mit Stundentakt fallen beide Auslöser meist zusammen: Platzt ein Umstieg, liegt die nächste Verbindung eine Stunde später, und damit ist auch die 20-Minuten-Schwelle erreicht.
 
-## Es zählt die Prognose, nicht der spätere Verlauf
+## 2. Es zählt die Prognose, nicht der spätere Verlauf
 
-Beide Auslöser sind Erwartungen: Nr. 9.1.1 spricht von dem, was „vernünftigerweise" angenommen werden muss, und die Hilfeseite von einer „erwartbaren" Verspätung. Wann diese Erwartung begründet ist, regelt Nr. 9.1.4:
+Beide Auslöser sind Erwartungen, keine Ergebnisse. Daraus folgt:
+
+- **Maßgeblich ist, was die DB ankündigt**: in der App, auf bahn.de, auf den Anzeigen und in den Durchsagen am Bahnhof und im Zug.
+- **Das Recht entsteht in dem Moment, in dem die Störung angekündigt wird**, und es bleibt bestehen, auch wenn der Zug später aufholt und der Anschluss doch noch erreichbar gewesen wäre.
+- **Eine Pflicht, die Lage später erneut zu prüfen, gibt es nicht.**
+- **Als Beleg dient ein Screenshot aus diesem Moment**, eine Benachrichtigung der DB zur Reise mit ihrer Uhrzeit oder eine Bescheinigung. Nötig ist eine Bescheinigung innerhalb Deutschlands nicht.
+
+Wann die Erwartung begründet ist, regelt Nr. 9.1.4:
 
 > Der Reisende kann insbesondere dann vernünftigerweise mit einer Verspätung nach Nr. 9.1.1 und Nr. 9.1.3 am Zielbahnhof rechnen, wenn diese über mindestens einen der nachfolgenden Informationskanäle bekanntgemacht wurde: (i) Aushangfahrpläne und ausgehängte Informationen über Fahrplanänderungen in Bahnhöfen, (ii) elektronische Anzeigen und Lautsprecheransagen in Zügen und auf Bahnhöfen, (iii) Fahrplaninformationen aus Buchungssystemen personalbedienter Verkaufsstellen sowie (iv) verfügbare Fahrplaninformations- und Reisendeninformationsmedien, insbesondere das Fahrplanauskunftssystem im Internet unter www.bahn.de. Die Übergangszeiten für planmäßige Umstiege (Umsteigezeiten) orientieren sich an der elektronischen Fahrplanauskunft unter www.bahn.de. Das Gleiche gilt, wenn der Reisende eine vom Beförderer oder vom Bahnhofsbetreiber ausgestellte Bestätigung vorlegen kann, aus der sich eine Verspätung nach Nr. 9.1.1 und Nr. 9.1.3 ergibt.
 >
 > *— Beförderungsbedingungen der DB AG, Stand 26.10.2026, BB Personenverkehr Nr. 9.1.4 — https://www.bahn.de/agb*
 
-Die DB bestimmt also ihre eigene Auskunft, die App eingeschlossen, zum Maßstab, und die dort hinterlegten Umsteigezeiten zum Maßstab dafür, ob ein Umstieg noch klappt. Zeigt die Auskunft einen Umstieg als nicht mehr erreichbar oder eine Ankunft mindestens 20 Minuten zu spät, ist die Bedingung erfüllt.
+Die DB macht damit ihre eigene Auskunft zum Maßstab, und die dort hinterlegten Umsteigezeiten zum Maßstab dafür, ob ein Umstieg noch klappt. Das Wahlrecht besteht nach Nr. 9.1.1 „unverzüglich", also in dem Moment, in dem die Störung bekannt wird, und die Klausel enthält keine Bedingung, unter der es wieder entfällt. Die Hilfeseite der DB stützt das mit dem Satz „Hinweis: Bei Fahrkarten mit Zugbindung (z. B. Sparpreisen) ist diese automatisch aufgehoben." (https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung). Eine Geltung von bis zu einem Jahr passt auch kaum zu einem Recht, das am selben Abend wieder verschwinden könnte.
 
-Das Wahlrecht besteht nach Nr. 9.1.1 „unverzüglich", also in dem Moment, in dem die Verspätung bekannt wird. Eine Bedingung, unter der es wieder entfällt, enthält die Klausel nicht. Holt der verspätete Zug später auf und wäre der Anschluss am Ende doch erreichbar gewesen, ändert das am bereits entstandenen Recht nichts. Die Hilfeseite der DB stützt diese Lesart mit dem Satz „Hinweis: Bei Fahrkarten mit Zugbindung (z. B. Sparpreisen) ist diese automatisch aufgehoben." (https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung), und eine Geltung von bis zu einem Jahr passt nicht zu einem Recht, das noch am selben Tag wieder verschwinden könnte.
-
-Eine Pflicht, die Lage vor dem Umstieg erneut zu prüfen, ist an keiner Stelle vorgesehen. Sie wäre in der Praxis auch kaum erfüllbar: Wird im DB Navigator eine angebotene Alternative übernommen, zeigt die App die ursprüngliche Verbindung nicht mehr an. Die Auswahl selbst ändert am Ticket nichts:
+Eine Pflicht zum erneuten Prüfen wäre in der Praxis auch kaum zu erfüllen. Wird im DB Navigator eine angebotene Alternative übernommen, zeigt die App die ursprüngliche Verbindung nicht mehr an. Am Ticket ändert die Auswahl nichts:
 
 > Wichtig: Wenn Sie eine alternative Verbindung auswählen, behalten Sie Ihr ursprüngliches Ticket. Es werden ausschließlich die angezeigten Informationen im Reiseplan und die Benachrichtigungen zur Reise angepasst. Bitte prüfen Sie vorher, ob Ihr Ticket für die ausgewählte Alternative gültig ist.
 >
 > *— bahn.de, DB Navigator, Funktionen: „Mein Zug ist verspätet, wie kann ich in der App eine alternative Verbindung auswählen?" — https://www.bahn.de/faq/pk/service/buchung/navigator/funktionen*
 
-## Für welche Strecke das Ticket danach gilt
+Gegen diese Lesart lässt sich einwenden, dass eine Prognose im Moment der Entscheidung zutreffen muss und eine erkennbar überholte Prognose nicht mehr trägt. Das stimmt für den Moment der Wahl selbst, reicht aber nicht bis zu einer Pflicht, die Lage danach weiter zu beobachten: Nr. 9.1.1 beschreibt einen Zeitpunkt, und Nr. 9.1.4 sieht keinen späteren Abgleich vor.
 
-Nr. 9.1.1 gewährt die „Fortsetzung der Fahrt oder der Weiterreise … bis zum Zielbahnhof", sofort oder „zu einem späteren Zeitpunkt". Die EU-Fahrgastrechteverordnung, auf der die Regel beruht, formuliert es genauso und nennt dabei ausdrücklich die Abfahrt als einen der Zeitpunkte, an denen die Erwartung entstehen kann:
-
-> Muss entweder bei der Abfahrt oder im Falle eines verpassten Anschlusses oder eines Zugausfalls vernünftigerweise davon ausgegangen werden, dass bei Ankunft am Zielort gemäß Beförderungsvertrag die Verspätung 60 Minuten oder mehr betragen wird, so bietet das Eisenbahnunternehmen, das den verspäteten oder ausfallenden Dienst betreibt, dem Fahrgast unverzüglich an, sich für eine der folgenden Möglichkeiten zu entscheiden […] b) Fortsetzung der Fahrt oder Weiterreise mit geänderter Streckenführung unter vergleichbaren Beförderungsbedingungen bis zum Zielort bei nächster Gelegenheit; c) Fortsetzung der Fahrt oder Weiterreise mit geänderter Streckenführung unter vergleichbaren Beförderungsbedingungen bis zum Zielort zu einem späteren Zeitpunkt nach Wahl des Fahrgasts.
->
-> *— Verordnung (EU) 2021/782, Art. 18 Abs. 1 — https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021R0782*
-
-Fortgesetzt wird eine Fahrt von dort, wo sie gerade steht. Eine Strecke, die schon gefahren ist, wird mit demselben Ticket nicht ein zweites Mal gefahren: Eine Fahrkarte für eine einfache Fahrt entspricht nach Nr. 1.3.4 der Beförderungsbedingungen einem Beförderungsvertrag (https://www.bahn.de/agb). Zurück an den Ausgangspunkt führt nur Nr. 9.1.3, und die greift erst ab 60 Minuten erwarteter Verspätung: Dann darf die Reise abgebrochen oder gar nicht erst angetreten werden, der Fahrpreis wird erstattet und gegebenenfalls die „Rückfahrt zum ersten Ausgangspunkt" gestellt (https://www.bahn.de/agb).
-
-Den zeitlichen Rahmen nennt die Hilfeseite der DB, die Beförderungsbedingungen selbst nennen keine Frist:
-
-> Sie können eine spätere Verbindung Ihrer Wahl nutzen (z.B. später am selben Reisetag, einen Tag später oder auch erst in 3 Wochen. Dies ist bis zu einem Jahr nach ursprünglichem Reisedatum möglich).
->
-> *— bahn.de, „In welchen Fällen ist die Zugbindung aufgehoben und was bedeutet das?" — https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung*
-
-Zusammengenommen ergibt sich daraus, für welchen Teil der Reise das Ticket nach einer aufgehobenen Zugbindung gilt:
-
-| Erste Prognose der Störung | Wofür das Ticket danach gilt |
-|---|---|
-| vor der Abfahrt, die Reise wird nicht angetreten | die ganze Strecke, an einem anderen Tag, bis zu einem Jahr |
-| unterwegs, an einem Bahnhof wird ausgestiegen | von diesem Bahnhof bis zum Ziel, sofort oder bis zu einem Jahr später |
-| erst nach der geplanten Abfahrt, die Reise wurde aus anderem Grund nicht angetreten | nicht freigegeben |
-| nie angekündigt, die gefahrene Reise kommt nur verspätet an | verbraucht; Entschädigung erst ab 60 Minuten |
-
-Ein Beispiel: Ein Super Sparpreis von Aachen nach Hannover mit Umstiegen in Köln und Hamm. Zeigt die App schon in Aachen, dass der Umstieg in Hamm nicht mehr klappt, kann die ganze Reise an einem anderen Tag stattfinden. Zeigt sie das erst bei der Ankunft in Köln, gilt das Ticket ab Köln, auch an einem späteren Tag. Die Strecke Aachen–Köln ist dann gefahren und wird nicht noch einmal gefahren.
-
-Ob eine Fahrt unterwegs unterbrochen und der Rest an einem anderen Tag gefahren werden darf, regeln weder die Beförderungsbedingungen noch die Hilfeseite ausdrücklich. Die zweite Zeile der Tabelle ist daher die naheliegende Lesart des Wortlauts, keine ausdrücklich geregelte Antwort.
-
-## Eine nicht angetretene Reise
-
-Eine Reise, die aus einem anderen Grund nicht angetreten wird, etwa wegen Krankheit, wird nicht dadurch frei, dass die Verbindung später am Abend tatsächlich verspätet ist. Wo die Beförderungsbedingungen den Nichtantritt einer Reise überhaupt regeln, ist die Verspätung der Grund dafür: nach Nr. 9.1.3 darf die Reise „aufgrund einer Verspätung“ abgebrochen oder „gar nicht erst“ angetreten werden, und Nr. 2.5.3 verlängert die Geltung einer Fahrkarte, wenn der Reisende „infolge Verspätung oder Ausfall eines Zuges die Fahrt nicht antreten kann" (https://www.bahn.de/agb).
-
-War die Störung dagegen schon vor der Abfahrt in der Auskunft der DB angekündigt, ist die Lage weniger eindeutig. Nr. 9.1.4 verlangt die Bekanntmachung über einen Kanal, nicht, dass sie gelesen wurde. Wer an diesem Tag aus einem anderen Grund nicht fährt, kann sich dann auf eine Ankündigung stützen, die tatsächlich bestand. Ob das trägt, hängt vor allem davon ab, ob sich die Ankündigung später belegen lässt.
-
-## Das Gegenargument
-
-Gegen die Lesart, dass einmal angekündigt einmal aufgehoben bleibt, lässt sich einwenden, dass Nr. 9.1.1 eine Prognose verlangt und eine Prognose im Moment der Entscheidung zutreffen muss. Bessert sich die Lage erkennbar, bevor die Entscheidung umgesetzt wird, wäre die Prognose überholt.
-
-Der Einwand trägt aus drei Gründen nicht bis zu einer Prüfpflicht. Nr. 9.1.1 gewährt das Wahlrecht „unverzüglich" und beschreibt damit einen Zeitpunkt, keinen Zustand, der laufend zu überwachen wäre. Nr. 9.1.4 regelt, woraus sich die Erwartung ergibt, nämlich aus der Bekanntmachung über einen der genannten Kanäle, und sieht keinen späteren Abgleich vor. Und eine Pflicht zum erneuten Prüfen wäre nur zu erfüllen, indem die Auskunft der DB gegen die eigene App geprüft wird, die die ursprüngliche Verbindung nach der Auswahl einer Alternative gerade nicht mehr anzeigt.
-
-Zutreffend am Einwand bleibt, dass die Prognose im Moment der Wahl tragfähig gewesen sein muss. Genau das leistet Nr. 9.1.4, indem sie die Auskunft der DB als ausreichende Grundlage benennt.
-
-## Nachweis
-
-Eine Bescheinigung ist innerhalb Deutschlands nicht nötig:
+Für den Nachweis gilt laut Hilfeseite:
 
 > Innerhalb Deutschlands benötigen Sie keine zusätzliche Bescheinigung zur Aufhebung der Zugbindung. Sie können sich aber auf expliziten Wunsch eine Bescheinigung ausstellen lassen (z.B. im Zug, im Reisezentrum oder an der DB Information).
 >
 > *— bahn.de, „In welchen Fällen ist die Zugbindung aufgehoben und was bedeutet das?" — https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung*
 
-Die Prognose selbst verschwindet aber, sobald die Züge weiterfahren, und nach der Auswahl einer Alternative zeigt die App die ursprüngliche Verbindung nicht mehr. Als Beleg eignet sich deshalb ein Screenshot der App oder von bahn.de im Moment der Ankündigung, eine Benachrichtigung der DB zur Reise mit ihrer Uhrzeit oder eben eine Bescheinigung. Nr. 9.1.4 nennt eine solche Bestätigung des Beförderers ausdrücklich als Grundlage (Zitat oben).
+Die Prognose selbst verschwindet aber, sobald die Züge weiterfahren. Ein Screenshot der App oder von bahn.de im Moment der Ankündigung hält fest, was die DB angezeigt hat, und genau darauf stellt Nr. 9.1.4 ab.
 
-## Grenzen
+## 3. Für welche Strecke das Ticket danach gilt
 
-- **Reservierungspflichtige Züge und Sonderzüge sind ausgenommen.** Nr. 9.1.1 schließt sie ausdrücklich aus (Zitat oben).
-- **Nicht jede angebotene Alternative ist vom Ticket gedeckt.** Darauf zielt der Satz „Bitte prüfen Sie vorher, ob Ihr Ticket für die ausgewählte Alternative gültig ist" in der Navigator-Hilfe (Zitat oben). Verträge mit Unternehmen, die die Beförderungsbedingungen nicht anerkennen, sieht Nr. 9.1.2 nur vor, wenn die DB nicht innerhalb von 100 Minuten über die Möglichkeiten zur Weiterreise informiert (https://www.bahn.de/agb).
-- **Ein Deutschland-Ticket kombiniert mit einem Fernverkehrsticket sind zwei Verträge.** Verpasst der Nahverkehrszug den Fernzug, bleibt die Zugbindung des Fernverkehrstickets bestehen (https://www.bahn.de/faq/deutschlandticket-kombi-fv-dt).
-- **Fahrkarten des Nahverkehrs funktionieren anders.** Laut der Hilfeseite: „Bei Nutzung eines höherwertigen Zugs (z.B. IC/EC, ICE) müssen Sie ein zusätzliches Ticket kaufen. Die Kosten können Sie über das Servicecenter Fahrgastrechte erstatten lassen. Diese Regelung gilt nicht für erheblich ermäßigte Fahrkarten (z.B. Deutschland-Ticket, Länder-Tickets)." (https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung)
+Entscheidend ist, wann die Störung zum ersten Mal angekündigt wird:
 
-## Einordnung
+- **Vor der Abfahrt:** Die ganze Strecke lässt sich an einem anderen Tag fahren, laut DB bis zu einem Jahr lang.
+- **Unterwegs:** Das Ticket gilt ab dem Bahnhof, an dem ausgestiegen wird, bis zum Ziel, sofort oder an einem späteren Tag.
+- **Eine schon gefahrene Strecke** wird mit demselben Ticket nicht noch einmal gefahren.
 
-Die Bewertung stützt sich auf den Wortlaut der Beförderungsbedingungen, der Verordnung und der zitierten Hilfeseiten. Veröffentlichte Rechtsprechung zu diesen Konstellationen ist nicht ersichtlich. Die Beförderungsbedingungen werden mehrmals im Jahr neu herausgegeben; zitiert ist die Fassung vom 26.10.2026, und die Nummerierung kann sich in späteren Ausgaben verschieben.
+Nr. 9.1.1 gewährt die „Fortsetzung der Fahrt oder der Weiterreise … bis zum Zielbahnhof". Die EU-Fahrgastrechteverordnung, auf der die Regel beruht, formuliert es genauso und nennt die Abfahrt ausdrücklich als einen der Zeitpunkte, an denen die Erwartung entstehen kann:
 
-Die Verordnung (EU) 2021/782 knüpft die Weiterreise an eine erwartete Verspätung von 60 Minuten oder mehr (Zitat oben). Die 20-Minuten-Schwelle für Reisen innerhalb Deutschlands ist eine vertragliche Regel der DB und geht über die Verordnung hinaus.
+> Muss entweder bei der Abfahrt oder im Falle eines verpassten Anschlusses oder eines Zugausfalls vernünftigerweise davon ausgegangen werden, dass bei Ankunft am Zielort gemäß Beförderungsvertrag die Verspätung 60 Minuten oder mehr betragen wird, so bietet das Eisenbahnunternehmen, das den verspäteten oder ausfallenden Dienst betreibt, dem Fahrgast unverzüglich an, sich für eine der folgenden Möglichkeiten zu entscheiden […] b) Fortsetzung der Fahrt oder Weiterreise mit geänderter Streckenführung unter vergleichbaren Beförderungsbedingungen bis zum Zielort bei nächster Gelegenheit; c) Fortsetzung der Fahrt oder Weiterreise mit geänderter Streckenführung unter vergleichbaren Beförderungsbedingungen bis zum Zielort zu einem späteren Zeitpunkt nach Wahl des Fahrgasts.
+>
+> *— Verordnung (EU) 2021/782, Art. 18 Abs. 1 — https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021R0782*
+
+Den zeitlichen Rahmen nennt nur die Hilfeseite der DB, die Beförderungsbedingungen selbst nennen keine Frist:
+
+> Sie können eine spätere Verbindung Ihrer Wahl nutzen (z.B. später am selben Reisetag, einen Tag später oder auch erst in 3 Wochen. Dies ist bis zu einem Jahr nach ursprünglichem Reisedatum möglich).
+>
+> *— bahn.de, „In welchen Fällen ist die Zugbindung aufgehoben und was bedeutet das?" — https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung*
+
+Fortgesetzt wird eine Fahrt von dort, wo sie gerade steht. Eine Fahrkarte für eine einfache Fahrt ist nach Nr. 1.3.4 ein einziger Beförderungsvertrag (https://www.bahn.de/agb), und zurück an den Ausgangspunkt führt nur Nr. 9.1.3. Die greift erst ab 60 Minuten erwarteter Verspätung, und dann wird die Reise abgebrochen und der Fahrpreis erstattet, gegebenenfalls „zusammen mit einer Rückfahrt zum ersten Ausgangspunkt" (https://www.bahn.de/agb).
+
+| Erste Ankündigung der Störung | Wofür das Ticket danach gilt |
+|---|---|
+| vor der Abfahrt, die Reise wird nicht angetreten | die ganze Strecke, an einem anderen Tag, bis zu einem Jahr |
+| unterwegs, an einem Bahnhof wird ausgestiegen | von diesem Bahnhof bis zum Ziel, sofort oder bis zu einem Jahr später |
+| erst nach der Abfahrt, die Reise wurde aus anderem Grund nicht angetreten | nicht freigegeben (Kapitel 4) |
+| nie angekündigt, die gefahrene Reise kommt nur verspätet an | verbraucht; Entschädigung erst ab 60 Minuten |
+
+Ein Beispiel ist ein Super Sparpreis von Aachen nach Hannover mit Umstiegen in Köln und Hamm. Zeigt die App schon in Aachen, dass der Umstieg in Hamm nicht mehr klappt, kann die ganze Reise an einem anderen Tag stattfinden. Zeigt sie das erst bei der Ankunft in Köln, gilt das Ticket ab Köln, auch an einem späteren Tag, und die Strecke Aachen–Köln ist gefahren.
+
+Ob eine Fahrt unterwegs unterbrochen und der Rest an einem anderen Tag gefahren werden darf, regeln weder die Beförderungsbedingungen noch die Hilfeseite ausdrücklich. Die zweite Zeile der Tabelle ist die naheliegende Lesart des Wortlauts, keine ausdrücklich geregelte Antwort.
+
+## 4. Eine Reise, die gar nicht erst angetreten wird
+
+- **In Ordnung ist es, die Reise nicht anzutreten, weil die Störung schon vor der Abfahrt angekündigt war.** Dann ist die ganze Strecke frei (Kapitel 3). Genau genommen gilt das nur, wenn die Störung auch der Grund ist, und nicht etwa eine Krankheit.
+- **Nicht in Ordnung ist es, die Reise nicht anzutreten und sich auf eine Störung zu berufen, die erst angekündigt wurde, als die Fahrt schon lief.** Dann hätte man im Zug sitzen müssen, und frei wäre nur der Rest ab dem Bahnhof, an dem man ausgestiegen wäre.
+
+Wo die Beförderungsbedingungen den Nichtantritt überhaupt regeln, ist die Verspätung der Grund dafür: Nach Nr. 9.1.3 darf die Reise „aufgrund einer Verspätung" abgebrochen oder „gar nicht erst" angetreten werden, und Nr. 2.5.3 verlängert die Geltung einer Fahrkarte, wenn der Reisende „infolge Verspätung oder Ausfall eines Zuges die Fahrt nicht antreten kann" (https://www.bahn.de/agb).
+
+Wie in [Kapitel 2](#2-es-zählt-die-prognose-nicht-der-spätere-verlauf) zählt auch hier die Ankündigung zum Zeitpunkt der Abfahrt, nicht der spätere Verlauf: Eine Verbindung, die am Abend tatsächlich verspätet ankommt, macht ein Ticket nicht nachträglich frei.
+
+## 5. Grenzen
+
+- **Reservierungspflichtige Züge und Sonderzüge sind ausgenommen.** Nr. 9.1.1 schließt sie ausdrücklich aus (Zitat in Kapitel 1).
+- **Nicht jede angebotene Alternative ist vom Ticket gedeckt.** Darauf zielt der Satz „Bitte prüfen Sie vorher, ob Ihr Ticket für die ausgewählte Alternative gültig ist" in der Navigator-Hilfe (Zitat in Kapitel 2). Verträge mit Unternehmen, die die Beförderungsbedingungen nicht anerkennen, sieht Nr. 9.1.2 nur vor, wenn die DB nicht innerhalb von 100 Minuten über die Möglichkeiten zur Weiterreise informiert (https://www.bahn.de/agb).
+- **Deutschland-Ticket plus Fernverkehrsticket sind zwei Verträge.** Verpasst der Nahverkehrszug den Fernzug, bleibt die Zugbindung des Fernverkehrstickets bestehen (https://www.bahn.de/faq/deutschlandticket-kombi-fv-dt).
+- **Fahrkarten des Nahverkehrs funktionieren anders.** Laut Hilfeseite: „Bei Nutzung eines höherwertigen Zugs (z.B. IC/EC, ICE) müssen Sie ein zusätzliches Ticket kaufen. Die Kosten können Sie über das Servicecenter Fahrgastrechte erstatten lassen. Diese Regelung gilt nicht für erheblich ermäßigte Fahrkarten (z.B. Deutschland-Ticket, Länder-Tickets)." (https://www.bahn.de/faq/zugbindung-aufgehoben-bedeutung)
+
+## 6. Einordnung
+
+- Die Bewertung stützt sich auf den Wortlaut der Beförderungsbedingungen, der Verordnung und der zitierten Hilfeseiten. Veröffentlichte Rechtsprechung zu diesen Fällen ist nicht ersichtlich.
+- Die Beförderungsbedingungen erscheinen mehrmals im Jahr neu. Zitiert ist die Fassung vom 26.10.2026; die Nummerierung kann sich in späteren Ausgaben verschieben.
+- Die EU-Verordnung knüpft die Weiterreise an 60 Minuten erwartete Verspätung (Zitat in Kapitel 3). Die 20-Minuten-Schwelle für Reisen innerhalb Deutschlands ist eine vertragliche Regel der DB und geht darüber hinaus.

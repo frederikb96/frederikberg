@@ -146,3 +146,26 @@ body {
   background: var(--c-amber-soft);
   color: inherit;
 }
+
+/* TL;DR box at the top of a post: <div class="tldr"> around a Markdown list in the post body. */
+.prose .tldr {
+  margin: 1.75em 0;
+  padding: 0.9em 1.25em 0.6em;
+  border: 1px solid var(--c-moss);
+  border-radius: 10px;
+  background: var(--c-moss-soft);
+}
+
+.prose .tldr > :first-child {
+  margin-top: 0;
+}
+
+.prose .tldr > p:first-child {
+  margin-bottom: 0.4em;
+  font-weight: 700;
+  color: var(--c-brand);
+}
+
+.prose .tldr ul {
+  margin-top: 0;
+}
