@@ -6,14 +6,21 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.2.0] - 2026-11-10
+
 ### Added
 
 - Posts can open with a highlighted TL;DR box.
 
 ### Changed
 
-- The site is built with Node 26 and Astro 7.4.7.
 - The Zugbindung post explains both triggers, that the announcement counts, and for which part of the trip a ticket is then valid.
+
+## [2.1.2] - 2026-11-08
+
+### Changed
+
+- The site is built with Node 26 and Astro 7.4.7.
 
 ## [2.1.1] - 2026-11-05
 
