@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.3.2] - 2026-11-10
+
+### Changed
+
+- The footer links the German explanation of the AI Influence Level on German pages.
+
 ## [2.3.1] - 2026-11-10
 
 ### Changed

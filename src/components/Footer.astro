@@ -2,6 +2,9 @@
 import { profile } from '../lib/data';
 import { site } from '../data/site';
 import Icon from './Icon.astro';
+import { ailPage, type Lang } from '../lib/ail';
+
+const { lang = 'en' } = Astro.props as { lang?: Lang };
 ---
 
 <footer class="mt-24 border-t border-line/70" data-pagefind-ignore="all">
@@ -25,7 +28,7 @@ import Icon from './Icon.astro';
           ><Icon name="scholar" class="h-4 w-4" />Scholar</a
         >
       </li>
-      <li><a href="/ai-influence-level/" class="hover:text-brand">AI Influence Level</a></li>
+      <li><a href={ailPage[lang]} class="hover:text-brand">{lang === 'de' ? 'KI-Einflussstufe' : 'AI Influence Level'}</a></li>
       <li><a href={site.repo} class="hover:text-brand">Source of this site</a></li>
     </ul>
   </div>
