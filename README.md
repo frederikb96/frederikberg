@@ -48,6 +48,9 @@ post ends with a short note on how it was written, selected by `disclaimer` (`co
 for posts that touch on law) and shown in the post's `lang`. Set `draft: true` to keep
 a post out of the build.
 
+A post can open with a highlighted summary box: wrap a short label line and a Markdown list in
+`<div class="tldr">` … `</div>`, with a blank line after the opening and before the closing tag.
+
 ## Release
 
 Pull requests run `astro check`, the build and a container build. A version tag on `main` builds the
