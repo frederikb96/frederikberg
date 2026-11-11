@@ -1,0 +1,65 @@
+# Development
+
+Running the site, editing its content and releasing it.
+
+## Run it locally
+
+```bash
+npm ci
+npm run dev        # http://localhost:4321, live reload
+npm run build      # type and content checks, static build into dist/, search index
+npm run preview    # serves dist/
+```
+
+Search only works after `npm run build`, since the Pagefind index is generated from the built pages.
+The CV at `/cv.pdf` comes from the [cv](https://github.com/frederikberg/cv) repository and is added
+when the container image is built; locally it is missing unless you put a `cv.pdf` into `public/`.
+
+## Editing content
+
+Everything a visitor reads lives in data files and Markdown, not in the components. The build fails
+with a message naming the file and field when an entry does not match its schema.
+
+- `src/data/profile.yaml` – name, role, bio, interests, education, contact.
+- `src/data/experience.yaml` – positions. Each entry also carries a `cv:` block with the shorter text
+  the CV renders from the same file.
+- `src/data/accomplishments.yaml` – certifications with a verification link or certificate PDF.
+- `src/data/more-projects.yaml` – smaller repositories listed without a card.
+- `src/content/blog/<slug>/index.md` – one folder per post, with its images beside it. A
+  translation is a post of its own (its own folder, or `index.<lang>.md` beside the original,
+  published under `/blog/<slug>/<lang>/`); `alt_lang` and `alt_url` link the two.
+- `src/content/projects/<slug>.md` – project cards; a project with a Markdown body gets its own page,
+  linked first from its card, as prose or, with `layout: gallery`, as a grid of its images.
+- `src/content/publications/<slug>/` – paper, BibTeX and abstract.
+- `src/data/site.ts` – navigation.
+
+The front matter fields of each collection, with what they mean, are in `src/content.config.ts`.
+
+### Blog posts
+
+`kind: research` posts are longer, sourced write-ups; `kind: update` posts are a few sentences, optionally
+with an `image`. Sources are numbered links in the text, `[\[1\]](url)`, with a numbered reference list at
+the end of the post.
+
+Every post carries an `ail` level from 0 to 6, the [AI Influence Level](https://danielmiessler.com/blog/ai-influence-level-ail)
+(level names in `src/lib/ail.ts`). It shows as a badge under the title that links to the explanation
+page, `/ai-influence-level/` (German: `/ai-influence-level/de/`, prose in
+`src/pages/ai-influence-level/`), and in the note on how the post was written at its end, shown in the
+post's `lang`. Above level 0 the note also carries the assistance text selected by `disclaimer` (`core`,
+or `core+legal` for posts that touch on law); a level 0 post sets no `disclaimer` and its note says it was
+written without AI. Set `draft: true` to keep a post out of the build.
+
+A post can open with a highlighted summary box: wrap a short label line and a Markdown list in
+`<div class="tldr">` … `</div>`, with a blank line after the opening and before the closing tag.
+
+## Release
+
+Pull requests run `astro check`, the build and a container build. A version tag on `main` builds the
+image for amd64 and arm64 and pushes it to `ghcr.io/frederikberg/frederikberg:<tag>`:
+
+```bash
+git tag -a v2.0.1 -m "Release v2.0.1" && git push origin v2.0.1
+```
+
+The container serves the site on port 80, answers `/healthz`, and redirects `www.frederikberg.com`
+to the apex domain.

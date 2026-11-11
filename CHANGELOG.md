@@ -8,7 +8,7 @@ All notable changes to this project are documented here. The format follows
 
 ### Changed
 
-- The README opens with a short profile intro, which GitHub shows on the account page; the build and content docs follow below.
+- The README is a short profile intro, which GitHub shows on the account page. Running, content editing and release moved to `docs/development.md`.
 
 ## [2.4.1] - 2026-11-11
 
