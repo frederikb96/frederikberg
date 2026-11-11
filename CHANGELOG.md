@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.4.0] - 2026-11-11
+
 ### Added
 
 - German versions of the blood donation and the footprints and handprints posts, with German charts.
