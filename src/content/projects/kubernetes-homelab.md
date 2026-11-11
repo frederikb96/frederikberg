@@ -4,9 +4,9 @@ status: active
 pitch: Three Hetzner servers on Talos Linux, managed by Flux, with replicated storage, apps for family and friends, and Borg backups. Every change goes through git.
 links:
   - label: kube-borg-backup
-    url: https://github.com/frederikb96/kube-borg-backup
+    url: https://github.com/frederikberg/kube-borg-backup
   - label: ECK on Talos
-    url: https://github.com/frederikb96/eck-on-talos
+    url: https://github.com/frederikberg/eck-on-talos
 image: ../../assets/art/ledger.jpg
 image_alt: A person at a desk with a large open ledger, a lookout tower seen through the window
 order: 4
@@ -31,8 +31,8 @@ Storage comes in three tiers, chosen by one question: does the app copy its data
 - **No**, which is most apps: a Mayastor volume, replicated over two nodes' NVMe.
 - **Large media**, the photo library and the cloud storage: Mayastor on hard disks.
 
-Backups are snapshots of the volumes, shipped to an offsite Borg repository. For that I wrote [kube-borg-backup](https://github.com/frederikb96/kube-borg-backup): it snapshots all volumes of an app at once, with hooks that put the database into a consistent state, clones the snapshots and sends them to Borg. It is installed per app as a Helm chart.
+Backups are snapshots of the volumes, shipped to an offsite Borg repository. For that I wrote [kube-borg-backup](https://github.com/frederikberg/kube-borg-backup): it snapshots all volumes of an app at once, with hooks that put the database into a consistent state, clones the snapshots and sends them to Borg. It is installed per app as a Helm chart.
 
 ## Elastic on the same nodes
 
-The Elastic stack runs inside the cluster through the ECK operator, three Elasticsearch nodes next to the apps they watch, with older data frozen as snapshots in object storage. How to set that up on Talos from scratch is written down as a public guide, [ECK on Talos](https://github.com/frederikb96/eck-on-talos).
+The Elastic stack runs inside the cluster through the ECK operator, three Elasticsearch nodes next to the apps they watch, with older data frozen as snapshots in object storage. How to set that up on Talos from scratch is written down as a public guide, [ECK on Talos](https://github.com/frederikberg/eck-on-talos).

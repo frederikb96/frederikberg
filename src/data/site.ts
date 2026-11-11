@@ -1,6 +1,6 @@
 export const site = {
   url: 'https://frederikberg.com',
-  repo: 'https://github.com/frederikb96/frederikberg',
+  repo: 'https://github.com/frederikberg/frederikberg',
   nav: [
     { label: 'CV', href: '/cv.pdf' },
     { label: 'Blog', href: '/blog/' },

@@ -42,7 +42,7 @@
     bullets:
       - "Elastic SIEM on my own Kubernetes cluster, configured entirely as code: detection rules over Kubernetes audit logs, network flows and container runtime events, with AI agents that triage alerts and security advisories and operate the cluster."
       - "A personal AI assistant infrastructure built on Claude Code, with a backend, web and iOS clients, long-term memory and scheduled agents."
-      - "MailVerdict: an open-source, self-hosted mail client in which a language model gives spam verdicts ([GitHub](https://github.com/frederikb96/mail-verdict))."
+      - "MailVerdict: an open-source, self-hosted mail client in which a language model gives spam verdicts ([GitHub](https://github.com/frederikberg/mail-verdict))."
 
 - id: rwth-research
   title: Research Associate

@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.4.1] - 2026-11-11
+
+### Changed
+
+- GitHub links, the repository badges and the CV and image paths name the `frederikberg` account.
+
 ## [2.4.0] - 2026-11-11
 
 ### Added
