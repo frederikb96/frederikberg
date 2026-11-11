@@ -7,7 +7,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 # The CV is maintained in its own repository; every image carries the version on its main branch.
-ADD --chmod=644 https://raw.githubusercontent.com/frederikb96/cv/main/cv.pdf dist/cv.pdf
+ADD --chmod=644 https://raw.githubusercontent.com/frederikberg/cv/main/cv.pdf dist/cv.pdf
 
 FROM nginx:1.29-alpine
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf

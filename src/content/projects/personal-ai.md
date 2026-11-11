@@ -4,9 +4,9 @@ status: active
 pitch: Claude Code sessions on a cloud VM, driven from a phone or a browser, with long-term memory, notes, scheduled agents that run my homelab, and a voice line. The core is closed source for now; the clients are open.
 links:
   - label: iOS client
-    url: https://github.com/frederikb96/pai-ios
+    url: https://github.com/frederikberg/pai-ios
   - label: Linux dictation client
-    url: https://github.com/frederikb96/pai-stt
+    url: https://github.com/frederikberg/pai-stt
 image: ../../assets/art/assistant.jpg
 image_alt: A small cabin with a lit desk and a filing cabinet, a person outside on the path looking at a phone
 order: 1
@@ -19,9 +19,9 @@ A large part of what I do on a computer starts as a conversation with an AI agen
 
 ## Sessions on a VM, driven from anywhere
 
-Every conversation is an ordinary Claude Code session in its own terminal on a virtual machine in my [Kubernetes cluster](/projects/kubernetes-homelab/). A small service on the VM starts and supervises the sessions and keeps one outbound connection to the backend, so the backend never has to reach into the VM. The backend is a FastAPI app with Postgres, with a web app and an [iPhone app](https://github.com/frederikb96/pai-ios) on top. Replies are read from the session's own transcript file, not scraped from a screen. When a session asks something the app cannot show, the terminal itself is streamed to the browser.
+Every conversation is an ordinary Claude Code session in its own terminal on a virtual machine in my [Kubernetes cluster](/projects/kubernetes-homelab/). A small service on the VM starts and supervises the sessions and keeps one outbound connection to the backend, so the backend never has to reach into the VM. The backend is a FastAPI app with Postgres, with a web app and an [iPhone app](https://github.com/frederikberg/pai-ios) on top. Replies are read from the session's own transcript file, not scraped from a screen. When a session asks something the app cannot show, the terminal itself is streamed to the browser.
 
-On the laptop I mostly talk instead of typing: the [Linux dictation client](https://github.com/frederikb96/pai-stt) streams the microphone to the same backend and puts the text into the clipboard. The phone app has dictation too, and a call mode for talking back and forth.
+On the laptop I mostly talk instead of typing: the [Linux dictation client](https://github.com/frederikberg/pai-stt) streams the microphone to the same backend and puts the text into the clipboard. The phone app has dictation too, and a call mode for talking back and forth.
 
 ## Memory
 

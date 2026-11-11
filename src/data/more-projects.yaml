@@ -1,28 +1,28 @@
 # Smaller public repositories, listed under "More on GitHub" without a card.
 - name: Prism
-  url: https://github.com/frederikb96/prism
+  url: https://github.com/frederikberg/prism
   description: A multi-level web search MCP server.
 - name: twilio-voice-bridge
-  url: https://github.com/frederikb96/twilio-voice-bridge
+  url: https://github.com/frederikberg/twilio-voice-bridge
   description: Connects Twilio phone calls to a realtime voice model over WebSocket.
 - name: tandemvault
-  url: https://github.com/frederikb96/tandemvault
+  url: https://github.com/frederikberg/tandemvault
   description: Keeps selected 1Password items in step with SOPS/age vaults on disk.
 - name: elastic-ingest-per-day
-  url: https://github.com/frederikb96/elastic-ingest-per-day
+  url: https://github.com/frederikberg/elastic-ingest-per-day
   description: Estimates the daily ingest volume of an Elasticsearch cluster, with the same formula as Kibana's Streams UI.
 - name: scrape-docs
-  url: https://github.com/frederikb96/scrape-docs
+  url: https://github.com/frederikberg/scrape-docs
   description: Scrapes documentation sites to Markdown for offline reading.
 - name: auto-on-top
-  url: https://github.com/frederikb96/auto-on-top
+  url: https://github.com/frederikberg/auto-on-top
   description: A GNOME Shell extension that pins windows always-on-top by rules.
 - name: independent-tabs
-  url: https://github.com/frederikb96/independent-tabs
+  url: https://github.com/frederikberg/independent-tabs
   description: A Chrome side panel that shows your tabs in your own order, independent of the tab bar.
 - name: cv
-  url: https://github.com/frederikb96/cv
+  url: https://github.com/frederikberg/cv
   description: My CV in LaTeX, and a one-page template anyone can reuse.
 - name: homeassistant-borg-backups
-  url: https://github.com/frederikb96/homeassistant-borg-backups
+  url: https://github.com/frederikberg/homeassistant-borg-backups
   description: Automated Borg backups of Home Assistant OS to BorgBase, deployed with Ansible.

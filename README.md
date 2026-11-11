@@ -1,7 +1,7 @@
 # frederikberg.com
 
-[![Checks](https://github.com/frederikb96/frederikberg/actions/workflows/checks.yml/badge.svg)](https://github.com/frederikb96/frederikberg/actions/workflows/checks.yml)
-[![Release](https://img.shields.io/github/v/tag/frederikb96/frederikberg?label=release)](https://github.com/frederikb96/frederikberg/tags)
+[![Checks](https://github.com/frederikberg/frederikberg/actions/workflows/checks.yml/badge.svg)](https://github.com/frederikberg/frederikberg/actions/workflows/checks.yml)
+[![Release](https://img.shields.io/github/v/tag/frederikberg/frederikberg?label=release)](https://github.com/frederikberg/frederikberg/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 My personal website: about me, experience and certifications, a blog, publications and projects.
@@ -17,7 +17,7 @@ npm run preview    # serves dist/
 ```
 
 Search only works after `npm run build`, since the Pagefind index is generated from the built pages.
-The CV at `/cv.pdf` comes from the [cv](https://github.com/frederikb96/cv) repository and is added
+The CV at `/cv.pdf` comes from the [cv](https://github.com/frederikberg/cv) repository and is added
 when the container image is built; locally it is missing unless you put a `cv.pdf` into `public/`.
 
 ## Editing content
@@ -60,7 +60,7 @@ A post can open with a highlighted summary box: wrap a short label line and a Ma
 ## Release
 
 Pull requests run `astro check`, the build and a container build. A version tag on `main` builds the
-image for amd64 and arm64 and pushes it to `ghcr.io/frederikb96/frederikberg:<tag>`:
+image for amd64 and arm64 and pushes it to `ghcr.io/frederikberg/frederikberg:<tag>`:
 
 ```bash
 git tag -a v2.0.1 -m "Release v2.0.1" && git push origin v2.0.1

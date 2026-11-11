@@ -4,7 +4,7 @@ status: active
 pitch: Every request, pod log, process start, network flow and login of my cluster lands in one Elastic cluster. Detection rules and a judged security-news feed wake AI agents that triage, tune and contain, and a second model watches the agents.
 links:
   - label: ECK on Talos guide
-    url: https://github.com/frederikb96/eck-on-talos
+    url: https://github.com/frederikberg/eck-on-talos
 image: ../../assets/art/two-watchers.jpg
 image_alt: A wooden lookout tower with a watcher above a small valley, a second tower on a far hill watching the first
 order: 3
@@ -38,4 +38,4 @@ Some attacks start before a patch exists, and the first warning is in the news, 
 
 ## Everything as code
 
-The whole Elastic configuration, from retention and Fleet policies to detection rules, exceptions and dashboards, is Terraform in git, applied by CI on merge. The stack itself runs through the ECK operator; how to set that up on Talos is in my [ECK on Talos](https://github.com/frederikb96/eck-on-talos) guide.
+The whole Elastic configuration, from retention and Fleet policies to detection rules, exceptions and dashboards, is Terraform in git, applied by CI on merge. The stack itself runs through the ECK operator; how to set that up on Talos is in my [ECK on Talos](https://github.com/frederikberg/eck-on-talos) guide.
