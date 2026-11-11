@@ -14,6 +14,8 @@ summary: >-
 tags: [health, blood donation]
 disclaimer: core
 ail: 4
+alt_lang: de
+alt_url: /blog/blood-donation/de/
 ---
 
 <div class="tldr">

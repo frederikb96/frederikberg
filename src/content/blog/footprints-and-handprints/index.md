@@ -17,6 +17,8 @@ summary: >-
 tags: [climate, carbon accounting, ecological footprint]
 disclaimer: core
 ail: 4
+alt_lang: de
+alt_url: /blog/footprints-and-handprints/de/
 ---
 
 <div class="tldr">
