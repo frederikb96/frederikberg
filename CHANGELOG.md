@@ -6,9 +6,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [2.4.2] - 2026-11-13
+
 ### Changed
 
 - The README is a short profile intro, which GitHub shows on the account page. Running, content editing and release moved to `docs/development.md`.
+- "More on GitHub" lists nextcloud-open-local and mirrorcal-outlook; Prism, archived, is gone from it.
+- The Baton card links the watch app in the Connect IQ Store.
 
 ## [2.4.1] - 2026-11-11
 

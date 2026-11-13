@@ -1,7 +1,10 @@
 # Smaller public repositories, listed under "More on GitHub" without a card.
-- name: Prism
-  url: https://github.com/frederikberg/prism
-  description: A multi-level web search MCP server.
+- name: nextcloud-open-local
+  url: https://github.com/frederikberg/nextcloud-open-local
+  description: A browser extension that opens the Nextcloud file you are looking at in your local desktop app.
+- name: mirrorcal-outlook
+  url: https://github.com/frederikberg/mirrorcal-outlook
+  description: A browser extension that mirrors your Outlook web calendar, one way, into a CalDAV calendar.
 - name: twilio-voice-bridge
   url: https://github.com/frederikberg/twilio-voice-bridge
   description: Connects Twilio phone calls to a realtime voice model over WebSocket.
