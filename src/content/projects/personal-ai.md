@@ -15,13 +15,17 @@ date: 2025-06-01
 
 A large part of what I do on a computer starts as a conversation with an AI agent: work on my homelab, research, notes, writing, small scripts. This project is the setup around that. It started as a few hooks and scripts around Claude Code on my laptop and grew into a system of its own.
 
-![How the parts connect: the iPhone app, the web app and the dictation client talk to the backend in the cluster; the backend drives the agent sessions on a VM and keeps the memory; scheduled agents are started by the backend and by alerts from Elastic.](../../assets/diagrams/personal-ai.svg)
+![How the parts connect: the iPhone app, the web app and the dictation client talk to the backend in the cluster; the backend drives the agent sessions on a VM and keeps the memory; each session runs on Claude Code or on Hermes Agent, which can use Claude through the API or Kimi at Infomaniak; scheduled agents are started by the backend and by alerts from Elastic.](../../assets/diagrams/personal-ai.svg)
 
 ## Sessions on a VM, driven from anywhere
 
 Every conversation is an ordinary Claude Code session in its own terminal on a virtual machine in my [Kubernetes cluster](/projects/kubernetes-homelab/). A small service on the VM starts and supervises the sessions and keeps one outbound connection to the backend, so the backend never has to reach into the VM. The backend is a FastAPI app with Postgres, with a web app and an [iPhone app](https://github.com/frederikberg/pai-ios) on top. Replies are read from the session's own transcript file, not scraped from a screen. When a session asks something the app cannot show, the terminal itself is streamed to the browser.
 
 On the laptop I mostly talk instead of typing: the [Linux dictation client](https://github.com/frederikberg/pai-stt) streams the microphone to the same backend and puts the text into the clipboard. The phone app has dictation too, and a call mode for talking back and forth.
+
+## A second engine
+
+Claude Code is not the only agent on the VM. Beside it runs [Hermes Agent](https://github.com/NousResearch/hermes-agent), an open-source agent by Nous Research that does the same job with other models: Claude through the pay-per-use API, or Kimi K2.6 at Infomaniak, a Swiss provider. Above the agent nothing knows which engine answers, so the apps, the memory and the notes work the same either way. When Claude Code is down or out of quota, I switch a session to Hermes in the model picker; nothing switches by itself.
 
 ## Memory
 

@@ -6,6 +6,10 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- The personal AI infrastructure page and its diagram show Hermes Agent as a second engine beside Claude Code, and the models behind both.
+
 ## [2.4.2] - 2026-11-13
 
 ### Changed
